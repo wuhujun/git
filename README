@@ -1,1 +1,11 @@
-学习使用git管理代码版本，
+开始学习使用git管理代码版本.
+git 的一些常用命令。
+1. 复制项目
+git  clone  https://github.com/wuhujun/git.git ；
+2. 向项目中添加文档。
+git add . /   git add filename 
+3.提交文档。
+git commit -a -m "some message " ;
+4.提交项目。
+git push orgin master
+
