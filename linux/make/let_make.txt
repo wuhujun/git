@@ -1,0 +1,5 @@
+跟我一起来写makefile
+作者：陈皓
+
+什么是makefile？或许很多Windows的程序员都不知道这个东西，因为那些Windows的IDE都为你
+做了这些工作，但我觉得要做一个好的

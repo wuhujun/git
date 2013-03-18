@@ -2,7 +2,8 @@
   感觉使用起来挺方便的一个工具：
 GIT(1)                                          Git Manual                                         GIT(1)
 
-
+     git 的最大优点是可以实现代码的分布式托管，无论在哪里工作，只要有网络，就可以将自己的工作提交上去，非常方便。
+     git非常适合开源软件的开发，很多开源项目都被放到github上面了。
 
 NAME
        git - the stupid content tracker

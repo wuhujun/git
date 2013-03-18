@@ -1,0 +1,180 @@
+    1.mysql 之必杀技术：
+    内连接案例
+    CREATE TABLE test1   
+    (   
+    name VARCHAR(32) NOT NULL,   
+    city VARCHAR(32) NOT NULL   
+    ); 
+    insert into TABLE1(name, city) values ('Person A', 'BJ');   
+    insert into TABLE1(name, city) values ('Person B', 'BJ');   
+    insert into TABLE1(name, city) values ('Person C', 'SH');   
+    insert into TABLE1(name, city) values ('Person D', 'SZ');   
+    commit ;    
+    CREATE TABLE test2   
+    (   
+    name VARCHAR(32) NOT NULL,   
+    city VARCHAR(32) NOT NULL   
+    ) ;
+    insert into TABLE2(name, city) values ('Person W', 'BJ');   
+    insert into TABLE2(name, city) values ('Person X', 'SH');   
+    insert into TABLE2(name, city) values ('Person Y', 'SH');   
+    insert into TABLE2(name, city) values ('Person Z', 'NJ');   
+    commit;
+    show tables ;
+    select  * from test1  inner join test2  on test2.city = test1.city 
+    select *  from test1  join test1  on test1.city = test2.city 
+    CREATE TABLE test1   
+    (   
+    name VARCHAR(32) NOT NULL,   
+    city VARCHAR(32) NOT NULL   
+    ); 
+    insert into TABLE1(name, city) values ('Person A', 'BJ');   
+    insert into TABLE1(name, city) values ('Person B', 'BJ');   
+    insert into TABLE1(name, city) values ('Person C', 'SH');   
+    insert into TABLE1(name, city) values ('Person D', 'SZ');   
+    commit ;    
+    CREATE TABLE test2   
+    (   
+    name VARCHAR(32) NOT NULL,   
+    city VARCHAR(32) NOT NULL   
+    ) ;
+    insert into TABLE2(name, city) values ('Person W', 'BJ');   
+    insert into TABLE2(name, city) values ('Person X', 'SH');   
+    insert into TABLE2(name, city) values ('Person Y', 'SH');   
+    insert into TABLE2(name, city) values ('Person Z', 'NJ');   
+    commit;
+    show tables ;
+    select  * from test1 a inner join test2 b on a.city = b.city 
+    /*
+    select * from table1 a j`oin table2 b on a.city = b.city 
+    */
+2.mysql将查询结果插入到已经存在的
+mysql> insert into demo3 select demo1.id , demo1.name , demo1.comment,demo2.length   from  demo1 cross  join demo2  on demo1.name = demo2.name ;
+	复制前并没有建立数据表。
+	create table dust select * from student;//用于复制前未创建新表dust的情况下 
+	复制前已经建好表。
+	insert into dust select * from student;//已经创建了新表dust的情况
+3.mysql字符操作函数：
+连接字符：
+select concat("A" ,"B","C");
+插入字符：
+SELECT INSERT('Quadratic', 3, 4, 'What');
+4.mysql 导出数据到csv文件中
+ select * from t_apps where created>'2012-07-02 00:00:00' into outfile /tmp/apps.csv ；
+ 指定分字段质检的分割符和记录质检的分割符：
+ select first_name,last_name,email from account into outfile 'e://output1.csv' fields terminated by ','optionally enclosed by ''lines terminated by '/n';
+在linux 下可以保存为一般的csv格式的数据。
+select * from demo1  into outfile './output4.csv' fields terminated by ','optionally enclosed by ''lines terminated by '\n';
+select * from wheeltread left join scheduling  on tread.work_date  = scheduling.trans_date ;
+ index_id     | character varying(200) | 
+ check_date   | character varying(200) | 
+ train_id     | character varying(200) | 
+ vehicle_id   | character varying(200) | 
+ vehicle_no   | character varying(200) | 
+ alxi_no      | character varying(200) | 
+ project_name | text                   | 
+ value        | numeric                | 
+ work_date    | character varying(40)  | 
+
+\d: extra argument ";" ignored
+oms=# \d scheduling ;
+ index_id   | integer               | 
+ train_id   | character(30)         | 
+ table_date | character(30)         | 
+ run_length | integer               | 
+ trans_date | character varying(40) | 
+
+
+ create table result ( index_id char(30) , train_id char(30) , vehicle_id char(30) , vechicle_no char(30) , alxi_no char(30) ,project_name char(100) ,value numeric(18,2) ,work_date char(30) ,run_length numeric(18,2));
+  
+ insert into  result 
+ select wheeltread.index_id  ,  wheeltread.train_id  ,  wheeltread.vehicle_id , 
+ wheeltread.vehicle_no , wheeltread.alxi_no , wheeltread.project_name  ,
+ wheeltread.value ,  wheeltread.work_date ,scheduling.run_length
+ from wheeltread left join scheduling on 
+ wheeltread.work_date= scheduling.trans_date and wheeltread.train_id = scheduling.train_id;
+
+'/home/postgres/data/sql/query.sql'
+select count(distinct(train_id)) from sub_result ;
+select distinct(work_date) from wheeltread where train_id = 'CRH380B-6426L' ;
+postgresql 导入csv数据。
+copy wheeltread(index_id ,check_date ,train_id , vehicle_no , alxi_no ,project_name ) from '/home/postgres/all.csv'   delimiter ',' ;
+ create table  wheeltred (
+ index_id      integer  , 
+ check_date    character(30) , 
+ train_id      character(30) , 
+ vehicle_id    integer    , 
+ vehicle_no    integer    , 
+ alxi_no       integer    , 
+ project_name  character varying(200)                   , 
+ value         numeric                , 
+ work_date     character varying(40) 
+ ) 
+ 使用command导入csv到mysql数据库时候
+ 进入的模式为：
+ start mysql in command mode by:
+mysql --local-infile -uroot -pandsoon
+
+Or by putting the following entry in a config file (in my case ~/.my.cnf):
+[mysql]
+local-infile 
+
+
+GRANT ALL PRIVILEGES ON *.* TO 'root@192.1.0.0' IDENTIFIED BY 'mypassword' WITH GRANT OPTION;
+FLUSH PRIVILEGES; 
+ index_id   | integer               | 
+ train_id   | character(30)         | 
+ table_date | character(30)         | 
+ run_length | integer               | 
+ trans_date | character varying(40)
+
+GRANT all privileges ON discuzbbs.* to discuz@192.168.0.3 IDENtTIFIED BY "comsenz";
+
+GRANT all privileges ON wheel.* to root@192.168.3.146 IDENtTIFIED BY "ia";
+
+postgreSQL 导出到 csv
+copy wheeltread(index_id ,check_date ,train_id , vehicle_no , alxi_no ,project_name ) to '/home/postgres/all.csv'   delimiter ',' ;
+
+psql (9.1.2)
+Type "help" for help.
+
+oms=# \?
+oms=# \? copy
+\?: extra argument "copy" ignored
+oms=# \h copy
+Command:     COPY
+Description: copy data between a file and a table
+Syntax:
+COPY table_name [ ( column [, ...] ) ]
+    FROM { 'filename' | STDIN }
+    [ [ WITH ] ( option [, ...] ) ]
+
+COPY { table_name [ ( column [, ...] ) ] | ( query ) }
+    TO { 'filename' | STDOUT }
+    [ [ WITH ] ( option [, ...] ) ]
+
+where option can be one of:
+
+    FORMAT format_name
+    OIDS [ boolean ]
+    DELIMITER 'delimiter_character'
+    NULL 'null_string'
+    HEADER [ boolean ]
+    QUOTE 'quote_character'
+    ESCAPE 'escape_character'
+    FORCE_QUOTE { ( column [, ...] ) | * }
+    FORCE_NOT_NULL ( column [, ...] ) |
+    ENCODING 'encoding_name'
+copy scheduling to '/home/postgres/scheduling.csv' delimiter ',' ;
+copy axle_mill_temp  to  '/home/postgres/axle_mill_temp.csv' delimiter ',' ;
+select trans_date from scheduling sort
+ 
+copy train to '/home/postgres/train.csv'  delimiter ',' ;
+
+
+
+
+
+
+
+

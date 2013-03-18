@@ -1,0 +1,63 @@
+安装openoffice时留下的
+ia@ia:/opt/openoffice.org/basis3.4/sdk$ ./setsdkenv_unix 
+
+ ************************************************************************
+ *
+ *  You have to configure your SDK environment first before you can
+ *  can use it! The configuration has to be done only once.
+ *
+ ************************************************************************
+
+Using an array as a reference is deprecated at /opt/openoffice.org/basis3.4/sdk/configure.pl line 764.
+Using an array as a reference is deprecated at /opt/openoffice.org/basis3.4/sdk/configure.pl line 764.
+Using an array as a reference is deprecated at /opt/openoffice.org/basis3.4/sdk/configure.pl line 769.
+Using an array as a reference is deprecated at /opt/openoffice.org/basis3.4/sdk/configure.pl line 769.
+sh: 1: cd: can't cd to /opt/openoffice.org/basis3.4/sdk/../ure-link
+ Enter the Office installation directory [../lib/libreoffice]: 
+ Error: An office installation is required, please specify the path to a valid installation.
+ Enter the Office installation directory [../lib/libreoffice]: /usr/lib/openoffice 
+ Error: An office installation is required, please specify the path to a valid installation.
+ Enter the Office installation directory [../lib/libreoffice]: /usr/lib/openoffice
+ Error: An office installation is required, please specify the path to a valid installation.
+ Enter the Office installation directory [../lib/libreoffice]: /usr/lib/openoffice
+ Error: An office installation is required, please specify the path to a valid installation.
+ Enter the Office installation directory [../lib/libreoffice]: /usr/lib/libreoffice
+ Enter GNU make (3.79.1 or higher) tools directory [/usr/bin]: 
+ Enter zip (2.3 or higher) tool directory [/usr/bin]: 
+ C++ compilers where for example a language binding exist:
+  - Solaris, Sun WorkShop 6 update 1 C++ 5.2 2000/09/11 or higher
+  - Linux, GNU C++ compiler, gcc version 4.0.1 or higher
+  - MacOS, GNU C++ compiler, gcc version 4.0.1 or higher
+ Enter the directory of the C++ compiler, the directory
+ where the compiler is located (optional) [/usr/bin]: 
+ Enter Java SDK (1.5, recommendation is 1.6 or higher) installation directory  (optional) [/usr]: 
+ Default output directory is in your HOME directory.
+ Enter an existent directory if you prefer a different output directory (optional) [/home/ia]: 
+ Automatic deployment of UNO components (YES/NO) [YES]: 
+
+ ************************************************************************
+ * ... your SDK environment has been prepared.
+ * For each time you want to use this configured SDK environment, you
+ * have to run the "setsdkenv_unix" script file!
+ * Alternatively can you source one of the scripts
+ *   "/home/ia/openoffice.org3.4_sdk/ia/setsdkenv_unix.sh"
+ *   "/home/ia/openoffice.org3.4_sdk/ia/setsdkenv_unix.csh"
+ * to get an environment without starting a new shell.
+ ************************************************************************
+
+
+ ************************************************************************
+ *
+ * SDK environment is prepared for Linux
+ *
+ * SDK = /opt/openoffice.org/basis3.4/sdk
+ * Office = /usr/lib/libreoffice
+ * Office Base = /opt/openoffice.org/basis3.4
+ * URE = 
+ * Make = /usr/bin
+ * Zip = /usr/bin
+ * C++ Compiler = /usr/bin
+ * Java = /usr
+ * SDK Output directory = /home/ia/openoffice.org3.4_sdk
+ * Auto deployment = YES
+
