@@ -18,6 +18,8 @@
 	};
 	class A{
 	private:
+		int a ;
+		double n ;
 	};
 
 
