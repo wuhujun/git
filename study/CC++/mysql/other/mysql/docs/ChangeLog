@@ -1,0 +1,503 @@
+------------------------------------------------------------
+revno: 3855
+committer: Joerg Bruehe <joerg.bruehe@oracle.com>
+branch nick: clone-5.1
+timestamp: Fri 2012-12-07 10:47:57 +0100
+message:
+  Last-minute fix to 5.1.67,
+  taking a change done to main 5.1 by Dmitri Lenev.
+  
+  This is the original comment:
+  
+  > committer: Dmitry Lenev <Dmitry.Lenev@oracle.com>
+  > branch nick: mysql-5.1-15954896
+  > timestamp: Wed 2012-12-05 19:26:56 +0400
+  > message:
+  >   Bug #15954896 "SP, MULTI-TABLE DELETE AND LONG ALIAS".
+  
+    Using too long table aliases in stored routines might
+    have caused server crashes.
+  
+    Code in sp_head::merge_table_list() which is responsible
+    for collecting information about tables used in stored
+    routine was not aware of the fact that table alias might
+    have arbitrary length. I.e. it assumed that table alias
+    can't be longer than NAME_LEN bytes and allocated buffer
+    for a key identifying table accordingly.
+  
+    This patch fixes the issue by ensuring that we use
+    dynamically allocated buffer for table key when table
+    alias is too long. By default stack based buffer is used
+    in which NAME_LEN bytes are reserved for table alias.
+------------------------------------------------------------
+revno: 3854
+author: akhil.mohan@oracle.com
+committer: Akhil Mohan <akhil.mohan@oracle.com>
+branch nick: mysql-5.1.67-release
+timestamp: Thu 2012-11-29 19:34:47 +0100
+message:
+  applying patch for BUG15912213
+------------------------------------------------------------
+revno: 3853
+tags: clone-5.1.67-build
+committer: Tor Didriksen <tor.didriksen@oracle.com>
+branch nick: 5.1
+timestamp: Thu 2012-11-01 17:23:06 +0100
+message:
+  Bug#14840488 VALGRIND ERRORS IN MYSQL_CLIENT_TEST
+  
+  Add missing DBUG_RETURNs, otherwise the debug-stack gets messed up,
+  and _db_enter_ and _db_exit_ will access data outside the current stack frame.
+------------------------------------------------------------
+revno: 3852
+committer: Anirudh Mangipudi <anirudh.mangipudi@oracle.com>
+branch nick: 5.1
+timestamp: Tue 2012-10-30 18:49:15 +0530
+message:
+  BUG#11754894: MYISAMCHK ERROR HAS INCORRECT REFERENCE 
+                TO 'MYISAM_SORT_BUFFER_SIZE'
+  Problem: 'myisam_sort_buffer_size' is a parameter used by 
+  mysqld program only whereas 'sort_buffer_size' is used by
+  mysqld and myisamchk programs. But the error message printed
+  when myisamchk program is run with insufficient buffer size 
+  is myisam_sort_buffer_size is too small which may mislead to the
+  server parameter myisam_sort_buffer_size.
+  SOLUTION: A parameter 'myisam_sort_buffer_size' is added as an
+  alias for 'sort_buffer_size' and the 'sort_buffer_size' parameter
+  is marked as deprecated. So myisamchk also has both the parameters
+  with the same role.
+------------------------------------------------------------
+revno: 3851
+committer: Shivji Kumar Jha <shivji.jha@oracle.com>
+branch nick: mysql-5.1_b14659685
+timestamp: Tue 2012-10-30 10:40:07 +0530
+message:
+  BUG#14659685 - main.mysqlbinlog_row_myisam and
+                 main.mysqlbinlog_row_innodb are skipped by mtr
+  
+  === Problem ===
+  
+  The following tests are wrongly placed in main suite and as a
+  result these are not run with proper binlog format combinations.
+  Some are always skipped by mtr.
+  1) mysqlbinlog_row_myisam
+  2) mysqlbinlog_row_innodb
+  3) mysqlbinlog_row.test
+  4) mysqlbinlog_row_trans.test
+  5) mysqlbinlog-cp932
+  6) mysqlbinlog2
+  7) mysqlbinlog_base64
+  
+  === Background ===
+  
+  mtr runs the tests placed in main suite with binlog format=stmt.
+  Those that need to be tested against binlog format=row or mixed
+  or more than one binlog format and require only one mysql server
+  are placed in binlog suite. mtr runs tests in binlog suite with
+  all three binlog formats(stmt,row and mixed).
+  
+  === Fix ===
+  
+  
+  1) Moved the test listed in problem section above to binlog suite.
+  2) Added prefix "binlog_" to the name of each test case moved.
+     Renamed the coresponding result files and option files accordingly. 
+------------------------------------------------------------
+revno: 3850
+committer: Marc Alff <marc.alff@oracle.com>
+branch nick: mysql-5.1-cleanup
+timestamp: Mon 2012-10-29 14:52:17 +0100
+message:
+  Test cleanup.
+  
+  Make sure the test output is stable, to avoid spurious failures.
+------------------------------------------------------------
+revno: 3849
+committer: Alexander Nozdrin <alexander.nozdrin@oracle.com>
+branch nick: 5.1
+timestamp: Mon 2012-10-29 12:47:01 +0400
+message:
+  Fix sp_notembedded.test.
+------------------------------------------------------------
+revno: 3848
+committer: Marko M?kel? <marko.makela@oracle.com>
+branch nick: mysql-5.1
+timestamp: Mon 2012-10-22 22:10:33 +0300
+message:
+  Backport from 5.6: Bug#14769820 ASSERT FLEN == LEN
+  IN ALTER TABLE ... ADD UNIQUE KEY
+  
+  A bogus debug assertion failure occurred when reporting a duplicate
+  key on a column prefix of a CHAR column.
+  
+  This is a regression from Bug#14729221 IN-PLACE ALTER TABLE REPORTS ''
+  INSTEAD OF REAL DUPLICATE VALUE FOR PREFIX KEYS. The assertion is only
+  present when UNIV_DEBUG is defined (which it is in debug builds
+  starting from MySQL 5.5). It is a case of overasserting.
+  
+  Fix approved by Inaam Rana on IM.
+------------------------------------------------------------
+revno: 3847
+committer: Nuno Carvalho <nuno.carvalho@oracle.com>
+branch nick: mysql-5.1
+timestamp: Sun 2012-10-21 20:28:19 +0100
+message:
+  BUG#14629727: USER_VAR_EVENT IS MISSING RANGE CHECKS
+  
+  Moved explicit instantiation of available_buffer and valid_buffer_range 
+  template functions to sql/log_event.cc.
+------------------------------------------------------------
+revno: 3846 [merge]
+committer: Nuno Carvalho <nuno.carvalho@oracle.com>
+branch nick: mysql-5.1
+timestamp: Sun 2012-10-21 15:34:38 +0100
+message:
+  BUG#14629727: USER_VAR_EVENT IS MISSING RANGE CHECKS
+  
+  Merge bundle on mysql-5.1.
+    ------------------------------------------------------------
+    revno: 3835.1.1
+    committer: Nuno Carvalho <nuno.carvalho@oracle.com>
+    branch nick: mysql-5.1
+    timestamp: Fri 2012-10-12 08:32:10 +0100
+    message:
+      BUG#14629727: USER_VAR_EVENT IS MISSING RANGE CHECKS
+      
+      This bug had two problems:
+       P1) Reads out of bounds;
+       P2) Writes out of bounds.
+      
+      PROBLEM P1
+      ----------
+      User_var_log_event unmarshalling from binlog was not performing range
+      checks when using name_len and val_len variables to walk on event
+      buffer.
+      
+      Added range checks to User_var_log_event unmarshalling to prevent
+      unmarshalling errors.
+      
+      PROBLEM P2
+      ----------
+      User_var_log_event value was allocated on thread stack, what caused
+      stack frame errors when User_var_log_event value was bigger than thread
+      stack size.
+      
+      Currently value is allocated on heap memory.
+      
+      @ internal/mysql-test/extra/rpl_tests/rpl_corrupted_binlog_event.inc
+         Dump a binary log content trough mysqlbinlog and replay it on slave.
+      @ internal/mysql-test/std_data/rpl_corrupted_binlog_event/binlog.001118
+         Binlog with corrupted User_var_log_event.
+      @ internal/mysql-test/std_data/rpl_corrupted_binlog_event/binlog.010160
+         Binlog with corrupted User_var_log_event.
+      @ internal/mysql-test/std_data/rpl_corrupted_binlog_event/binlog.010644
+         Binlog with corrupted User_var_log_event.
+      @ internal/mysql-test/std_data/rpl_corrupted_binlog_event/binlog.016516
+         Binlog with corrupted User_var_log_event.
+      @ internal/mysql-test/std_data/rpl_corrupted_binlog_event/slave-relay-bin_linux.index
+         Relay log index to replay corrupted binlog on slave on Linux.
+      @ internal/mysql-test/std_data/rpl_corrupted_binlog_event/slave-relay-bin_win.index
+         Relay log index to replay corrupted binlog on slave on Windows.
+      @ internal/mysql-test/suite/i_binlog/r/binlog_big_user_variable.result
+         binlog_big_user_variable test case results.
+      @ internal/mysql-test/suite/i_binlog/t/binlog_big_user_variable-master.opt
+         binlog_big_user_variable master server options.
+      @ internal/mysql-test/suite/i_binlog/t/binlog_big_user_variable.test
+         Test case to verify that a big User_var_log_event can be print
+         safely.
+      @ internal/mysql-test/suite/i_rpl/r/rpl_corrupted_binlog_event.result
+         rpl_corrupted_binlog_event test case results.
+      @ internal/mysql-test/suite/i_rpl/t/rpl_corrupted_binlog_event.test
+         Execute rpl_corrupted_binlog_event.inc for all binary logs.
+      @ sql/log_event.cc
+         Added range checks to User_var_log_event unmarshalling.
+         Changed allocation of memory on User_var_log_event::print() to
+         heap-based.
+      @ sql/log_event.h
+         Added event_len argument to User_var_log_event constructor and
+         override Log_event::is_valid() method.
+      @ sql/mysql_priv.h
+         Added template functions available_buffer() and
+         valid_buffer_range().
+------------------------------------------------------------
+revno: 3845 [merge]
+committer: Joerg Bruehe <joerg.bruehe@oracle.com>
+branch nick: merge-5.1
+timestamp: Fri 2012-10-19 20:09:29 +0200
+message:
+  Automerge into main 5.1
+    ------------------------------------------------------------
+    revno: 3810.1.1
+    committer: Joerg Bruehe <joerg.bruehe@oracle.com>
+    branch nick: bug12794345-5.1
+    timestamp: Tue 2012-09-11 20:56:22 +0200
+    message:
+      Backport this change from MySQL 5.5 to 5.1:
+      
+        Bug #14181049: MYSQL_INSTALL_DB.PL CREATES EMPTY SYSTEM TABLES FOR MYSQL
+      
+        The script is different from what's used on unixes.
+        It was not playing the table insertion script (mysql_system_tables_data.sql),
+        although it was checking for the presence of this script.
+        Fixed by re-enabling the lookup for this file and replaying it at bootstrap
+        time. Note that on the Unixes "SELECT @@hostname" does return a fully qualified
+        name, whereas on Windows it returns only a hostname.
+        So by default we're filtering records in the mysql.user table until we ensure
+        this is fixed.
+      
+      The change was coded in 5.5 by Georgi Kodinov <Georgi.Kodinov@Oracle.com>
+------------------------------------------------------------
+revno: 3844
+committer: Neeraj Bisht <neeraj.x.bisht@oracle.com>
+branch nick: mysql-5.1
+timestamp: Thu 2012-10-18 23:45:15 +0530
+message:
+  Bug#13726751 - 8 BYTE MEMORY LEAK IN DO_SAVE_BLOB
+  
+  Problem:-
+  When we execute a query which has subquery with GROUP BY, ORDER BY and have a
+  BLOB column,results a memory leak.
+  
+  Analysis:-
+  In case of subquery, which have GROUP BY on BLOB and a ORDER BY on other field
+  and BLOB is not a key. We allocate a tmp buffer to copy_field to take care of
+  BLOB value.This copy_field value can have copies of its in two join(objects),
+  so while freeing this copy_field we have to take care that it is
+  not deleted twice.
+  The double deletion of tmp_table_param.copy_field is handled by two patches.
+  
+  One by Kostja :
+  revid:sp1r-konstantin@mysql.com-20050627101056-55153
+  Fix the broken test suite in -debug build.
+  
+  and other by Oleksandr
+  revid:sp1r-bell@sanja.is.com.ua-20060118114857-19905
+  Excluded posibility of tmp_table_param.copy_field double deletion (BUG#14851).
+  
+  both of this patches are commited in different branch and while
+  merging they both get placed,but there is no need for Kostja patch as Oleksandr
+  patch handle this.
+------------------------------------------------------------
+revno: 3843
+committer: Marko M?kel? <marko.makela@oracle.com>
+branch nick: mysql-5.1
+timestamp: Thu 2012-10-18 17:03:06 +0300
+message:
+  Bug#14758405: ALTER TABLE: ADDING SERIAL NULL DATATYPE: ASSERTION:
+  LEN <= SIZEOF(ULONGLONG)
+  
+  This bug was caught in the WL#6255 ALTER TABLE...ADD COLUMN in MySQL
+  5.6, but there is a bug in all InnoDB versions that support
+  auto-increment columns.
+  
+  row_search_autoinc_read_column(): When reading the maximum value of
+  the auto-increment column, and the column only contains NULL values,
+  return 0. This corresponds to the case when the table is empty in
+  row_search_max_autoinc().
+  
+  rb:1415 approved by Sunny Bains
+------------------------------------------------------------
+revno: 3842
+committer: Krunal Bauskar krunal.bauskar@oracle.com
+branch nick: mysql-5.1
+timestamp: Wed 2012-10-17 14:30:32 +0530
+message:
+  bug#14765606: ensure select is active before killing it else kill signal is ignored
+------------------------------------------------------------
+revno: 3841 [merge]
+committer: Tatjana Azundris Nuernberg <tatjana.nuernberg@oracle.com>
+branch nick: 51-11764559
+timestamp: Wed 2012-10-17 09:14:44 +0100
+message:
+  Bug#11764559: UMASK IS IGNORED BY ERROR LOG
+  
+  mysqld_safe script did not heed MySQL specific environment variable
+  $UMASK, leading to divergent behavior between mysqld and mysqld_safe.
+  
+  Patch adds an approximation of mysqld's behavior to mysqld_safe,
+  within the bounds dictated by attempt to have mysqld_safe run on
+  even the most basic of shells (proper '70s sh, not just bash
+  with a fancy symlink).
+  
+  Patch also adds approximation of said behavior to mysqld_multi
+  (in perl).
+  
+  (backport)
+    ------------------------------------------------------------
+    revno: 3839.1.1
+    committer: Tatjana Azundris Nuernberg <tatjana.nuernberg@oracle.com>
+    branch nick: 51-11764559
+    timestamp: Wed 2012-10-17 07:22:06 +0100
+    message:
+      Bug#11764559: UMASK IS IGNORED BY ERROR LOG
+      
+      mysqld_safe script did not heed MySQL specific environment variable
+      $UMASK, leading to divergent behavior between mysqld and mysqld_safe.
+      
+      Patch adds an approximation of mysqld's behavior to mysqld_safe,
+      within the bounds dictated by attempt to have mysqld_safe run on
+      even the most basic of shells (proper '70s sh, not just bash
+      with a fancy symlink).
+      
+      Patch also adds approximation of said behavior to mysqld_multi
+      (in perl).
+------------------------------------------------------------
+revno: 3840
+committer: Yasufumi Kinoshita <yasufumi.kinoshita@oracle.com>
+branch nick: mysql-5.1_test
+timestamp: Wed 2012-10-17 15:28:31 +0900
+message:
+  Bug #13702112 : WAIT_FOR_READ IS STUCK IN THE 90S
+  
+  rb://1334
+  approved by: Inaam Rana
+------------------------------------------------------------
+revno: 3839
+committer: Neeraj Bisht <neeraj.x.bisht@oracle.com>
+branch nick: mysql-5.1
+timestamp: Tue 2012-10-16 23:18:48 +0530
+message:
+  Bug#11745891 - LAST_INSERT(ID) DOES NOT SUPPORT BIGINT UNSIGNED
+  
+  Problem:-
+  using last_insert_id() on an auto_incremented bigint unsigned does
+  not work for values which are greater than max-bigint-signed.
+  
+  Analysis:-
+  last_insert_id() returns the first auto_incremented value for a column
+  and an auto_incremented value can have only positive values.
+  
+  In our code, when we are initializing a last_insert_id object, we are
+  taking it as a signed BIGINT, So when the auto_incremented value reaches
+  greater than max signed bigint, last_insert_id gives negative result.
+  
+  Solution:
+  When we are fetching the value from last_insert_id, We are setting the 
+  unsigned_flag, so that it take only unsigned BIGINT value.
+------------------------------------------------------------
+revno: 3838
+committer: Marko M?kel? <marko.makela@oracle.com>
+branch nick: mysql-5.1
+timestamp: Tue 2012-10-16 14:24:15 +0300
+message:
+  Bug#14729221 IN-PLACE ALTER TABLE REPORTS '' INSTEAD OF
+  REAL DUPLICATE VALUE FOR PREFIX KEYS
+  
+  innobase_rec_to_mysql(): Invoke dict_index_get_nth_col_or_prefix_pos()
+  instead of dict_index_get_nth_col_pos() to find the column.
+------------------------------------------------------------
+revno: 3837
+committer: Krunal Bauskar krunal.bauskar@oracle.com
+branch nick: mysql-5.1
+timestamp: Mon 2012-10-15 09:24:33 +0530
+message:
+  
+  bug#14704286
+  SECONDARY INDEX UPDATES MAKE CONSISTENT READS DO O(N^2) UNDO PAGE
+  LOOKUPS (honoring kill query while accessing sec_index)
+  
+  If secondary index is being used for select query evaluation and this
+  query is operating with consistent read snapshot it might take good time for
+  secondary index to return back control to mysql as MVCC would kick in.
+  
+  If user issues "kill query <id>" while query is actively accessing
+  secondary index it will not be honored as there is no hook to check
+  for this condition. Added hook for this check.
+  
+  -----
+  Parallely secondary index taking too long to evaluate for consistent
+  read snapshot case is being examined for performance improvement. WL#6540.
+------------------------------------------------------------
+revno: 3836
+committer: Marc Alff <marc.alff@oracle.com>
+branch nick: mysql-5.1-bug14629232
+timestamp: Fri 2012-10-12 19:38:45 +0200
+message:
+  Bug#14629232 SECURITY VULNERABILITY WITH SHOW PROFILE
+  
+  This fix resolves a security vulnerability of SHOW PROFILE.
+  
+  See the bug report for details.
+------------------------------------------------------------
+revno: 3835
+committer: Vasil Dimov <vasil.dimov@oracle.com>
+branch nick: mysql-5.1
+timestamp: Wed 2012-10-10 22:22:10 +0300
+message:
+  Fix compilation error in debug mode:
+  os/os0file.c:1332: error: ISO C90 forbids mixed declarations and code
+------------------------------------------------------------
+revno: 3834
+committer: Vasil Dimov <vasil.dimov@oracle.com>
+branch nick: mysql-5.1
+timestamp: Tue 2012-10-09 16:29:00 +0300
+message:
+  Port the test for Bug#14708715 from 5.1/innodb_plugin into 5.1/innodb
+  although the bug does not exist in 5.1/innodb.
+------------------------------------------------------------
+revno: 3833
+committer: Vasil Dimov <vasil.dimov@oracle.com>
+branch nick: mysql-5.1
+timestamp: Tue 2012-10-09 16:08:06 +0300
+message:
+  Update the ChangeLog with the fix of Bug#14708715
+------------------------------------------------------------
+revno: 3832
+committer: Vasil Dimov <vasil.dimov@oracle.com>
+branch nick: mysql-5.1
+timestamp: Tue 2012-10-09 16:02:58 +0300
+message:
+  Fix Bug#14708715 CREATE TABLE MEMORY LEAK ON DB_OUT_OF_FILE_SPACE
+  
+  The problem is in the error handling in row_create_table_for_mysql().
+  In the 'disk full' case we may forget to call dict_mem_table_free() on
+  the table object.
+  
+  Approved by:	Marko (rb:1377 and rb:1386)
+------------------------------------------------------------
+revno: 3831
+committer: Marko M?kel? <marko.makela@oracle.com>
+branch nick: mysql-5.1
+timestamp: Mon 2012-10-08 16:01:50 +0300
+message:
+  Bug#14731482 UPDATE OR DELETE CORRUPTS A RECORD WITH A LONG PRIMARY KEY
+  
+  We did not allocate enough bits for index->trx_id_offset, causing an
+  UPDATE or DELETE of a table with a PRIMARY KEY longer than 1024 bytes
+  to corrupt the PRIMARY KEY.
+  
+  dict_index_t: Allocate enough bits.
+  
+  dict_index_build_internal_clust(): Check for overflow of
+  index->trx_id_offset. Trip a debug assertion when overflow occurs.
+  
+  rb:1380 approved by Jimmy Yang
+------------------------------------------------------------
+revno: 3830
+committer: Tor Didriksen <tor.didriksen@oracle.com>
+branch nick: 5.1
+timestamp: Mon 2012-10-01 13:12:38 +0200
+message:
+  Bug#14683676 ENDLESS MEMORY CONSUMPTION IN SETUP_REF_ARRAY WITH MAX IN SUBQUERY
+  
+  n_child_sum_items kept increasing.
+  Since it is used for calculating the size of ref_pointer_array,
+  we will allocate larger and larger chunks of memory, until we hit some
+  operating system limit.
+  The memory is free()d at disconnect, but is most likely *not*
+  returned to the operating system.
+------------------------------------------------------------
+revno: 3829 [merge]
+committer: Joerg Bruehe <joerg.bruehe@oracle.com>
+branch nick: mysql-5.1
+timestamp: Mon 2012-10-01 11:19:59 +0200
+message:
+  Merge 5.1.66 into main 5.1
+    ------------------------------------------------------------
+    revno: 3808.1.1
+    tags: mysql-5.1.66
+    committer: Joerg Bruehe <joerg.bruehe@oracle.com>
+    branch nick: clone-5.1
+    timestamp: Tue 2012-09-11 12:47:32 +0200
+    message:
+      Spec file change to work around cast ulonglong -> int.

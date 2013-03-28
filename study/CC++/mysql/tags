@@ -1,0 +1,278 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BIGINT	mysql/include/cppconn/datatype.h	/^		BIGINT,$/;"	e	enum:sql::DataType::__anon5
+BINARY	mysql/include/cppconn/datatype.h	/^		BINARY,$/;"	e	enum:sql::DataType::__anon5
+BIT	mysql/include/cppconn/datatype.h	/^		BIT,$/;"	e	enum:sql::DataType::__anon5
+CHAR	mysql/include/cppconn/datatype.h	/^		CHAR,$/;"	e	enum:sql::DataType::__anon5
+CLOSE_CURSORS_AT_COMMIT	mysql/include/cppconn/resultset.h	/^		CLOSE_CURSORS_AT_COMMIT,$/;"	e	enum:sql::ResultSet::__anon1
+CONCUR_READ_ONLY	mysql/include/cppconn/resultset.h	/^		CONCUR_READ_ONLY,$/;"	e	enum:sql::ResultSet::__anon2
+CONCUR_UPDATABLE	mysql/include/cppconn/resultset.h	/^		CONCUR_UPDATABLE$/;"	e	enum:sql::ResultSet::__anon2
+CPPCONN_PUBLIC_FUNC	mysql/include/cppconn/build_config.h	35;"	d
+CPPCONN_PUBLIC_FUNC	mysql/include/cppconn/build_config.h	39;"	d
+CPPCONN_PUBLIC_FUNC	mysql/include/cppconn/build_config.h	42;"	d
+CPPCONN_PUBLIC_FUNC	mysql/include/cppconn/build_config.h	46;"	d
+ConnectOptionsMap	mysql/include/cppconn/connection.h	/^typedef std::map< sql::SQLString, ConnectPropertyVal > ConnectOptionsMap;$/;"	t	namespace:sql
+ConnectPropertyVal	mysql/include/cppconn/connection.h	/^typedef boost::variant<int, double, bool, sql::SQLString > ConnectPropertyVal;$/;"	t	namespace:sql
+Connection	mysql/include/cppconn/connection.h	/^	Connection() {};$/;"	f	class:sql::Connection
+Connection	mysql/include/cppconn/connection.h	/^class CPPCONN_PUBLIC_FUNC Connection$/;"	c	namespace:sql
+DATE	mysql/include/cppconn/datatype.h	/^		DATE,$/;"	e	enum:sql::DataType::__anon5
+DECIMAL	mysql/include/cppconn/datatype.h	/^		DECIMAL,$/;"	e	enum:sql::DataType::__anon5
+DOUBLE	mysql/include/cppconn/datatype.h	/^		DOUBLE,$/;"	e	enum:sql::DataType::__anon5
+DataType	mysql/include/cppconn/datatype.h	/^class DataType$/;"	c	namespace:sql
+DatabaseMetaData	mysql/include/cppconn/metadata.h	/^class DatabaseMetaData$/;"	c	namespace:sql
+Driver	mysql/include/cppconn/driver.h	/^class CPPCONN_PUBLIC_FUNC Driver$/;"	c	namespace:sql
+ENUM	mysql/include/cppconn/datatype.h	/^		ENUM,$/;"	e	enum:sql::DataType::__anon5
+EXAMPLE_DB	Connect.cpp	19;"	d	file:
+EXAMPLE_HOST	Connect.cpp	16;"	d	file:
+EXAMPLE_PASS	Connect.cpp	18;"	d	file:
+EXAMPLE_USER	Connect.cpp	17;"	d	file:
+FETCH_FORWARD	mysql/include/cppconn/resultset.h	/^		FETCH_FORWARD,$/;"	e	enum:sql::ResultSet::__anon3
+FETCH_REVERSE	mysql/include/cppconn/resultset.h	/^		FETCH_REVERSE,$/;"	e	enum:sql::ResultSet::__anon3
+FETCH_UNKNOWN	mysql/include/cppconn/resultset.h	/^		FETCH_UNKNOWN$/;"	e	enum:sql::ResultSet::__anon3
+GEOMETRY	mysql/include/cppconn/datatype.h	/^		GEOMETRY,$/;"	e	enum:sql::DataType::__anon5
+HAVE_FUNCTION_STRTOIMAX	mysql/include/cppconn/config.h	35;"	d
+HAVE_FUNCTION_STRTOL	mysql/include/cppconn/config.h	30;"	d
+HAVE_FUNCTION_STRTOLD	mysql/include/cppconn/config.h	28;"	d
+HAVE_FUNCTION_STRTOLL	mysql/include/cppconn/config.h	29;"	d
+HAVE_FUNCTION_STRTOUL	mysql/include/cppconn/config.h	33;"	d
+HAVE_FUNCTION_STRTOULL	mysql/include/cppconn/config.h	31;"	d
+HAVE_FUNCTION_STRTOUMAX	mysql/include/cppconn/config.h	36;"	d
+HAVE_INT16_T	mysql/include/cppconn/config.h	43;"	d
+HAVE_INT32_T	mysql/include/cppconn/config.h	45;"	d
+HAVE_INT32_T	mysql/include/cppconn/config.h	47;"	d
+HAVE_INT64_T	mysql/include/cppconn/config.h	49;"	d
+HAVE_INT8_T	mysql/include/cppconn/config.h	41;"	d
+HAVE_INTTYPES_H	mysql/include/cppconn/config.h	39;"	d
+HAVE_STDINT_H	mysql/include/cppconn/config.h	38;"	d
+HAVE_UINT16_T	mysql/include/cppconn/config.h	44;"	d
+HAVE_UINT32_T	mysql/include/cppconn/config.h	46;"	d
+HAVE_UINT32_T	mysql/include/cppconn/config.h	48;"	d
+HAVE_UINT64_T	mysql/include/cppconn/config.h	50;"	d
+HAVE_UINT8_T	mysql/include/cppconn/config.h	42;"	d
+HOLD_CURSORS_OVER_COMMIT	mysql/include/cppconn/resultset.h	/^		HOLD_CURSORS_OVER_COMMIT$/;"	e	enum:sql::ResultSet::__anon1
+INTEGER	mysql/include/cppconn/datatype.h	/^		INTEGER,$/;"	e	enum:sql::DataType::__anon5
+InvalidArgumentException	mysql/include/cppconn/exception.h	/^	InvalidArgumentException(const InvalidArgumentException& e) : SQLException(e.what(), e.sql_state, e.errNo) { }$/;"	f	struct:sql::InvalidArgumentException
+InvalidArgumentException	mysql/include/cppconn/exception.h	/^	InvalidArgumentException(const std::string& reason) : SQLException(reason, "", 0) {}$/;"	f	struct:sql::InvalidArgumentException
+InvalidArgumentException	mysql/include/cppconn/exception.h	/^struct CPPCONN_PUBLIC_FUNC InvalidArgumentException : public SQLException$/;"	s	namespace:sql
+InvalidInstanceException	mysql/include/cppconn/exception.h	/^	InvalidInstanceException(const InvalidInstanceException& e) : SQLException(e.what(), e.sql_state, e.errNo) { }$/;"	f	struct:sql::InvalidInstanceException
+InvalidInstanceException	mysql/include/cppconn/exception.h	/^	InvalidInstanceException(const std::string& reason) : SQLException(reason, "", 0) {}$/;"	f	struct:sql::InvalidInstanceException
+InvalidInstanceException	mysql/include/cppconn/exception.h	/^struct CPPCONN_PUBLIC_FUNC InvalidInstanceException : public SQLException$/;"	s	namespace:sql
+LONGVARBINARY	mysql/include/cppconn/datatype.h	/^		LONGVARBINARY,$/;"	e	enum:sql::DataType::__anon5
+LONGVARCHAR	mysql/include/cppconn/datatype.h	/^		LONGVARCHAR,$/;"	e	enum:sql::DataType::__anon5
+MEDIUMINT	mysql/include/cppconn/datatype.h	/^		MEDIUMINT,$/;"	e	enum:sql::DataType::__anon5
+MEMORY_ALLOC_OPERATORS	mysql/include/cppconn/exception.h	38;"	d
+MethodNotImplementedException	mysql/include/cppconn/exception.h	/^	MethodNotImplementedException(const MethodNotImplementedException& e) : SQLException(e.what(), e.sql_state, e.errNo) { }$/;"	f	struct:sql::MethodNotImplementedException
+MethodNotImplementedException	mysql/include/cppconn/exception.h	/^	MethodNotImplementedException(const std::string& reason) : SQLException(reason, "", 0) {}$/;"	f	struct:sql::MethodNotImplementedException
+MethodNotImplementedException	mysql/include/cppconn/exception.h	/^struct CPPCONN_PUBLIC_FUNC MethodNotImplementedException : public SQLException$/;"	s	namespace:sql
+MySQL_Connection	mysql/include/mysql_connection.h	/^class CPPCONN_PUBLIC_FUNC MySQL_Connection : public sql::Connection$/;"	c	namespace:sql::mysql
+MySQL_Driver	mysql/include/mysql_driver.h	/^class CPPCONN_PUBLIC_FUNC MySQL_Driver : public sql::Driver$/;"	c	namespace:sql::mysql
+MySQL_Savepoint	mysql/include/mysql_connection.h	/^class MySQL_Savepoint : public sql::Savepoint$/;"	c	namespace:sql::mysql
+NUMERIC	mysql/include/cppconn/datatype.h	/^		NUMERIC,$/;"	e	enum:sql::DataType::__anon5
+NativeAPI	mysql/include/mysql_connection.h	/^namespace NativeAPI$/;"	n	namespace:sql::mysql
+NativeAPI	mysql/include/mysql_driver.h	/^namespace NativeAPI$/;"	n	namespace:sql::mysql
+NonScrollableException	mysql/include/cppconn/exception.h	/^	NonScrollableException(const NonScrollableException& e) : SQLException(e.what(), e.sql_state, e.errNo) { }$/;"	f	struct:sql::NonScrollableException
+NonScrollableException	mysql/include/cppconn/exception.h	/^	NonScrollableException(const std::string& reason) : SQLException(reason, "", 0) {}$/;"	f	struct:sql::NonScrollableException
+NonScrollableException	mysql/include/cppconn/exception.h	/^struct CPPCONN_PUBLIC_FUNC NonScrollableException : public SQLException$/;"	s	namespace:sql
+ParameterMetaData	mysql/include/cppconn/parameter_metadata.h	/^class ParameterMetaData$/;"	c	namespace:sql
+PreparedStatement	mysql/include/cppconn/prepared_statement.h	/^class PreparedStatement : public Statement$/;"	c	namespace:sql
+REAL	mysql/include/cppconn/datatype.h	/^		REAL,$/;"	e	enum:sql::DataType::__anon5
+ResultSet	mysql/include/cppconn/resultset.h	/^class ResultSet$/;"	c	namespace:sql
+ResultSetMetaData	mysql/include/cppconn/resultset_metadata.h	/^class ResultSetMetaData$/;"	c	namespace:sql
+RowID	mysql/include/cppconn/resultset.h	/^class RowID$/;"	c	namespace:sql
+SET	mysql/include/cppconn/datatype.h	/^		SET,$/;"	e	enum:sql::DataType::__anon5
+SMALLINT	mysql/include/cppconn/datatype.h	/^		SMALLINT,$/;"	e	enum:sql::DataType::__anon5
+SQLException	mysql/include/cppconn/exception.h	/^	SQLException() : std::runtime_error(""), sql_state("HY000"), errNo(0) {}$/;"	f	class:sql::SQLException
+SQLException	mysql/include/cppconn/exception.h	/^	SQLException(const SQLException& e) : std::runtime_error(e.what()), sql_state(e.sql_state), errNo(e.errNo) {}$/;"	f	class:sql::SQLException
+SQLException	mysql/include/cppconn/exception.h	/^	SQLException(const std::string& reason) : std::runtime_error(reason), sql_state("HY000"), errNo(0) {}$/;"	f	class:sql::SQLException
+SQLException	mysql/include/cppconn/exception.h	/^	SQLException(const std::string& reason, const std::string& SQLState) : std::runtime_error(reason), sql_state(SQLState), errNo(0) {}$/;"	f	class:sql::SQLException
+SQLException	mysql/include/cppconn/exception.h	/^	SQLException(const std::string& reason, const std::string& SQLState, int vendorCode) :$/;"	f	class:sql::SQLException
+SQLException	mysql/include/cppconn/exception.h	/^class CPPCONN_PUBLIC_FUNC SQLException : public std::runtime_error$/;"	c	namespace:sql
+SQLNULL	mysql/include/cppconn/datatype.h	/^		SQLNULL$/;"	e	enum:sql::DataType::__anon5
+SQLString	mysql/include/cppconn/sqlstring.h	/^		SQLString() {}$/;"	f	class:sql::SQLString
+SQLString	mysql/include/cppconn/sqlstring.h	/^		SQLString(const SQLString & other) : realStr(other.realStr) {}$/;"	f	class:sql::SQLString
+SQLString	mysql/include/cppconn/sqlstring.h	/^		SQLString(const char * s, size_t n) : realStr(s, n) {}$/;"	f	class:sql::SQLString
+SQLString	mysql/include/cppconn/sqlstring.h	/^		SQLString(const char other[]) : realStr(other) {}$/;"	f	class:sql::SQLString
+SQLString	mysql/include/cppconn/sqlstring.h	/^		SQLString(const std::string & other) : realStr(other) {}$/;"	f	class:sql::SQLString
+SQLString	mysql/include/cppconn/sqlstring.h	/^	class CPPCONN_PUBLIC_FUNC SQLString$/;"	c	namespace:sql
+SQLWarning	mysql/include/cppconn/warning.h	/^	SQLWarning(){}$/;"	f	class:sql::SQLWarning
+SQLWarning	mysql/include/cppconn/warning.h	/^	SQLWarning(const SQLWarning& e){};$/;"	f	class:sql::SQLWarning
+SQLWarning	mysql/include/cppconn/warning.h	/^class SQLWarning$/;"	c	namespace:sql
+Savepoint	mysql/include/cppconn/connection.h	/^	Savepoint() {};$/;"	f	class:sql::Savepoint
+Savepoint	mysql/include/cppconn/connection.h	/^class Savepoint$/;"	c	namespace:sql
+Statement	mysql/include/cppconn/statement.h	/^class Statement$/;"	c	namespace:sql
+TIME	mysql/include/cppconn/datatype.h	/^		TIME,$/;"	e	enum:sql::DataType::__anon5
+TIMESTAMP	mysql/include/cppconn/datatype.h	/^		TIMESTAMP,$/;"	e	enum:sql::DataType::__anon5
+TINYINT	mysql/include/cppconn/datatype.h	/^		TINYINT,$/;"	e	enum:sql::DataType::__anon5
+TRANSACTION_NONE	mysql/include/cppconn/connection.h	/^	TRANSACTION_NONE= 0,$/;"	e	enum:sql::transaction_isolation
+TRANSACTION_READ_COMMITTED	mysql/include/cppconn/connection.h	/^	TRANSACTION_READ_COMMITTED,$/;"	e	enum:sql::transaction_isolation
+TRANSACTION_READ_UNCOMMITTED	mysql/include/cppconn/connection.h	/^	TRANSACTION_READ_UNCOMMITTED,$/;"	e	enum:sql::transaction_isolation
+TRANSACTION_REPEATABLE_READ	mysql/include/cppconn/connection.h	/^	TRANSACTION_REPEATABLE_READ,$/;"	e	enum:sql::transaction_isolation
+TRANSACTION_SERIALIZABLE	mysql/include/cppconn/connection.h	/^	TRANSACTION_SERIALIZABLE$/;"	e	enum:sql::transaction_isolation
+TYPE_FORWARD_ONLY	mysql/include/cppconn/resultset.h	/^		TYPE_FORWARD_ONLY,$/;"	e	enum:sql::ResultSet::__anon4
+TYPE_SCROLL_INSENSITIVE	mysql/include/cppconn/resultset.h	/^		TYPE_SCROLL_INSENSITIVE,$/;"	e	enum:sql::ResultSet::__anon4
+TYPE_SCROLL_SENSITIVE	mysql/include/cppconn/resultset.h	/^		TYPE_SCROLL_SENSITIVE$/;"	e	enum:sql::ResultSet::__anon4
+UNKNOWN	mysql/include/cppconn/datatype.h	/^		UNKNOWN = 0,$/;"	e	enum:sql::DataType::__anon5
+VARBINARY	mysql/include/cppconn/datatype.h	/^		VARBINARY,$/;"	e	enum:sql::DataType::__anon5
+VARCHAR	mysql/include/cppconn/datatype.h	/^		VARCHAR,$/;"	e	enum:sql::DataType::__anon5
+YEAR	mysql/include/cppconn/datatype.h	/^		YEAR,$/;"	e	enum:sql::DataType::__anon5
+_MYSQL_CONNECTION_H_	mysql/include/mysql_connection.h	28;"	d
+_MYSQL_DRIVER_H_	mysql/include/mysql_driver.h	28;"	d
+_SQL_BUILD_CONFIG_H_	mysql/include/cppconn/build_config.h	28;"	d
+_SQL_CONNECTION_H_	mysql/include/cppconn/connection.h	28;"	d
+_SQL_DATATYPE_H_	mysql/include/cppconn/datatype.h	28;"	d
+_SQL_DRIVER_H_	mysql/include/cppconn/driver.h	28;"	d
+_SQL_EXCEPTION_H_	mysql/include/cppconn/exception.h	28;"	d
+_SQL_METADATA_H_	mysql/include/cppconn/metadata.h	28;"	d
+_SQL_PARAMETER_METADATA_H_	mysql/include/cppconn/parameter_metadata.h	28;"	d
+_SQL_PREPARED_STATEMENT_H_	mysql/include/cppconn/prepared_statement.h	29;"	d
+_SQL_RESULTSET_H_	mysql/include/cppconn/resultset.h	28;"	d
+_SQL_RESULTSET_METADATA_H_	mysql/include/cppconn/resultset_metadata.h	28;"	d
+_SQL_STATEMENT_H_	mysql/include/cppconn/statement.h	28;"	d
+_SQL_STRING_H_	mysql/include/cppconn/sqlstring.h	28;"	d
+_SQL_WARNING_H_	mysql/include/cppconn/warning.h	28;"	d
+append	mysql/include/cppconn/sqlstring.h	/^		SQLString & append(const char * s)$/;"	f	class:sql::SQLString
+append	mysql/include/cppconn/sqlstring.h	/^		SQLString & append(const std::string & str)$/;"	f	class:sql::SQLString
+asStdString	mysql/include/cppconn/sqlstring.h	/^		const std::string & asStdString() const$/;"	f	class:sql::SQLString
+attributeNoNulls	mysql/include/cppconn/metadata.h	/^		attributeNoNulls = 0,$/;"	e	enum:sql::DatabaseMetaData::__anon9
+attributeNullable	mysql/include/cppconn/metadata.h	/^		attributeNullable,$/;"	e	enum:sql::DatabaseMetaData::__anon9
+attributeNullableUnknown	mysql/include/cppconn/metadata.h	/^		attributeNullableUnknown$/;"	e	enum:sql::DatabaseMetaData::__anon9
+bestRowNotPseudo	mysql/include/cppconn/metadata.h	/^		bestRowNotPseudo,$/;"	e	enum:sql::DatabaseMetaData::__anon11
+bestRowPseudo	mysql/include/cppconn/metadata.h	/^		bestRowPseudo$/;"	e	enum:sql::DatabaseMetaData::__anon11
+bestRowSession	mysql/include/cppconn/metadata.h	/^		bestRowSession$/;"	e	enum:sql::DatabaseMetaData::__anon10
+bestRowTemporary	mysql/include/cppconn/metadata.h	/^		bestRowTemporary = 0,$/;"	e	enum:sql::DatabaseMetaData::__anon10
+bestRowTransaction	mysql/include/cppconn/metadata.h	/^		bestRowTransaction,$/;"	e	enum:sql::DatabaseMetaData::__anon10
+bestRowUnknown	mysql/include/cppconn/metadata.h	/^		bestRowUnknown = 0,$/;"	e	enum:sql::DatabaseMetaData::__anon11
+c_str	mysql/include/cppconn/sqlstring.h	/^		const char * c_str() const$/;"	f	class:sql::SQLString
+columnNoNulls	mysql/include/cppconn/metadata.h	/^		columnNoNulls = 0,$/;"	e	enum:sql::DatabaseMetaData::__anon12
+columnNoNulls	mysql/include/cppconn/resultset_metadata.h	/^		columnNoNulls,$/;"	e	enum:sql::ResultSetMetaData::__anon8
+columnNullable	mysql/include/cppconn/metadata.h	/^		columnNullable,$/;"	e	enum:sql::DatabaseMetaData::__anon12
+columnNullable	mysql/include/cppconn/resultset_metadata.h	/^		columnNullable,$/;"	e	enum:sql::ResultSetMetaData::__anon8
+columnNullableUnknown	mysql/include/cppconn/metadata.h	/^		columnNullableUnknown$/;"	e	enum:sql::DatabaseMetaData::__anon12
+columnNullableUnknown	mysql/include/cppconn/resultset_metadata.h	/^		columnNullableUnknown$/;"	e	enum:sql::ResultSetMetaData::__anon8
+compare	mysql/include/cppconn/sqlstring.h	/^		int compare(const SQLString& str) const$/;"	f	class:sql::SQLString
+compare	mysql/include/cppconn/sqlstring.h	/^		int compare(const char * s) const$/;"	f	class:sql::SQLString
+compare	mysql/include/cppconn/sqlstring.h	/^		int compare(size_t pos1, size_t n1, const char * s) const$/;"	f	class:sql::SQLString
+driver	mysql/include/mysql_connection.h	/^	Driver * driver;$/;"	m	class:sql::mysql::MySQL_Connection
+enum_transaction_isolation	mysql/include/cppconn/connection.h	/^} enum_transaction_isolation;$/;"	t	namespace:sql	typeref:enum:sql::transaction_isolation
+enum_type	mysql/include/cppconn/resultset.h	/^	} enum_type;$/;"	t	class:sql::ResultSet	typeref:enum:sql::ResultSet::__anon4
+errNo	mysql/include/cppconn/exception.h	/^	const int errNo;$/;"	m	class:sql::SQLException
+find	mysql/include/cppconn/sqlstring.h	/^		size_t find(char c, size_t pos = 0) const$/;"	f	class:sql::SQLString
+find	mysql/include/cppconn/sqlstring.h	/^		size_t find(const SQLString & s, size_t pos = 0) const$/;"	f	class:sql::SQLString
+find_first_of	mysql/include/cppconn/sqlstring.h	/^		size_t find_first_of(char c, size_t pos = 0) const$/;"	f	class:sql::SQLString
+find_last_of	mysql/include/cppconn/sqlstring.h	/^		size_t find_last_of(char c, size_t pos = npos) const$/;"	f	class:sql::SQLString
+getErrorCode	mysql/include/cppconn/exception.h	/^	int getErrorCode() const$/;"	f	class:sql::SQLException
+getSQLState	mysql/include/cppconn/exception.h	/^	const std::string & getSQLState() const$/;"	f	class:sql::SQLException
+getSQLStateCStr	mysql/include/cppconn/exception.h	/^	const char * getSQLStateCStr() const$/;"	f	class:sql::SQLException
+get_mysql_driver_instance	mysql/include/mysql_driver.h	/^static inline MySQL_Driver * get_mysql_driver_instance() { return get_driver_instance(); }$/;"	f	namespace:sql::mysql
+importedKeyCascade	mysql/include/cppconn/metadata.h	/^		importedKeyCascade = 0,$/;"	e	enum:sql::DatabaseMetaData::__anon13
+importedKeyInitiallyDeferred	mysql/include/cppconn/metadata.h	/^		importedKeyInitiallyDeferred,$/;"	e	enum:sql::DatabaseMetaData::__anon13
+importedKeyInitiallyImmediate	mysql/include/cppconn/metadata.h	/^		importedKeyInitiallyImmediate,$/;"	e	enum:sql::DatabaseMetaData::__anon13
+importedKeyNoAction	mysql/include/cppconn/metadata.h	/^		importedKeyNoAction,$/;"	e	enum:sql::DatabaseMetaData::__anon13
+importedKeyNotDeferrable	mysql/include/cppconn/metadata.h	/^		importedKeyNotDeferrable,$/;"	e	enum:sql::DatabaseMetaData::__anon13
+importedKeyRestrict	mysql/include/cppconn/metadata.h	/^		importedKeyRestrict,$/;"	e	enum:sql::DatabaseMetaData::__anon13
+importedKeySetDefault	mysql/include/cppconn/metadata.h	/^		importedKeySetDefault,$/;"	e	enum:sql::DatabaseMetaData::__anon13
+importedKeySetNull	mysql/include/cppconn/metadata.h	/^		importedKeySetNull$/;"	e	enum:sql::DatabaseMetaData::__anon13
+int16_t	mysql/include/cppconn/config.h	/^typedef __int16			int16_t;$/;"	t
+int32_t	mysql/include/cppconn/config.h	/^typedef __int32			int32_t;$/;"	t
+int64_t	mysql/include/cppconn/config.h	/^typedef __int64			int64_t;$/;"	t
+int8_t	mysql/include/cppconn/config.h	/^typedef __int8			int8_t;$/;"	t
+intern	mysql/include/mysql_connection.h	/^	MySQL_ConnectionData * intern; \/* pimpl *\/$/;"	m	class:sql::mysql::MySQL_Connection
+length	mysql/include/cppconn/sqlstring.h	/^		size_t length() const$/;"	f	class:sql::SQLString
+main	Connect.cpp	/^int main(int argc, const char **argv)$/;"	f
+mysql	mysql/include/mysql_connection.h	/^namespace mysql$/;"	n	namespace:sql
+mysql	mysql/include/mysql_driver.h	/^namespace mysql$/;"	n	namespace:sql
+name	mysql/include/mysql_connection.h	/^	sql::SQLString name;$/;"	m	class:sql::mysql::MySQL_Savepoint
+npos	mysql/include/cppconn/sqlstring.h	/^		static const size_t npos = std::string::npos;$/;"	m	class:sql::SQLString
+npos	mysql/include/cppconn/sqlstring.h	/^        static const size_t npos = static_cast<std::string::size_type>(-1);$/;"	m	class:sql::SQLString
+operator !=	mysql/include/cppconn/sqlstring.h	/^inline bool operator !=(const SQLString & op1, const SQLString & op2)$/;"	f	namespace:sql
+operator +	mysql/include/cppconn/sqlstring.h	/^inline const SQLString operator+(const SQLString & op1, const SQLString & op2)$/;"	f	namespace:sql
+operator +=	mysql/include/cppconn/sqlstring.h	/^		const SQLString & operator+=(const SQLString & op2)$/;"	f	class:sql::SQLString
+operator ->	mysql/include/cppconn/sqlstring.h	/^		std::string * operator ->()$/;"	f	class:sql::SQLString
+operator <	mysql/include/cppconn/sqlstring.h	/^inline bool operator <(const SQLString & op1, const SQLString & op2)$/;"	f	namespace:sql
+operator <<	mysql/include/cppconn/sqlstring.h	/^	inline ostream & operator << (ostream & os, const sql::SQLString & str )$/;"	f	namespace:std
+operator =	mysql/include/cppconn/sqlstring.h	/^		const SQLString & operator=(const SQLString & rhs)$/;"	f	class:sql::SQLString
+operator =	mysql/include/cppconn/sqlstring.h	/^		const SQLString & operator=(const char * s)$/;"	f	class:sql::SQLString
+operator =	mysql/include/cppconn/sqlstring.h	/^		const SQLString & operator=(const std::string & rhs)$/;"	f	class:sql::SQLString
+operator ==	mysql/include/cppconn/sqlstring.h	/^inline bool operator ==(const SQLString & op1, const SQLString & op2)$/;"	f	namespace:sql
+operator []	mysql/include/cppconn/sqlstring.h	/^		const char& operator[](size_t pos) const$/;"	f	class:sql::SQLString
+operator const std::string &	mysql/include/cppconn/sqlstring.h	/^		operator const std::string &() const$/;"	f	class:sql::SQLString
+parameterModeIn	mysql/include/cppconn/parameter_metadata.h	/^		parameterModeIn,$/;"	e	enum:sql::ParameterMetaData::__anon6
+parameterModeInOut	mysql/include/cppconn/parameter_metadata.h	/^		parameterModeInOut,$/;"	e	enum:sql::ParameterMetaData::__anon6
+parameterModeOut	mysql/include/cppconn/parameter_metadata.h	/^		parameterModeOut,$/;"	e	enum:sql::ParameterMetaData::__anon6
+parameterModeUnknown	mysql/include/cppconn/parameter_metadata.h	/^		parameterModeUnknown$/;"	e	enum:sql::ParameterMetaData::__anon6
+parameterNoNulls	mysql/include/cppconn/parameter_metadata.h	/^		parameterNoNulls,$/;"	e	enum:sql::ParameterMetaData::__anon7
+parameterNullable	mysql/include/cppconn/parameter_metadata.h	/^		parameterNullable,$/;"	e	enum:sql::ParameterMetaData::__anon7
+parameterNullableUnknown	mysql/include/cppconn/parameter_metadata.h	/^		parameterNullableUnknown$/;"	e	enum:sql::ParameterMetaData::__anon7
+procedureColumnIn	mysql/include/cppconn/metadata.h	/^		procedureColumnIn = 0,$/;"	e	enum:sql::DatabaseMetaData::__anon14
+procedureColumnInOut	mysql/include/cppconn/metadata.h	/^		procedureColumnInOut,$/;"	e	enum:sql::DatabaseMetaData::__anon14
+procedureColumnOut	mysql/include/cppconn/metadata.h	/^		procedureColumnOut,$/;"	e	enum:sql::DatabaseMetaData::__anon14
+procedureColumnResult	mysql/include/cppconn/metadata.h	/^		procedureColumnResult,$/;"	e	enum:sql::DatabaseMetaData::__anon14
+procedureColumnReturn	mysql/include/cppconn/metadata.h	/^		procedureColumnReturn,$/;"	e	enum:sql::DatabaseMetaData::__anon14
+procedureColumnUnknown	mysql/include/cppconn/metadata.h	/^		procedureColumnUnknown,$/;"	e	enum:sql::DatabaseMetaData::__anon14
+procedureNoNulls	mysql/include/cppconn/metadata.h	/^		procedureNoNulls,$/;"	e	enum:sql::DatabaseMetaData::__anon14
+procedureNoResult	mysql/include/cppconn/metadata.h	/^		procedureNoResult,$/;"	e	enum:sql::DatabaseMetaData::__anon14
+procedureNullable	mysql/include/cppconn/metadata.h	/^		procedureNullable,$/;"	e	enum:sql::DatabaseMetaData::__anon14
+procedureNullableUnknown	mysql/include/cppconn/metadata.h	/^		procedureNullableUnknown,$/;"	e	enum:sql::DatabaseMetaData::__anon14
+procedureResultUnknown	mysql/include/cppconn/metadata.h	/^		procedureResultUnknown,$/;"	e	enum:sql::DatabaseMetaData::__anon14
+procedureReturnsResult	mysql/include/cppconn/metadata.h	/^		procedureReturnsResult$/;"	e	enum:sql::DatabaseMetaData::__anon14
+proxy	mysql/include/mysql_connection.h	/^	boost::shared_ptr< NativeAPI::NativeConnectionWrapper > proxy;$/;"	m	class:sql::mysql::MySQL_Connection
+proxy	mysql/include/mysql_driver.h	/^	boost::scoped_ptr< ::sql::mysql::NativeAPI::NativeDriverWrapper > proxy;$/;"	m	class:sql::mysql::MySQL_Driver
+realStr	mysql/include/cppconn/sqlstring.h	/^		std::string realStr;$/;"	m	class:sql::SQLString
+replace	mysql/include/cppconn/sqlstring.h	/^		const SQLString& replace(size_t pos1, size_t n1, const SQLString & s)$/;"	f	class:sql::SQLString
+service	mysql/include/mysql_connection.h	/^	boost::scoped_ptr< ::sql::mysql::MySQL_Statement > service;$/;"	m	class:sql::mysql::MySQL_Connection
+sql	mysql/include/cppconn/connection.h	/^namespace sql$/;"	n
+sql	mysql/include/cppconn/datatype.h	/^namespace sql$/;"	n
+sql	mysql/include/cppconn/driver.h	/^namespace sql$/;"	n
+sql	mysql/include/cppconn/exception.h	/^namespace sql$/;"	n
+sql	mysql/include/cppconn/metadata.h	/^namespace sql$/;"	n
+sql	mysql/include/cppconn/parameter_metadata.h	/^namespace sql$/;"	n
+sql	mysql/include/cppconn/prepared_statement.h	/^namespace sql$/;"	n
+sql	mysql/include/cppconn/resultset.h	/^namespace sql$/;"	n
+sql	mysql/include/cppconn/resultset_metadata.h	/^namespace sql$/;"	n
+sql	mysql/include/cppconn/sqlstring.h	/^namespace sql$/;"	n
+sql	mysql/include/cppconn/statement.h	/^namespace sql$/;"	n
+sql	mysql/include/cppconn/warning.h	/^namespace sql$/;"	n
+sql	mysql/include/mysql_connection.h	/^namespace sql$/;"	n
+sql	mysql/include/mysql_driver.h	/^namespace sql$/;"	n
+sqlStateSQL99	mysql/include/cppconn/metadata.h	/^		sqlStateSQL99 = 0,$/;"	e	enum:sql::DatabaseMetaData::__anon15
+sqlStateXOpen	mysql/include/cppconn/metadata.h	/^		sqlStateXOpen$/;"	e	enum:sql::DatabaseMetaData::__anon15
+sql_state	mysql/include/cppconn/exception.h	/^	const std::string sql_state;$/;"	m	class:sql::SQLException
+std	mysql/include/cppconn/sqlstring.h	/^namespace std$/;"	n
+substr	mysql/include/cppconn/sqlstring.h	/^		SQLString substr(size_t pos = 0, size_t n = npos) const$/;"	f	class:sql::SQLString
+tableIndexClustered	mysql/include/cppconn/metadata.h	/^		tableIndexClustered = 0,$/;"	e	enum:sql::DatabaseMetaData::__anon16
+tableIndexHashed	mysql/include/cppconn/metadata.h	/^		tableIndexHashed,$/;"	e	enum:sql::DatabaseMetaData::__anon16
+tableIndexOther	mysql/include/cppconn/metadata.h	/^		tableIndexOther,$/;"	e	enum:sql::DatabaseMetaData::__anon16
+tableIndexStatistic	mysql/include/cppconn/metadata.h	/^		tableIndexStatistic$/;"	e	enum:sql::DatabaseMetaData::__anon16
+transaction_isolation	mysql/include/cppconn/connection.h	/^typedef enum transaction_isolation$/;"	g	namespace:sql
+typeNoNulls	mysql/include/cppconn/metadata.h	/^		typeNoNulls = 0,$/;"	e	enum:sql::DatabaseMetaData::__anon18
+typeNullable	mysql/include/cppconn/metadata.h	/^		typeNullable = 1,$/;"	e	enum:sql::DatabaseMetaData::__anon18
+typeNullableUnknown	mysql/include/cppconn/metadata.h	/^		typeNullableUnknown = 2$/;"	e	enum:sql::DatabaseMetaData::__anon18
+typePredBasic	mysql/include/cppconn/metadata.h	/^		typePredBasic= 2,$/;"	e	enum:sql::DatabaseMetaData::__anon19
+typePredChar	mysql/include/cppconn/metadata.h	/^		typePredChar = 1,$/;"	e	enum:sql::DatabaseMetaData::__anon19
+typePredNone	mysql/include/cppconn/metadata.h	/^		typePredNone = 0,$/;"	e	enum:sql::DatabaseMetaData::__anon19
+typeSearchable	mysql/include/cppconn/metadata.h	/^		typeSearchable = 3$/;"	e	enum:sql::DatabaseMetaData::__anon19
+uint16_t	mysql/include/cppconn/config.h	/^typedef unsigned __int16	uint16_t;$/;"	t
+uint32_t	mysql/include/cppconn/config.h	/^typedef unsigned __int32	uint32_t;$/;"	t
+uint64_t	mysql/include/cppconn/config.h	/^typedef unsigned __int64	uint64_t;$/;"	t
+uint8_t	mysql/include/cppconn/config.h	/^typedef unsigned __int8	uint8_t;$/;"	t
+versionColumnNotPseudo	mysql/include/cppconn/metadata.h	/^		versionColumnNotPseudo = 1,$/;"	e	enum:sql::DatabaseMetaData::__anon17
+versionColumnPseudo	mysql/include/cppconn/metadata.h	/^		versionColumnPseudo = 2$/;"	e	enum:sql::DatabaseMetaData::__anon17
+versionColumnUnknown	mysql/include/cppconn/metadata.h	/^		versionColumnUnknown = 0,$/;"	e	enum:sql::DatabaseMetaData::__anon17
+~Connection	mysql/include/cppconn/connection.h	/^	virtual ~Connection() {};$/;"	f	class:sql::Connection
+~DatabaseMetaData	mysql/include/cppconn/metadata.h	/^	virtual ~DatabaseMetaData() {}$/;"	f	class:sql::DatabaseMetaData
+~Driver	mysql/include/cppconn/driver.h	/^	virtual ~Driver() {}$/;"	f	class:sql::Driver
+~MySQL_Savepoint	mysql/include/mysql_connection.h	/^	virtual ~MySQL_Savepoint() {}$/;"	f	class:sql::mysql::MySQL_Savepoint
+~ParameterMetaData	mysql/include/cppconn/parameter_metadata.h	/^	virtual ~ParameterMetaData() {}$/;"	f	class:sql::ParameterMetaData
+~PreparedStatement	mysql/include/cppconn/prepared_statement.h	/^	virtual ~PreparedStatement() {}$/;"	f	class:sql::PreparedStatement
+~ResultSet	mysql/include/cppconn/resultset.h	/^	virtual ~ResultSet() {}$/;"	f	class:sql::ResultSet
+~ResultSetMetaData	mysql/include/cppconn/resultset_metadata.h	/^	virtual ~ResultSetMetaData() {}$/;"	f	class:sql::ResultSetMetaData
+~RowID	mysql/include/cppconn/resultset.h	/^	virtual ~RowID() {}$/;"	f	class:sql::RowID
+~SQLException	mysql/include/cppconn/exception.h	/^	virtual ~SQLException() throw () {};$/;"	f	class:sql::SQLException
+~SQLString	mysql/include/cppconn/sqlstring.h	/^		~SQLString() {}$/;"	f	class:sql::SQLString
+~SQLWarning	mysql/include/cppconn/warning.h	/^	virtual ~SQLWarning(){};$/;"	f	class:sql::SQLWarning
+~Savepoint	mysql/include/cppconn/connection.h	/^	virtual ~Savepoint() {};$/;"	f	class:sql::Savepoint
+~Statement	mysql/include/cppconn/statement.h	/^	virtual ~Statement() {};$/;"	f	class:sql::Statement
