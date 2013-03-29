@@ -1,5 +1,5 @@
 MAKE(1)                                LOCAL USER COMMANDS                               MAKE(1)
-
+make 是一个非常方便的项目构建工具，非常多的C/C++开源项目都采用make作为构建器。
 NAME
        make - GNU make utility to maintain groups of programs
 
