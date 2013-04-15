@@ -1,0 +1,1 @@
+hadoop 用户管理：hadoop 的用户就是Linux操作系统的用户：
