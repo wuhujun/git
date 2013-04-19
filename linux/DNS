@@ -1,0 +1,7 @@
+1.添加文件
+/etc/resolvconf/resolv.conf.d/tail
+配置DNS服务器地址
+2.重启DNS解析服务：
+/etc/init.d/resolvconf restart  
+ 
+ 

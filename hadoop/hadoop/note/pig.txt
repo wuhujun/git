@@ -1,0 +1,4 @@
+Pig 为大型数据集的处理提供了更高层次的抽象，MapReduce使程序员能够自己定义连续执行的maphereduce函数。
+但是，数据处理通常需要多个MapReduce过程才能实现，所以将数据处理要求改写成MapReduce模式是很复杂的。
+与MapReduce相比，Pig提供了更丰富的数据结构，一般是多值和嵌套的数据结构，Pig还提供了一套更强大的数
+据变换操作，包括MapReduce中忽略的join

@@ -1,0 +1,244 @@
+                                           Hadoop 系统搭建手册
+1.Hadoop 简介
+    Hadoop是Apache软件基金会旗下的一个开源分布式计算平台。以Hadoop分布式文件系统（HDFS，Hadoop Distributed 
+Filesystem）和MapReduce（Google MapReduce的开源实现）为核心的Hadoop为用户提供了系统底层细节透明的分布式基础
+架构。
+　  对于Hadoop的集群来讲，可以分成两大类角色：Master和Slave。一个HDFS集群是由一个NameNode和若干个DataNode
+组成的。其中NameNode作为主服务器，管理文件系统的命名空间和客户端对文件系统的访问操作；集群中的DataNode管理存
+储的数据。MapReduce框架是由一个单独运行在主节点上的JobTracker和运行在每个集群从节点的TaskTracker共同组成的。
+主节点负责调度构成一个作业的所有任务，这些任务分布在不同的从节点上。主节点监控它们的执行情况，并且重新执行
+之前的失败任务；从节点仅负责由主节点指派的任务。当一个Job被提交时，JobTracker接收到提交作业和配置信息之后，就
+会将配置信息等分发给从节点，同时调度任务并监控TaskTracker的执行。
+
+　　HDFS和MapReduce共同组成了Hadoop分布式系统体系结构的核心。HDFS在集群上实现分布式文件系统，MapReduce在集群上
+实现了分布式计算和任务处理。HDFS在MapReduce任务处理过程中提供了文件操作和存储等支持，MapReduce在HDFS的基础上实
+现了任务的分发、跟踪、执行等工作，并收集结果，二者相互作用，完成了Hadoop分布式集群的主要任务。
+2.环境
+在此次搭建的hadoop平台中，采用了28个节点的datanode，1个节点的namenode。
+a.4台IBM system x3850 x5, 由一台 H3C 5500 千兆以太网互联
+b.3850x5 配置为 Intel Xeon E7-4820 2.0GHz x4, 600G SAS x8, 192G内存
+c.4台使用光纤联接V3700磁阵, VMware ESXi 5.0 程序安装在磁阵中, 主机的磁盘不做整列, 直通模式。
+d.每台可以提供8块独立硬盘.
+f.Hadoop系统版本：hadoop-1.0.4
+g.操作系统： Ubutun 12.04  server x64 .
+2.1环境说明
+    集群中包括1个Master28个Slave，节点之间局域网互联，检查两台机器质检网络是否正常的工具
+    ping 和 namp 
+     a. PING (Packet Internet Groper)，因特网包探索器，用于测试网络连接量的程序。
+     Ping发送一个ICMP(Internet Control Messages Protocol）即因特网信报控制协议；
+     回声请求消息给目的地并报告是否收到。
+     b.nmap是一个网络连接端扫描软件，用来扫描网上电脑开放的网络连接端。确定哪些服务运行在哪些连
+     接端，并且推断计算机运行哪个操作系统（这是亦称 fingerprinting）。它是网络管理员必用的软
+     件之一，以及用以评估网络系统保安。
+     （在网络管理员比较懒的时候，他们不愿意将已经分配的IP地址登记在册，如果要部署Hadoop这个工具非常有效，
+通过扫描这个IP地址的端口，可以很快的知道那台机器上运行这那些项目，并以次推断出这台机器的负责人，同它协调IP
+冲突问题。）
+2.2网络配置
+ 同局域网中其他用户沟通协调，获取一段静态IP,不被分配到其他机器。
+ 我列出了一个单子将分配的IP和主机名对应起来。
+ IP地址            主机名称 
+ 192.168.3.170  Master.Hadoop  
+ 192.168.3.171  Slave1.Hadoop
+ 192.168.3.173  Slave2.Hadoop
+ 192.168.3.174  Slave3.Hadoop
+ 192.168.3.175  Slave4.Hadoop
+ 192.168.3.176  Slave5.Hadoop 
+ 192.168.3.177  Slave6.Hadoop
+ 192.168.3.178  Slave7.Hadoop
+ 192.168.3.179  Slave8.Hadoop
+ 192.168.3.180  Slave9.Hadoop
+ 192.168.3.182  Slave10.Hadoop
+ 192.168.3.183  Slave11.Hadoop
+ 192.168.3.184  Slave12.Hadoop
+ 192.168.3.185  Slave13.Hadoop
+ 192.168.3.186  Slave14.Hadoop
+ 192.168.3.212  Slave15.Hadoop
+ 192.168.3.216  Slave16.Hadoop
+ 192.168.3.217  Slave17.Hadoop
+ 192.168.3.218  Slave18.Hadoop
+ 192.168.3.219  Slave19.Hadoop
+ 192.168.3.222  Slave20.Hadoop
+ 192.168.3.225  Slave21.Hadoop
+ 192.168.3.226  Slave22.Hadoop
+ 192.168.3.227  Slave23.Hadoop
+ 192.168.3.228  Slave24.Hadoop
+ 192.168.3.232  Slave25.Hadoop
+ 192.168.3.236  Slave26.Hadoop
+ 192.168.3.237  Slave27.Hadoop
+ 192.168.3.242  Slave28.Hadoop
+ 每台机器配置IP，主机名称，
+ a.配置机器的静态IP
+ vim /etc/network/interfaces 文件
+ 配置 address 项为对应的IP地址。
+ b.配置主机名称
+ vim /etc/hostname  文件
+ 输入对应的主机名。
+ c.为了方便使用,在每台机器的hosts中加入IP和对应主机的列表,这样就可以之际通过主机名称地址访问对应的机器。
+ "/etc/hosts"这个文件是用来配置主机将用的DNS服务器信息，是记载LAN内接续的各主机的对应[HostName和IP]用的。
+ 当用户在进行网络连接时，首先查找该文件，寻找对应主机名（或域名）对应的IP地址。
+ d.配置DNS解析服务器，
+ 由于使用ubuntu Server .要使用 /etc/apt/sources.list中的源必须配置好网络和DNS解析服务器地址，否则解析不
+  了里面配置的域名地址：
+  配置DNS服务器地址有两种方法：
+  （1）配置动态DNS解析服务器：
+   打开 /etc/resolv.conf
+   添加一行：
+   nameserver 192.168.3.254 (对应局域网的DNS解析服务器)
+   这种方法简单快捷，但是在服务器重启后需要重新配置。
+  （2）配置静态DNS解析服务器：
+   添加文件/etc/resolvconf/resolv.conf.d/tail文件
+   配置 nameserver 192.168.3.254 (对应局域网的DNS解析服务器)
+3.需要安装的软件。
+      a.Hadoop是采用Java语言编写，运行在JVM平台上，所以部署Hadoop之前必须先给每台机器安装jdk。
+  安装的Java版本：
+ /*
+  *java version "1.7.0_15"
+  *OpenJDK Runtime Environment (IcedTea7 2.3.7) (7u15-2.3.7-0ubuntu1~12.10.1)
+  *OpenJDK 64-Bit Server VM (build 23.7-b01, mixed mode)
+  */
+    配置完DNS解析服务器，即可以使用apt-get 安装软件
+    apt-get install  openjdk-7-jdk
+     b.由于我们在系统中需要 R ，安装R需要用到gcc/g++编译器和gortran编译器，R是用C语言和FORTRAN语言编写，
+  apt-get install g++ 
+  apt-get install gfortran 
+     c. 安装R，可以通过apt-get install 直接安装R，也可以通过源代码编译安装。
+R是开源的每次发布新的版本就是通过发布源代码的方式。
+这里给出通过源代码编译安装R的过程。
+         （1）.从R主页http://www.r-project.org/下载R源代码。
+	 （2） 解压 ~src>tar xvfz ~/dist/R-X.X.X.tar.gz
+	 （3） 进入源文件目录。
+	  (4)  阅读INSTALL文件
+	 （5） ./configure 
+         （6） 如果之前没有安装fortran编译器，会出现这样错误提示：
+	  configure: error: No F77 compiler found
+	 （7）./configure --with-readline=no 
+	 （8）make ，如果没有错误，make install .R安装成功，非常简单。
+4.配置SSH免密码验证登录
+        安装ssh apt-get install open-ssh .
+	Hadoop运行过程中需要管理远端Hadoop守护进程，在Hadoop启动以后，NameNode是通过SSH（Secure Shell）来启动
+  和停止各个DataNode上的各种守护进程的。这就必须在节点之间执行指令的时候是不需要输入密码的形式，故我们需
+  要配置SSH运用无密码公钥认证的形式，这样NameNode使用SSH无密码登录并启动DataName进程，同样原理，DataNode
+  上也能使用SSH无密码登录到NameNode。
+  SSH 免密码验证登录的原理:
+  在linux系统中,ssh是远程登录的默认工具,因为该工具的协议使用了RSA/DSA的加密算法.该工具做linux系统的远程管
+  理是非常安全的。telnet,因为其不安全性,在linux系统中被搁置使用了。
+       "公私钥"认证方式简单的解释:首先在客户端上创建一对公私钥 （公钥文件：~/.ssh/id_rsa.pub； 
+  私钥文件：~/.ssh/id_rsa.pub）。然后把公钥放到服务器上（~/.ssh/authorized_keys）, 
+  自己保留好私钥.在使用ssh登录时,ssh程序会发送私钥去和服务器上的公钥做匹配.如果匹配成功就可以登录了。
+  Hadoop系统正常运行需要的是，Master可以免密码验证登录到所有的Slave上，每台Datanode可以免密码验证登录
+  到Master上。
+  具体的做法就是在Master上生成密钥对，将公钥发送到每台Slave机器,并导入到~/.ssh/authorized_keys中。
+  用到的命令：
+    ssh-keygen -t rsa -P ‘''
+    cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys  
+    将本机生成的公钥导入到本机存放公钥的文件中，可以不需要验证登录localhost.
+    将~/.ssh/id_rsa.pub 分发到每台Slave机器，并导入到Slave机器的~/.ssh/authorized_keys 中。
+   对于从Slave免密码验证登录到Master的方法与此同理。
+5.安装Hadoop
+   从http://hadoop.apache.org/下载hadoop安装包，加压，配置。
+   目前我们系统中采用的是hadoop-1.0.4系统。
+   主要配置文件子啊/usr/hadoop/conf/目录下：
+capacity-scheduler.xml  hadoop-env.sh               log4j.properties       slaves
+configuration.xsl       hadoop-metrics2.properties  mapred-queue-acls.xml  ssl-client.xml.example
+core-site.xml           hadoop-policy.xml           mapred-site.xml        ssl-server.xml.example
+fair-scheduler.xml      hdfs-site.xml               masters                taskcontroller.cfg
+（1）slaves：配置datanode的IP地址。
+（2）masters ：配置masters的IP地址。
+（3）core-site.xml :核心配置
+<configuration>
+
+        <property>
+
+            <name>hadoop.tmp.dir</name>
+
+            <value>/usr/hadoop/tmp</value>
+
+
+            <description>A base for other temporary directories.</description>
+
+        </property>
+
+    <!-- file system properties -->
+
+        <property>
+
+            <name>fs.default.name</name>
+
+            <value>hdfs://Master.Hadoop:9000</value>
+
+        </property>
+
+</configuration>
+  (4)hdfs-site.xml 数据冗余数
+    <configuration>
+
+        <property>
+
+            <name>dfs.replication</name>
+
+            <value>3</value>
+
+        </property>
+
+    </configuration>
+ (5)mapred-site.xml jobtracker服务配置
+<configuration>
+
+        <property>
+
+            <name>mapred.job.tracker</name>
+
+            <value>http://192.168.3.170:9001</value>
+
+        </property>
+
+</configuration>
+除此五个文件外，还有一个就是hadoop-env.sh 这个里面主要配置java环境，HADOOP_CLASSPATH，和HADOOP_HEAPSIZE
+ export JAVA_HOME=/usr
+
+# Extra Java CLASSPATH elements.  Optional.
+ export HADOOP_CLASSPATH=.:/usr/hadoop/hadoop-core-1.0.4.jar:/usr/jar/ant.jar
+
+# The maximum amount of heap to use, in MB. Default is 1000.
+ export HADOOP_HEAPSIZE=20000
+
+6.环境变量配置：
+配置环境变量可以在/etc/envrionment 文件中或者
+/etc/profile文件中。
+这是我的一些配置：
+JAVA_HOME=/usr
+PATH=$JAVA_HOME/bin:$PATH
+CLASSPATH=.:/usr/lib/jvm/java-6-openjdk-amd64/lib/dt.jar:/usr/lib/jvm/java-6-openjdk-amd64/lib/tools.jar:
+export JAVA_HOME
+export PATH
+export CLASSPATH
+export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig/
+export HADOOP_HOME=/usr/hadoop
+export HIVE_HOME=$HADOOP_HOME/hive
+export PATH=$PATH:$HADOOP_HOME/bin:$HIVE_HOME/bin
+export CLASSPATH=$CLASSPATH:$HADOOP_HOME/lib:$HIVE_HOME/
+7.分发配置好的hadoop文件，由于所有的机器的系统配置相同，而且Mast和Slave的配置也相同，所以只需要将
+配置好的hadoop文件分发到各个节点，配置就算完成。
+我写了一个简单的脚本来分发配置好的文件。
+#!/bin/bash
+for i in {1..28}
+   do  
+        dfs= "scp -r /usr/hadoop  Slave$i.Haoop:/usr/ " 
+        echo $dfs 
+        dfs 
+   done
+exit 1
+8.格式化一个Namenode，
+由于环境变量已经配置好无须要在/usr/hadoop/bin目录下执行hadoop命令。
+hadoop namenode -format 
+可以格式化一个namenode。
+9.启动Hadoop分布式系统
+  start-all.sh 
+  为了快速检测系统是否全部启动
+  stop-all.sh 
+  如果那个节点没有出现 nodatanode stop 则说明其没有启动。
+关于Hadoop安装配置描述比较详细的资料：
+http://www.cnblogs.com/xia520pi/archive/2012/05/16/2503949.html
+关于R安装比较详细的资料
+关于RHive应用比较详细的资料
+http://www.bjt.name/2012/12/RHive-install/

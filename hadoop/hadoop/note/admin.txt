@@ -1,0 +1,10 @@
+Hadoop  的管理
+MapReduce的作业运行机制
+可以用一行代码来运行一个MapReduce作业：JobClient.runJob(conf).
+这个简短的代码，幕后隐藏着大量的细节。
+整个MapReduce过程包含4个独立的实体。
+客户端：提交MapReduce作业。
+jobtracker ：协调作业的运行。jobtracker是一个Java应用程序，它的主类是JobTracker。
+tasktracker ： 运行作业划分后的任务。tasktracker是Java应用程序，它的主类是TaskTracker。
+分布式文件系统（一般为HDFS，）用来在其他实体间共享作业文件。
+Jobclient 的runJob()方法使用于新建JobClient实例并调用其submitJob()方法
