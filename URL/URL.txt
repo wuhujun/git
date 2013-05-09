@@ -1,0 +1,2 @@
+一个关于Linux学习资料的网站。
+http://tldp.org/guides.html

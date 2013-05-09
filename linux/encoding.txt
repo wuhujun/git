@@ -1,0 +1,13 @@
+将文本文档转化为UTF-8格式
+enca -L zh_CN -x UTF-8 sale_record20090101.bcp
+在linux做开发或者系统管理遇到乱码是经常的事情，主要windows下中文的默认编码是bg2312，而linux下是utf-8。很多时候 涉及到和windows平台系统的通信免不了编码的转化，可能大部分人都用iconv库函数（包含在glib中）和iconv命令来执行编码转换，今天我 要推荐的是另一个shell下编码转换工具enca。用它不仅可以转换编码，还可以查看文件的原始编码，使用上也比iconv方便一些。
+在ubuntu下安装enca很简单，apt一下就行了，enca用法如下：
+enca -L zh_CN file 检查文件的编码
+enca -L zh_CN -x UTF-8 file 将文件编码转换为”UTF-8″编码
+enca -L zh_CN -x UTF-8 < file1 > file2 如果不想覆盖原文件可以这样
+除了有检查文件编码的功能以外，”enca”还有一个好处就是如果文件本来就是你要转换的那种编码，它不会报错，还是会print出结果来，而”iconv”则会报错。这对于脚本编写是比较方便的事情。
+查看中文编码格式：
+ enca -L zh_CN  sale_record20100101.bcp
+使用iconv转化文件格式：
+iconv -f   GB2312   -t  UTF-8  sale_record20100101.bcp>sale_record20100101.txt
+

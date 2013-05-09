@@ -1,9 +1,14 @@
-1.linux 查看当前机器的硬件信息。
-测试机器的硬件信息：
-2.查看设备的硬盘大小
+linux 查看当前机器的硬件信息。
+1测试机器的硬件信息：
+(1)查看磁盘使用情况
 df -h
-3.查看设备的内存大小
+(2)查看当前路径下的磁盘使用情况
+du --max-depth=1 -h
+(3)查看内存使用情况
 cat /proc/meminfo
+(4)查看网络情况
+cat /etc/network/interface
+(5)查看当前目录下文件的个数 
 查看CPU信息（型号）
 # cat /proc/cpuinfo | grep name | cut -f2 -d: | uniq -c
       8  Intel(R) Xeon(R) CPU            E5410   @ 2.33GHz

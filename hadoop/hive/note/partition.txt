@@ -1,0 +1,27 @@
+Hive将表组织成分区，这是一种根据“”分区列”的值对表进行粗略划分的机制，使用分区可以加快分片的查询速度。
+表或分区可以进一步分为桶，它会为数据提供额外的结构，以或得更高效的查询处理。
+外壳环境是我们和Hive进行交互，发出HiveQL命令的主要方式。HiveQL是Hive的查询语言。它是SQL的一种方言，
+它的设计受到Mysql的很多影响。
+表和分区可以进一步分为桶。它会为数据提供额外的结构以或得更高的查询处理。
+Hive中建立索引：
+create index test_index_id on table test(id)
+AS 'org.apache.hadoop.hive.ql.index.compact.CompactIndexHandler'   WITH DEFERRED REBUILD ;
+create index test_index_name on table test(name)
+as 'org.apache.hadoop.hive.ql.index.compact.CompactIndexHandler'  with DEFERRED REBUILD;
+--create index ticket_index_from_station_name on table ticket(from_station_name) 
+--as  'org.apache.hadoop.hive.ql.index.compact.CompactIndexHandler'  with DEFERRED REBUILD ;
+create index ticket_index_from_tele_code on table ticket(from_tele_code)
+as  'org.apache.hadoop.hive.ql.index.compact.CompactIndexHandler'  with DEFERRED REBUILD ;
+create index ticket_index_to_station_name on table ticket(to_station_name)
+as  'org.apache.hadoop.hive.ql.index.compact.CompactIndexHandler'  with DEFERRED REBUILD ;
+create index ticket_index_to_tele_code on table ticket(to_tele_code)
+as  'org.apache.hadoop.hive.ql.index.compact.CompactIndexHandler'  with DEFERRED REBUILD ;
+create index ticket_index_from_bureau_code on table ticket(from_bureau_code)
+as  'org.apache.hadoop.hive.ql.index.compact.CompactIndexHandler'  with DEFERRED REBUILD ;
+create index ticket_index_start_time on table ticket(start_time)
+as  'org.apache.hadoop.hive.ql.index.compact.CompactIndexHandler'  with DEFERRED REBUILD ;
+create index ticket_index_train_date on table ticket(train_date)
+as  'org.apache.hadoop.hive.ql.index.compact.CompactIndexHandler'  with DEFERRED REBUILD ;
+create index ticket_index_board_train_code on table ticket(board_train_code)
+as  'org.apache.hadoop.hive.ql.index.compact.CompactIndexHandler'  with DEFERRED REBUILD ;
+
