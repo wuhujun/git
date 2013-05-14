@@ -1,0 +1,4 @@
+关于Hbase的安装部署的博客
+http://www.cnblogs.com/ggjucheng/archive/2012/05/04/2483474.html
+Hbase的架构
+http://www.alidata.org/archives/1509
