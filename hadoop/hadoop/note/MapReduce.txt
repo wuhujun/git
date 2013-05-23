@@ -1,0 +1,29 @@
+1.MapReduce适合做的事情   
+MapReduce is a good fit for problems that need to analyze the whole dataset, 
+in a batch fashion, particularly for ad hoc analysis.
+MapReduce works well on unstructured or semi-structured data, since it is 
+designed to interpret the data at processing time
+2.RDBMS适合做的事情
+An RDBMS is good for point queries or updates, where the dataset has been in-
+dexed to deliver low-latency retrieval and update times of a relatively small amount of
+data.
+3.Hadoop的生态圈
+Common:一组分布式文件系统和通用I/O的组建与接口（序列化，Java，RPC和持久化数据结构）
+Avro  :一种支持高效，跨语言的RPC以及永久存储数据的序列化系统。
+MapReduce:分布式数据处理模型和执行环境，运行于大型商业用机集群。
+HDFS分布式文件系统，运行于大型商业机集群。
+Pig：一种数据流语言和运行环境，用以检索非常大的数据集。pig运行在MapReduce和HDFS的集群上。
+Hive：一个分布式，安列存储的数据仓库管理HDFS中存储的数据，并提供基于SQL的查询语言(由运行时
+引擎翻译成MapReduce作业)用以查询数据。
+HBase：一个分布式，按列存储数据库。HBase使用HDFS作为底层存储，同时支持MapReduce的批量式
+计算和查询（随机读取）
+Zookeeper：一个分布式，可用性高的协调服务。Zookeeper提供分布式锁之类的基本服务，用以构建分
+布式应用。
+Sqoop: 在数据库和HDFS之间高效传输数据的工具。
+4.MapReduce model
+MapReduce is a programming model for data processing. The model is simple, yet not
+too simple to express useful programs in.
+MapReduce programs are inherently parallel, thus putting very large-scale data analysis 
+into the hands of anyone withenough machines at their disposal. MapReduce comes into 
+its own for large datasets, so let’s start by looking at one.
+MapReduce 程序本质上是并行化的计算过程。

@@ -18,6 +18,7 @@ void point_len(void ){
    int lendouble = sizeof(pdouble) ;
    cout<<" double 类型指针的长度: "<<lendouble<<"\n";
    cout<<sizeof(int*)<<endl;
+   
 }
 /*
 关于面向对象的几个问题。
