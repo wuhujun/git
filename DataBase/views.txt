@@ -1,0 +1,1 @@
+   A view allows a query to be saved and treated like a table

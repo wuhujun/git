@@ -1,0 +1,1 @@
+COPY axle_mill  TO  '/home/postgres/axle_mill.csv' CSV HEADER ; 

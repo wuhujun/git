@@ -1,0 +1,35 @@
+1.取字符串的长度
+[root@localhost shell]# string="hello,everyone my name is xiaoming"
+[root@localhost shell]# echo ${#string}
+34
+[root@localhost shell]# expr length "$string"
+34
+2.expr中的expr index $string substring索引命令功能在字符串$string上找出substring中字符第一次出现的位置，若找不到则expr index返回0或1。
+举例
+[root@localhost shell]# string="hello,everyone my name is xiaoming"
+[root@localhost shell]# expr index "$string" my
+11
+[root@localhost shell]# expr index "$string" nihao
+1
+3. expr中的expr match $string substring命令在string字符串中匹配substring字符串，然后返回匹配到的substring字符串的长度，若找不到则返回0。
+举例
+[root@localhost shell]# string="hello,everyone my name is xiaoming"
+[root@localhost shell]# expr match "$string" my
+0
+[root@localhost shell]# expr match "$string" hell.*
+34
+[root@localhost shell]# expr match "$string" hell
+4
+[root@localhost shell]# expr match "$string" small
+0
+4、在shell中可以用{string:position}和{string:position:length}进行对string字符串中字符的抽取。第一种是从position位置开始抽取直到字符串结束，第二种是从position位置开始抽取长度为length的子串。而用expr中的expr substr $string $position $length同样能实现上述功能。
+举例
+root@localhost shell]# string="hello,everyone my name is xiaoming"
+[root@localhost shell]# echo ${string:10}
+yone my name is xiaoming
+[root@localhost shell]# echo ${string:10:5}
+yone
+[root@localhost shell]# echo ${string:10:10}
+yone my na
+[root@localhost shell]# expr substr "$string" 10 5
+rone

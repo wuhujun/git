@@ -1,0 +1,12 @@
+SQL取中位数：
+WITH OrdersRN AS
+(
+  SELECT EmployeeID, Value,
+    ROW_NUMBER() OVER(PARTITION BY EmployeeID ORDER BY Value) AS RowNum,
+    COUNT(*) OVER(PARTITION BY EmployeeID) AS Cnt
+  FROM dbo.VOrders
+)
+SELECT EmployeeID, AVG(Value) AS Median
+FROM OrdersRN
+WHERE RowNum IN((Cnt + 1) / 2, (Cnt + 2) / 2)
+GROUP BY EmployeeID;
