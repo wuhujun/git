@@ -1,0 +1,26 @@
+1.检测sqoop是否部署成功
+sqoop-list-tables --connect jdbc:mysql://localhost/wheel --username root --P
+2.从mysql数据库导出数据到HDFS中数据库。
+如果要导出数据的数据库在本地，不要使用localhost，要使用数据库服务器的IP地址，因为其他的datanode不知到
+localhost是那台机器。
+sqoop import --connect jdbc:mysql://192.168.3.170/test  --username root   --password ia  --table test   -m  1  
+3.授权从远程访问mysql数据库
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'ia' WITH GRANT OPTION;
+4.检测sqoop连接oracle数据库是否成功,注意oracle数据库的连接方式和mysql有所不同。
+sqoop-list-databases  --connect jdbc:oracle:thin:@192.168.5.56:1521:orcl  --username stat --P
+5.从oracle数据库中导出数据到HDFS中。
+sqoop import --connect jdbc:oracle:thin:@192.168.5.56:1521:orcl    --username stat  --password stat  \
+ --table TICKET_2012   --columns  TRAIN_DATE,BOARD_TRAIN_CODE  \
+ --fields-terminated-by '\t'  -m 1 
+6.从oracle数据库中导出数据： 
+ sqoop import --append --connect jdbcracle:thin:@<数据库的IP>:1521:<数据库的SID> --username <数据库的用户> --password <密码> --target-dir /sqoop/oracle --num-mappers 1 --table <数据库表名称> --columns <字段1,字段2,字段3,字段4,字段5> --fields-terminated-by '\t'
+7.导入到mysql数据库
+ sqoop export --connect jdbc:mysql://192.168.3.170/test --table test  --username root  --password ia   \
+--export-dir  /user/root/mysql/test
+8.导入到oracle数据库
+sqoop export --connect jdbc:oracle:thin:@192.168.5.56:1521:orcl    --username stat  --password stat  \
+ --table TICKET_2012   --columns  TRAIN_DATE,BOARD_TRAIN_CODE  \
+ --export-dir  /user/root/oracle/sqoop
+9.创建表
+create table sqoop (train_date varchar(30) , send_num number(20) , entery_num number(20), ticket_incom_count number(20));
+

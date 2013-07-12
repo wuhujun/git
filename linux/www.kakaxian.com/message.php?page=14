@@ -1,0 +1,633 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<meta name="Description" content="" />
+
+<title>留言板_卡卡鲜</title>
+
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="http://www.kakaxian.com/themes/kkx/style.css" rel="stylesheet" type="text/css" />
+<link href="http://www.kakaxian.com/themes/kkx/css/re.css" rel="stylesheet" type="text/css" />
+<link href="http://www.kakaxian.com/themes/kkx/css/pro.css" rel="stylesheet" type="text/css" />
+
+
+<script type="text/javascript" src="http://www.kakaxian.com/js/common.js"></script></head>
+<body>
+<script type="text/javascript">
+var process_request = "正在处理您的请求...";
+</script>
+
+
+     
+  
+  
+
+<div class="top" style="overflow:hidden">
+<div class="topbox">
+<div class="tl">
+
+               <a href="article.php?id=20" >媒体报道</a>
+                                         <a href="message.php" >留言板</a>
+                                         <a href="http://kakaxian.com/article.php?id=15" >用户反馈</a>
+                                         <a href="http://blog.sina.com.cn/u/2963755804"  target="_blank" >官方博客</a>
+                    
+     
+</div>
+
+<div class="tr">
+<p>
+  欢迎光临卡卡鲜&nbsp;请
+ [<a href="user.php">登录</a>] | [
+ <a href="user.php?act=register">免费注册</a>]
+</p>
+<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1632380823&site=qq&menu=yes" class="qkf"><img src="http://www.kakaxian.com/themes/kkx/images/kf.jpg" width="75" height="25" /></a><a target="_blank" href="msnim:chat?contact=kakaxian@hotmail.com" class="qkf"><img src="http://www.kakaxian.com/themes/kkx/images/msn_2.gif" width="75" height="25" /></a>
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="logobox">
+<a href="index.php" class="logo"><img src="http://www.kakaxian.com/themes/kkx/images/logo.gif"  /></a>
+
+
+
+<!--
+<span><img src="themes/kkx/images/ly.jpg" width="239" height="79" /></span>
+-->
+
+
+<div id="search">
+  
+  <form id="searchForm" name="searchForm" method="get" action="http://www.kakaxian.com/search.php" onSubmit="return checkSearchForm()" class="f_r"  style="_position:relative; top:5px;">
+   <select name="category" id="category" class="B_input">
+      <option value="0">所有分类</option>
+      <option value="23" >当日即达</option><option value="26" >&nbsp;&nbsp;&nbsp;&nbsp;美味靓汤</option><option value="24" >&nbsp;&nbsp;&nbsp;&nbsp;素食蔬菜</option><option value="25" >&nbsp;&nbsp;&nbsp;&nbsp;特色荤菜</option><option value="3" >素食蔬菜</option><option value="13" >&nbsp;&nbsp;&nbsp;&nbsp;豆制品</option><option value="15" >&nbsp;&nbsp;&nbsp;&nbsp;蛋</option><option value="12" >&nbsp;&nbsp;&nbsp;&nbsp;时令蔬菜</option><option value="16" >&nbsp;&nbsp;&nbsp;&nbsp;其它</option><option value="27" >餐后甜品</option><option value="29" >&nbsp;&nbsp;&nbsp;&nbsp;草莓</option><option value="30" >&nbsp;&nbsp;&nbsp;&nbsp;梨</option><option value="31" >&nbsp;&nbsp;&nbsp;&nbsp;火龙果</option><option value="4" >美味靓汤</option><option value="17" >&nbsp;&nbsp;&nbsp;&nbsp;鱼汤</option><option value="21" >&nbsp;&nbsp;&nbsp;&nbsp;滋补汤</option><option value="18" >&nbsp;&nbsp;&nbsp;&nbsp;素汤</option><option value="1" >特色荤菜</option><option value="10" >&nbsp;&nbsp;&nbsp;&nbsp;牛肉</option><option value="7" >&nbsp;&nbsp;&nbsp;&nbsp;鱼肉</option><option value="11" >&nbsp;&nbsp;&nbsp;&nbsp;虾</option><option value="8" >&nbsp;&nbsp;&nbsp;&nbsp;猪肉</option><option value="9" >&nbsp;&nbsp;&nbsp;&nbsp;羊肉</option><option value="6" >&nbsp;&nbsp;&nbsp;&nbsp;鸡肉</option><option value="28" >粥类</option>    </select>
+   <input name="keywords" type="text" id="keyword" value="" class="B_input" style="width:110px;"/>
+   <input name="imageField" type="submit" value="" class="go" style="cursor:pointer;" />
+  <!-- <a href="search.php?act=advanced_search">高级搜索</a>-->
+   </form>
+   <div class="clr"></div>
+   <div class="keys f_l">
+   <script type="text/javascript">
+    
+    <!--
+    function checkSearchForm()
+    {
+        if(document.getElementById('keyword').value)
+        {
+            return true;
+        }
+        else
+        {
+            alert("请输入搜索关键词！");
+            return false;
+        }
+    }
+    -->
+    
+    </script>
+    <a>热搜:</a>
+       <a href="search.php?keywords=�%2582%2589">肉</a>
+      <a href="search.php?keywords=�%259A%259D油�%2589%259B�%2582%2589">蚝油牛肉</a>
+      <a href="search.php?keywords=�%2585��%258F%259C鱼">酸菜鱼</a>
+      <a href="search.php?keywords=�%2586�%2592�%259D%258F�%258D�%258F%2587">豆角杏鲍菇</a>
+      <a href="search.php?keywords=�%2586��%2593%259C�%258E%2592骨汤">冬瓜排骨汤</a>
+        </div>
+</div>
+
+<!--<div class="er"><img src="themes/kkx/images/dgdh.jpg" >
+</div>-->
+<div class="clr"></div>
+</div>
+
+
+<div class="dh">
+<div class="dhbox">
+<div class="dhli">
+<ul>
+<li  class="dhcho" ><a href="index.php">首页<span></span></a></li>
+   <li   ><a href="category.php?id=1"  >特色荤菜<span></span></a></li>
+   <li   ><a href="category.php?id=3"  >素食蔬菜<span></span></a></li>
+   <li   ><a href="category.php?id=4"  >美味靓汤<span></span></a></li>
+   <li   ><a href="category.php?id=27"  >餐后甜品<span></span></a></li>
+   <li   ><a href="category.php?id=28"  >健康粥道<span></span></a></li>
+   <li   ><a href="category_today.php?id=23"  >当日即达<span></span></a></li>
+   <li   ><a href="http://www.kakaxian.com/sns"  >社区<span></span></a></li>
+  
+  
+</ul>
+</div>
+
+<div class="chr">
+
+
+
+<script type="text/javascript" src="http://www.kakaxian.com/js/transport.js"></script><div class="" id="ECS_CARTINFO">
+ <a href="flow.php" title="查看购物车">购物车有 0 件</a></div>
+
+
+ </div>
+
+</div>
+</div>
+ 
+<div class="block box">
+ <div id="ur_here" class="local membox">
+  <p>当前位置: <a href="index.html">首页</a> <code>&gt;</code> 留言板</p> </div>
+</div>
+
+<div class="blank"></div>
+<div class="block clearfix membox">
+  
+  <div class="AreaL">
+    
+    <div class="box">
+ <div class="box_1">
+  <div id="category_tree">
+    <div class="prorigtop"><span>分类列表</span></div>
+
+         <dl>
+     <dt><a href="category.php?id=1">特色荤菜</a></dt>
+     
+     <dd>
+          <a href="category.php?id=6">鸡肉</a> 
+       
+          <a href="category.php?id=7">鱼肉</a> 
+       
+          <a href="category.php?id=8">猪肉</a> 
+       
+          <a href="category.php?id=9">羊肉</a> 
+       
+          <a href="category.php?id=10">牛肉</a> 
+       
+          <a href="category.php?id=11">虾</a> 
+       
+          <div class="clr"></div>
+     <dd>
+       
+       </dl>
+         <dl>
+     <dt><a href="category.php?id=3">素食蔬菜</a></dt>
+     
+     <dd>
+          <a href="category.php?id=12">时令蔬菜</a> 
+       
+          <a href="category.php?id=13">豆制品</a> 
+       
+          <a href="category.php?id=15">蛋</a> 
+       
+          <a href="category.php?id=16">其它</a> 
+       
+          <div class="clr"></div>
+     <dd>
+       
+       </dl>
+         <dl>
+     <dt><a href="category.php?id=4">美味靓汤</a></dt>
+     
+     <dd>
+          <a href="category.php?id=17">鱼汤</a> 
+       
+          <a href="category.php?id=18">素汤</a> 
+       
+          <a href="category.php?id=21">滋补汤</a> 
+       
+          <div class="clr"></div>
+     <dd>
+       
+       </dl>
+         <dl>
+     <dt><a href="category.php?id=23">当日即达</a></dt>
+     
+     <dd>
+          <a href="category.php?id=24">素食蔬菜</a> 
+       
+          <a href="category.php?id=25">特色荤菜</a> 
+       
+          <a href="category.php?id=26">美味靓汤</a> 
+       
+          <div class="clr"></div>
+     <dd>
+       
+       </dl>
+         <dl>
+     <dt><a href="category.php?id=27">餐后甜品</a></dt>
+     
+     <dd>
+          <a href="category.php?id=29">草莓</a> 
+       
+          <a href="category.php?id=30">梨</a> 
+       
+          <a href="category.php?id=31">火龙果</a> 
+       
+          <div class="clr"></div>
+     <dd>
+       
+       </dl>
+         <dl>
+     <dt><a href="category.php?id=28">粥类</a></dt>
+     
+     <dd>
+          <div class="clr"></div>
+     <dd>
+       
+       </dl>
+     
+  </div>
+ </div>
+</div>
+<div class="blank5"></div>
+        
+
+
+
+            
+    
+    
+    
+    <div class="box" id='history_div'>
+ <div class="box_1">
+      <div class="prorigtop"><span>最近浏览</span></div>
+
+  <div class="boxCenterList clearfix" id='history_list'>
+    <ul class="clearfix"><li class="goodsimg"><a href="goods.php?id=76" target="_blank"><img src="images/201211/thumb_img/76_thumb_G_1352213733917.jpg" alt="红薯（粥/汤）" class="B_blue" /></a></li><li><a href="goods.php?id=76" target="_blank" title="红薯（粥/汤）">红薯（粥/汤）</a><br />本店售价：<font class="f1">￥4.0元</font><br /></li></ul><ul class="clearfix"><li class="goodsimg"><a href="goods.php?id=181" target="_blank"><img src="images/201304/thumb_img/181_thumb_G_1364936483328.jpg" alt="干锅牛蛙" class="B_blue" /></a></li><li><a href="goods.php?id=181" target="_blank" title="干锅牛蛙">干锅牛蛙</a><br />本店售价：<font class="f1">￥26.0元</font><br /></li></ul><ul class="clearfix"><li class="goodsimg"><a href="goods.php?id=228" target="_blank"><img src="images/201306/thumb_img/228_thumb_G_1372027617494.jpg" alt="宫爆杏鲍菇" class="B_blue" /></a></li><li><a href="goods.php?id=228" target="_blank" title="宫爆杏鲍菇">宫爆杏鲍菇</a><br />本店售价：<font class="f1">￥10.0元</font><br /></li></ul><ul class="clearfix"><li class="goodsimg"><a href="goods.php?id=230" target="_blank"><img src="images/201306/thumb_img/230_thumb_G_1372026663864.jpg" alt="姜汁菠菜" class="B_blue" /></a></li><li><a href="goods.php?id=230" target="_blank" title="姜汁菠菜">姜汁菠菜</a><br />本店售价：<font class="f1">￥10.0元</font><br /></li></ul><ul class="clearfix"><li class="goodsimg"><a href="goods.php?id=236" target="_blank"><img src="images/201306/thumb_img/236_thumb_G_1372034889647.jpg" alt="如意白玉汤" class="B_blue" /></a></li><li><a href="goods.php?id=236" target="_blank" title="如意白玉汤">如意白玉汤</a><br />本店售价：<font class="f1">￥12.0元</font><br /></li></ul><ul id="clear_history"><a onclick="clear_history()">[清空]</a></ul>  </div>
+ </div>
+</div>
+<div class="blank5"></div>
+<script type="text/javascript">
+if (document.getElementById('history_list').innerHTML.replace(/\s/g,'').length<1)
+{
+    document.getElementById('history_div').style.display='none';
+}
+else
+{
+    document.getElementById('history_div').style.display='block';
+}
+function clear_history()
+{
+Ajax.call('user.php', 'act=clear_history',clear_history_Response, 'GET', 'TEXT',1,1);
+}
+function clear_history_Response(res)
+{
+document.getElementById('history_list').innerHTML = '您已清空最近浏览过的菜品';
+}
+</script>  </div>
+  
+  
+  <div class="AreaR">
+  <div class="box">
+     <div class="box_1">
+      <h3><span>留言板</span></h3>
+      <div class="boxCenterList">
+            <div class="f_l" style="width:100%; position:relative; line-height:30px;">
+      [<b>留言</b>]&nbsp;LL9611：<font class="f4">换菜</font> (2013-05-23 16:15:46)      </div>
+      <div class="msgBottomBorder word">
+      我刚刚下了订单，但想换一个菜，把耗油牛肉换成酸菜鱼，可以吗？<br><br>
+            <div class="mesbox">
+      
+       <font class="f2">管理员回复</font><br />
+       <p style=" color:#F60">嗯哪，可以的哈，我这边给您记录一下：）：）</p>
+      
+      </div>
+            </div>
+            <div class="f_l" style="width:100%; position:relative; line-height:30px;">
+      [<b>求购</b>]&nbsp;匿名用户：<font class="f4">自助火锅烧烤</font> (2013-05-22 14:18:41)      </div>
+      <div class="msgBottomBorder word">
+      菜品有了，希望能添加火锅和烧烤的材料，如羊肉牛肉卷各种丸子蔬菜，以及五花肉（切片），牛排等等。另外鸡蛋这种也可以按斤卖，不一定只做成品菜系吧？<br><br>
+            <div class="mesbox">
+      
+       <font class="f2">管理员回复</font><br />
+       <p style=" color:#F60">嗯，我们之前有“火锅套餐”的哈，只是现在天气热了，选择“火锅套餐”的不多了，所以我们暂时把它下架了。鸡蛋这个我们会考虑的哈，谢谢您的建议哦：）：）</p>
+      
+      </div>
+            </div>
+            <div class="f_l" style="width:100%; position:relative; line-height:30px;">
+      [<b>留言</b>]&nbsp;TianYuan：<font class="f4">配送方式</font> (2013-05-22 13:57:09)      </div>
+      <div class="msgBottomBorder word">
+      为什么不能再地铁站设自提点？看起来可以解决地铁上班族的配送问题<br><br>
+            <div class="mesbox">
+      
+       <font class="f2">管理员回复</font><br />
+       <p style=" color:#F60">这个问题我们会考虑的。。谢谢您的建议哦。。：）：）</p>
+      
+      </div>
+            </div>
+            <div class="f_l" style="width:100%; position:relative; line-height:30px;">
+      [<b>评论</b>]&nbsp;铭记的旋律：评论了<b><a class="f3" href="goods.php?id=33" target="_blank" title="鲫鱼汤">鲫鱼汤</a></b><font class="f4"></font> (2013-05-22 11:46:25)<img style="position:absolute; right:0px;" src="http://www.kakaxian.com/themes/kkx/images/stars5.gif" alt="5" />      </div>
+      <div class="msgBottomBorder word">
+      鱼很新鲜，处理的很干净<br><br>
+            <div class="mesbox">
+      
+       <font class="f2">管理员回复</font><br />
+       <p style=" color:#F60">鱼的确很新鲜的哦，我们会处理干净的，让大家吃着放心：）：）</p>
+      
+      </div>
+            </div>
+            <div class="f_l" style="width:100%; position:relative; line-height:30px;">
+      [<b>评论</b>]&nbsp;铭记的旋律：评论了<b><a class="f3" href="goods.php?id=148" target="_blank" title="鱼香茄子">鱼香茄子</a></b><font class="f4"></font> (2013-05-22 11:45:17)<img style="position:absolute; right:0px;" src="http://www.kakaxian.com/themes/kkx/images/stars5.gif" alt="5" />      </div>
+      <div class="msgBottomBorder word">
+      酸酸甜甜，味道很好~~~~<br><br>
+            <div class="mesbox">
+      
+       <font class="f2">管理员回复</font><br />
+       <p style=" color:#F60">嗯哪，也欢迎您品尝我们其他的菜品哦：）：）</p>
+      
+      </div>
+            </div>
+            <div class="f_l" style="width:100%; position:relative; line-height:30px;">
+      [<b>评论</b>]&nbsp;铭记的旋律：评论了<b><a class="f3" href="goods.php?id=16" target="_blank" title="五花肉手撕包菜">五花肉手撕包菜</a></b><font class="f4"></font> (2013-05-22 11:44:14)<img style="position:absolute; right:0px;" src="http://www.kakaxian.com/themes/kkx/images/stars5.gif" alt="5" />      </div>
+      <div class="msgBottomBorder word">
+      好吃~~~料很足，菜很新鲜<br><br>
+            <div class="mesbox">
+      
+       <font class="f2">管理员回复</font><br />
+       <p style=" color:#F60">我们的菜都是配送当天采购的，所以很新鲜的哈。</p>
+      
+      </div>
+            </div>
+            <div class="f_l" style="width:100%; position:relative; line-height:30px;">
+      [<b>评论</b>]&nbsp;铭记的旋律：评论了<b><a class="f3" href="goods.php?id=147" target="_blank" title="酸菜鱼">酸菜鱼</a></b><font class="f4"></font> (2013-05-22 11:43:34)<img style="position:absolute; right:0px;" src="http://www.kakaxian.com/themes/kkx/images/stars5.gif" alt="5" />      </div>
+      <div class="msgBottomBorder word">
+      弟弟很喜欢吃~~说味道满好额<br><br>
+            <div class="mesbox">
+      
+       <font class="f2">管理员回复</font><br />
+       <p style=" color:#F60">嗯哪，我们菜品的味道的确不错哈，亲的厨艺也不错的哦：）：）</p>
+      
+      </div>
+            </div>
+            <div class="f_l" style="width:100%; position:relative; line-height:30px;">
+      [<b>评论</b>]&nbsp;铭记的旋律：评论了<b><a class="f3" href="goods.php?id=31" target="_blank" title="蚝油牛肉">蚝油牛肉</a></b><font class="f4"></font> (2013-05-22 11:42:33)<img style="position:absolute; right:0px;" src="http://www.kakaxian.com/themes/kkx/images/stars5.gif" alt="5" />      </div>
+      <div class="msgBottomBorder word">
+      牛肉质量很好，很是喜欢<br><br>
+            <div class="mesbox">
+      
+       <font class="f2">管理员回复</font><br />
+       <p style=" color:#F60">嘿嘿。。嗯哪，谢谢哦。：）：）</p>
+      
+      </div>
+            </div>
+            <div class="f_l" style="width:100%; position:relative; line-height:30px;">
+      [<b>留言</b>]&nbsp;铭记的旋律：<font class="f4">关于团购的几个菜</font> (2013-05-21 21:54:09)      </div>
+      <div class="msgBottomBorder word">
+      我觉得相当合算哪，最主要的是菜很新鲜，都洗净切配好了，对于上班族来说，很是方便及人性化，赞赞赞赞赞<br><br>
+            <div class="mesbox">
+      
+       <font class="f2">管理员回复</font><br />
+       <p style=" color:#F60">嘿嘿，谢谢啊，可以到每个菜品下面去点评，点评有积分哦，呵呵。：）：）</p>
+      
+      </div>
+            </div>
+            <div class="f_l" style="width:100%; position:relative; line-height:30px;">
+      [<b>评论</b>]&nbsp;chinawindy：评论了<b><a class="f3" href="goods.php?id=23" target="_blank" title="鱼香肉丝">鱼香肉丝</a></b><font class="f4"></font> (2013-05-19 21:51:15)<img style="position:absolute; right:0px;" src="http://www.kakaxian.com/themes/kkx/images/stars5.gif" alt="5" />      </div>
+      <div class="msgBottomBorder word">
+      你们最近还有打折，团购吗。<br /><br><br>
+            <div class="mesbox">
+      
+       <font class="f2">管理员回复</font><br />
+       <p style=" color:#F60">亲，团购只是我们回馈新老客户的优惠活动哈。最近推出“盐煎肉”，“蚂蚁上树”等新菜品哦，我们5月份有充值送油的活动哈，您可以看看哦：）：）</p>
+      
+      </div>
+            </div>
+        
+    </div>
+  </div>
+</div>
+<div class="blank5"></div>
+
+
+
+
+  
+<form name="selectPageForm" action="message.php" method="get">
+
+
+ <div id="pager" class="pagebar">
+  <span class="f_l f6" style="margin-right:10px;">总计 <b>535</b>  个记录</span>
+  <a href="message.php?page=1">第一页 ...</a>  <a class="prev" href="message.php?page=13">上一页</a>                  <a href="message.php?page=12">[12]</a>
+                      <a href="message.php?page=13">[13]</a>
+                      <span class="page_now">14</span>
+                      <a href="message.php?page=15">[15]</a>
+                      <a href="message.php?page=16">[16]</a>
+                      <a href="message.php?page=17">[17]</a>
+                      <a href="message.php?page=18">[18]</a>
+                      <a href="message.php?page=19">[19]</a>
+                      <a href="message.php?page=20">[20]</a>
+                      <a href="message.php?page=21">[21]</a>
+            
+  <a class="next" href="message.php?page=15">下一页</a>  <a class="last" href="message.php?page=54">...最末页</a>          <kbd style="float:left; margin-left:8px; position:relative; bottom:3px;"><input type="text" name="page" onkeydown="if(event.keyCode==13)selectPage(this)" size="3" class="B_blue" /></kbd>
+    </div>
+
+
+</form>
+<script type="Text/Javascript" language="JavaScript">
+<!--
+
+function selectPage(sel)
+{
+  sel.form.submit();
+}
+
+//-->
+</script>
+  <div class="blank5"></div>
+    <div class="box">
+     <div class="box_1">
+      <h3><span>我要留言</span></h3>
+      <div class="boxCenterList">
+          <form action="message.php" method="post" name="formMsg" onSubmit="return submitMsgBoard(this)">
+            <table width="100%" border="0" cellpadding="3">
+              <tr>
+                <td align="right">用户名</td>
+                <td>
+                               匿名用户                                </td>
+              </tr>
+              <tr>
+                <td align="right">电子邮件地址</td>
+                <td><input name="user_email" type="text" class="inputBg" size="20" value="" /></td>
+              </tr>
+              <tr>
+                <td align="right">留言类型</td>
+                <td><input name="msg_type" type="radio" value="0" checked="checked" />
+                  留言                  <input type="radio" name="msg_type" value="1" />
+                  投诉                  <input type="radio" name="msg_type" value="2" />
+                  询问                  <input type="radio" name="msg_type" value="3" />
+                  售后                  <input type="radio" name="msg_type" value="4" />
+                  求购 </td>
+              </tr>
+              <tr>
+                <td align="right">主题</td>
+                <td><input name="msg_title" type="text" class="inputBg" size="30" /></td>
+              </tr>
+                          <tr>
+                <td align="right" valign="top">留言内容</td>
+                <td><textarea name="msg_content" cols="50" rows="4" wrap="virtual" style="border:1px solid #ccc;"></textarea></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td><input type="hidden" name="act" value="act_add_message" />
+                  <input type="submit" value="我要留言" class="bnt_blue_1" />
+                </td>
+              </tr>
+            </table>
+          </form>
+        <script type="text/javascript">
+                var msg_empty_email = "请输入您的电子邮件地址";
+                var msg_error_email = "电子邮件地址格式不正确";
+                var msg_title_empty = "留言标题为空";
+                var msg_content_empty = "留言内容为空";
+                var msg_captcha_empty = "验证码为空";
+                var msg_title_limit = "留言标题不能超过200个字";
+                
+        /**
+         * 提交留言信息
+        */
+        function submitMsgBoard(frm)
+        {
+            var msg = new Object;
+
+             msg.user_email  = frm.elements['user_email'].value;
+             msg.msg_title   = frm.elements['msg_title'].value;
+             msg.msg_content = frm.elements['msg_content'].value;
+             msg.captcha     = frm.elements['captcha'] ? frm.elements['captcha'].value : '';
+
+            var msg_err = '';
+
+            if (msg.user_email.length > 0)
+            {
+               if (!(Utils.isEmail(msg.user_email)))
+               {
+                  msg_err += msg_error_email + '\n';
+                }
+             }
+             else
+             {
+                  msg_err += msg_empty_email + '\n';
+             }
+            if (msg.msg_title.length == 0)
+            {
+                msg_err += msg_title_empty + '\n';
+            }
+            if (frm.elements['captcha'] && msg.captcha.length==0)
+            {
+                msg_err += msg_captcha_empty + '\n'
+            }
+            if (msg.msg_content.length == 0)
+            {
+                msg_err += msg_content_empty + '\n'
+            }
+            if (msg.msg_title.length > 200)
+            {
+                msg_err += msg_title_limit + '\n';
+            }
+
+            if (msg_err.length > 0)
+            {
+                alert(msg_err);
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        
+        </script>
+      </div>
+     </div>
+    </div>
+  </div>
+  
+</div>
+<div class="blank5"></div>
+
+<div class="block">
+  <div class="box">
+   <div class="helpTitBg clearfix">
+       </div>
+  </div>
+</div>
+<div class="blank"></div>
+
+
+
+<div class="blank"></div>
+
+
+<div class="foot">
+<img src="http://www.kakaxian.com/themes/kkx/images/footad.gif" width="1200" height="70"><div class="clr"></div>
+
+ 
+
+<div class="footone">
+  <h4 class="gy">关于卡卡鲜</h4>
+<ul>
+<li><a href="article.php?id=17">品牌故事</a></li>
+<li><a href="article.php?id=18">产品理念</a></li>
+<li><a href="article.php?id=20">媒体报道</a></li>
+<li><a href="article.php?id=19">加盟推广</a></li>
+<li><a href="article.php?id=4">联系我们</a></li>
+ </ul>
+</div>
+
+<div class="footone">
+<h4 class="xs">新手上路</h4>
+<ul>
+<li><a href="article.php?id=8">用户注册</a></li>
+<li><a href="article.php?id=9">购物流程</a></li>
+<li><a href="article.php?id=16">消费保障</a></li>
+</ul>
+</div>
+
+<div class="footone">
+<h4 class="ps">配送与支付 </h4>
+<ul>
+<li><a href="article.php?id=7">配送方式</a></li>
+<li><a href="article.php?id=10">支付方法</a></li>
+</ul>
+</div>
+<div class="footone">
+<h4 class="bz">帮助文档 </h4>
+<ul>
+<li><a href="article.php?id=11">菜品如何新鲜</a></li>
+<li><a href="article.php?id=12">调料香料</a></li>
+<li><a href="article.php?id=13">菜品说明</a></li>
+</ul>
+</div>
+
+
+
+
+<div class="clr"></div>
+</div>
+
+<div class="footer">
+<p>           <a href="article.php?cat_id=-1"  target="_blank" >免责条款</a>
+                   &copy; 2005-2013 卡卡鲜在线配菜 版权所有，并保留所有权利。 ICP备案证书号:<a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备12037631号-1</a></p>
+
+
+<div class="wb"><iframe width="100%" height="24" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0" scrolling="no" border="0" src="http://widget.weibo.com/relationship/followbutton.php?language=zh_cn&width=100%&height=24&uid=2963755804&style=3&btn=red&dpc=1"></iframe></div>
+<div class="clr"></div>
+</div>
+
+
+
+
+
+
+
+<p style="text-align:center"><script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F849142ea016a74090fd8bff80b671f48' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p></body>
+</html>

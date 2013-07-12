@@ -1,0 +1,939 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<title>卡卡鲜</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="http://www.kakaxian.com/themes/kkx/style.css" rel="stylesheet" type="text/css" />
+<link href="http://www.kakaxian.com/themes/kkx/css/re.css" rel="stylesheet" type="text/css" />
+<link href="http://www.kakaxian.com/themes/kkx/css/pro.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://www.kakaxian.com/js/common.js"></script><script type="text/javascript" src="http://www.kakaxian.com/js/global.js"></script><script type="text/javascript" src="http://www.kakaxian.com/js/compare.js"></script></head>
+<body>
+ 
+<div class="box">
+ <div class="box_1" style="border:none">
+ 
+  
+  <style>
+  .drtop{border-bottom:1px solid #d0d4d9; text-align:left}
+  .drtop span{float:left}
+  .drtop a{float:right; margin-top:10px; margin-right:3px;} 
+  </style>
+  
+  <div class="drtop">
+    
+    <span><img src="http://www.kakaxian.com/themes/kkx/images/pro/kk3.jpg" ></span>
+    
+    <a href="category.php?id=3" target="_new"><img src="http://www.kakaxian.com/themes/kkx/images/pro/20111226202707749.gif" width="57" height="15"></a>
+    <div class="clr"></div>
+                             
+    
+    
+    </div>
+  
+  
+      <form name="compareForm" action="http://www.kakaxian.com/compare.php" method="post" onSubmit="return compareGoods(this);">
+            <div class="centerPadd "  style="border:none;">
+    <div class="clearfix goodsBox" style="border:none;">
+             <div class="goodsItem" id="goodname">
+   
+     
+           <a href="goods.php?id=271" target="_new"><img src="images/201306/thumb_img/271_thumb_G_1371856002312.jpg" alt="剁椒金针菇" class="goodsimg" /></a><br />
+           <p class="goodname"><a href="goods.php?id=271" target="_new" title="剁椒金针菇">剁椒金针菇</a></p>
+           
+           
+           
+           
+         
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>                        <font class="shop_s"><strong>￥12.0元</strong></font><br />
+                        </td>
+    <td> <a href="goods.php?id=271#dp" target="_new" class="dpfont">0条评价</a></td>
+  </tr>
+</table>
+            
+            
+            <p style="margin-top:5px;">
+           <a href="javascript:collect(271);" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/jrsc.jpg" ></a> 
+           <a href="javascript:addToCart(271)" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/ljgm.jpg" ></a> 
+           </p><div class="clr"></div>
+              
+        </div>
+                 <div class="goodsItem" id="goodname">
+   
+     
+           <a href="goods.php?id=263" target="_new"><img src="images/201306/thumb_img/263_thumb_G_1371850500602.jpg" alt="鲍鱼杏鲍菇" class="goodsimg" /></a><br />
+           <p class="goodname"><a href="goods.php?id=263" target="_new" title="鲍鱼杏鲍菇">鲍鱼杏鲍菇</a></p>
+           
+           
+           
+           
+         
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>                        <font class="shop_s"><strong>￥12.0元</strong></font><br />
+                        </td>
+    <td> <a href="goods.php?id=263#dp" target="_new" class="dpfont">0条评价</a></td>
+  </tr>
+</table>
+            
+            
+            <p style="margin-top:5px;">
+           <a href="javascript:collect(263);" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/jrsc.jpg" ></a> 
+           <a href="javascript:addToCart(263)" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/ljgm.jpg" ></a> 
+           </p><div class="clr"></div>
+              
+        </div>
+                 <div class="goodsItem" id="goodname">
+   
+     
+           <a href="goods.php?id=240" target="_new"><img src="images/201306/thumb_img/240_thumb_G_1372030483961.jpg" alt="蒜香金针菇" class="goodsimg" /></a><br />
+           <p class="goodname"><a href="goods.php?id=240" target="_new" title="蒜香金针菇">蒜香金针菇</a></p>
+           
+           
+           
+           
+         
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>                        <font class="shop_s"><strong>￥12.0元</strong></font><br />
+                        </td>
+    <td> <a href="goods.php?id=240#dp" target="_new" class="dpfont">0条评价</a></td>
+  </tr>
+</table>
+            
+            
+            <p style="margin-top:5px;">
+           <a href="javascript:collect(240);" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/jrsc.jpg" ></a> 
+           <a href="javascript:addToCart(240)" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/ljgm.jpg" ></a> 
+           </p><div class="clr"></div>
+              
+        </div>
+                 <div class="goodsItem" id="goodname">
+   
+     
+           <a href="goods.php?id=239" target="_new"><img src="images/201306/thumb_img/239_thumb_G_1372026254628.jpg" alt="蒜泥空心菜" class="goodsimg" /></a><br />
+           <p class="goodname"><a href="goods.php?id=239" target="_new" title="蒜泥空心菜">蒜泥空心菜</a></p>
+           
+           
+           
+           
+         
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>                        <font class="shop_s"><strong>￥10.0元</strong></font><br />
+                        </td>
+    <td> <a href="goods.php?id=239#dp" target="_new" class="dpfont">2条评价</a></td>
+  </tr>
+</table>
+            
+            
+            <p style="margin-top:5px;">
+           <a href="javascript:collect(239);" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/jrsc.jpg" ></a> 
+           <a href="javascript:addToCart(239)" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/ljgm.jpg" ></a> 
+           </p><div class="clr"></div>
+              
+        </div>
+                 <div class="goodsItem" id="goodname">
+   
+     
+           <a href="goods.php?id=234" target="_new"><img src="images/201306/thumb_img/234_thumb_G_1372026299698.jpg" alt="炝炒空心菜" class="goodsimg" /></a><br />
+           <p class="goodname"><a href="goods.php?id=234" target="_new" title="炝炒空心菜">炝炒空心菜</a></p>
+           
+           
+           
+           
+         
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>                        <font class="shop_s"><strong>￥10.0元</strong></font><br />
+                        </td>
+    <td> <a href="goods.php?id=234#dp" target="_new" class="dpfont">5条评价</a></td>
+  </tr>
+</table>
+            
+            
+            <p style="margin-top:5px;">
+           <a href="javascript:collect(234);" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/jrsc.jpg" ></a> 
+           <a href="javascript:addToCart(234)" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/ljgm.jpg" ></a> 
+           </p><div class="clr"></div>
+              
+        </div>
+                 <div class="goodsItem" id="goodname">
+   
+     
+           <a href="goods.php?id=231" target="_new"><img src="images/201306/thumb_img/231_thumb_G_1372026710762.jpg" alt="韭菜炒鸡蛋" class="goodsimg" /></a><br />
+           <p class="goodname"><a href="goods.php?id=231" target="_new" title="韭菜炒鸡蛋">韭菜炒鸡蛋</a></p>
+           
+           
+           
+           
+         
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>                        <font class="shop_s"><strong>￥10.0元</strong></font><br />
+                        </td>
+    <td> <a href="goods.php?id=231#dp" target="_new" class="dpfont">2条评价</a></td>
+  </tr>
+</table>
+            
+            
+            <p style="margin-top:5px;">
+           <a href="javascript:collect(231);" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/jrsc.jpg" ></a> 
+           <a href="javascript:addToCart(231)" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/ljgm.jpg" ></a> 
+           </p><div class="clr"></div>
+              
+        </div>
+                 <div class="goodsItem" id="goodname">
+   
+     
+           <a href="goods.php?id=227" target="_new"><img src="images/201306/thumb_img/227_thumb_G_1372030126225.jpg" alt="干煸四季豆" class="goodsimg" /></a><br />
+           <p class="goodname"><a href="goods.php?id=227" target="_new" title="干煸四季豆">干煸四季豆</a></p>
+           
+           
+           
+           
+         
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>                        <font class="shop_s"><strong>￥12.0元</strong></font><br />
+                        </td>
+    <td> <a href="goods.php?id=227#dp" target="_new" class="dpfont">0条评价</a></td>
+  </tr>
+</table>
+            
+            
+            <p style="margin-top:5px;">
+           <a href="javascript:collect(227);" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/jrsc.jpg" ></a> 
+           <a href="javascript:addToCart(227)" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/ljgm.jpg" ></a> 
+           </p><div class="clr"></div>
+              
+        </div>
+                 <div class="goodsItem" id="goodname">
+   
+     
+           <a href="goods.php?id=213" target="_new"><img src="images/201304/thumb_img/213_thumb_G_1366925429983.jpg" alt="素炒木耳" class="goodsimg" /></a><br />
+           <p class="goodname"><a href="goods.php?id=213" target="_new" title="素炒木耳">素炒木耳</a></p>
+           
+           
+           
+           
+         
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>                        <font class="shop_s"><strong>￥10.0元</strong></font><br />
+                        </td>
+    <td> <a href="goods.php?id=213#dp" target="_new" class="dpfont">0条评价</a></td>
+  </tr>
+</table>
+            
+            
+            <p style="margin-top:5px;">
+           <a href="javascript:collect(213);" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/jrsc.jpg" ></a> 
+           <a href="javascript:addToCart(213)" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/ljgm.jpg" ></a> 
+           </p><div class="clr"></div>
+              
+        </div>
+                 <div class="goodsItem" id="goodname">
+   
+     
+           <a href="goods.php?id=183" target="_new"><img src="images/201304/thumb_img/183_thumb_G_1364936714356.jpg" alt="素炒茄子" class="goodsimg" /></a><br />
+           <p class="goodname"><a href="goods.php?id=183" target="_new" title="素炒茄子">素炒茄子</a></p>
+           
+           
+           
+           
+         
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>                        <font class="shop_s"><strong>￥10.0元</strong></font><br />
+                        </td>
+    <td> <a href="goods.php?id=183#dp" target="_new" class="dpfont">0条评价</a></td>
+  </tr>
+</table>
+            
+            
+            <p style="margin-top:5px;">
+           <a href="javascript:collect(183);" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/jrsc.jpg" ></a> 
+           <a href="javascript:addToCart(183)" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/ljgm.jpg" ></a> 
+           </p><div class="clr"></div>
+              
+        </div>
+                 <div class="goodsItem" id="goodname">
+   
+     
+           <a href="goods.php?id=92" target="_new"><img src="images/201301/thumb_img/92_thumb_G_1357435952068.jpg" alt="虎皮青椒" class="goodsimg" /></a><br />
+           <p class="goodname"><a href="goods.php?id=92" target="_new" title="虎皮青椒">虎皮青椒</a></p>
+           
+           
+           
+           
+         
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>                        <font class="shop_s"><strong>￥10.0元</strong></font><br />
+                        </td>
+    <td> <a href="goods.php?id=92#dp" target="_new" class="dpfont">2条评价</a></td>
+  </tr>
+</table>
+            
+            
+            <p style="margin-top:5px;">
+           <a href="javascript:collect(92);" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/jrsc.jpg" ></a> 
+           <a href="javascript:addToCart(92)" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/ljgm.jpg" ></a> 
+           </p><div class="clr"></div>
+              
+        </div>
+            </div>
+    </div>
+        </form>
+  
+ </div>
+</div>
+<div class="blank5"></div>
+<script type="Text/Javascript" language="JavaScript">
+<!--
+function selectPage(sel)
+{
+  sel.form.submit();
+}
+//-->
+</script>
+<script type="text/javascript">
+window.onload = function()
+{
+  Compare.init();
+  fixpng();
+}
+var button_compare = '';
+var exist = "您已经选择了%s";
+var count_limit = "最多只能选择4个菜品进行对比";
+var goods_type_different = "\"%s\"和已选择菜品类型不同无法进行对比";
+var compare_no_goods = "您没有选定任何需要比较的菜品或者比较的菜品数少于 2 个。";
+var btn_buy = "购买";
+var is_cancel = "取消";
+var select_spe = "请选择菜品属性";
+</script> </body>
+</html><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<title>卡卡鲜</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="http://www.kakaxian.com/themes/kkx/style.css" rel="stylesheet" type="text/css" />
+<link href="http://www.kakaxian.com/themes/kkx/css/re.css" rel="stylesheet" type="text/css" />
+<link href="http://www.kakaxian.com/themes/kkx/css/pro.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+ 
+<div class="box">
+ <div class="box_1" style="border:none">
+ 
+  
+  <style>
+  .drtop{border-bottom:1px solid #d0d4d9; text-align:left}
+  .drtop span{float:left}
+  .drtop a{float:right; margin-top:10px; margin-right:3px;} 
+  </style>
+  
+  <div class="drtop">
+    
+    <span><img src="http://www.kakaxian.com/themes/kkx/images/pro/kk7.jpg" ></span>
+    
+    <a href="category.php?id=7" target="_new"><img src="http://www.kakaxian.com/themes/kkx/images/pro/20111226202707749.gif" width="57" height="15"></a>
+    <div class="clr"></div>
+                             
+    
+    
+    </div>
+  
+  
+      <form name="compareForm" action="http://www.kakaxian.com/compare.php" method="post" onSubmit="return compareGoods(this);">
+            <div class="centerPadd "  style="border:none;">
+    <div class="clearfix goodsBox" style="border:none;">
+             <div class="goodsItem" id="goodname">
+   
+     
+           <a href="goods.php?id=269" target="_new"><img src="images/201306/thumb_img/269_thumb_G_1371854459641.jpg" alt="清蒸桂鱼" class="goodsimg" /></a><br />
+           <p class="goodname"><a href="goods.php?id=269" target="_new" title="清蒸桂鱼">清蒸桂鱼</a></p>
+           
+           
+           
+           
+         
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>                        <font class="shop_s"><strong>￥52.0元</strong></font><br />
+                        </td>
+    <td> <a href="goods.php?id=269#dp" target="_new" class="dpfont">0条评价</a></td>
+  </tr>
+</table>
+            
+            
+            <p style="margin-top:5px;">
+           <a href="javascript:collect(269);" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/jrsc.jpg" ></a> 
+           <a href="javascript:addToCart(269)" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/ljgm.jpg" ></a> 
+           </p><div class="clr"></div>
+              
+        </div>
+                 <div class="goodsItem" id="goodname">
+   
+     
+           <a href="goods.php?id=242" target="_new"><img src="images/201306/thumb_img/242_thumb_G_1372027674022.jpg" alt="香干肉丝炒毛豆" class="goodsimg" /></a><br />
+           <p class="goodname"><a href="goods.php?id=242" target="_new" title="香干肉丝炒毛豆">香干肉丝炒毛豆</a></p>
+           
+           
+           
+           
+         
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>                        <font class="shop_s"><strong>￥16.0元</strong></font><br />
+                        </td>
+    <td> <a href="goods.php?id=242#dp" target="_new" class="dpfont">0条评价</a></td>
+  </tr>
+</table>
+            
+            
+            <p style="margin-top:5px;">
+           <a href="javascript:collect(242);" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/jrsc.jpg" ></a> 
+           <a href="javascript:addToCart(242)" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/ljgm.jpg" ></a> 
+           </p><div class="clr"></div>
+              
+        </div>
+                 <div class="goodsItem" id="goodname">
+   
+     
+           <a href="goods.php?id=241" target="_new"><img src="images/201306/thumb_img/241_thumb_G_1372026164426.jpg" alt="糖醋鳊鱼" class="goodsimg" /></a><br />
+           <p class="goodname"><a href="goods.php?id=241" target="_new" title="糖醋鳊鱼">糖醋鳊鱼</a></p>
+           
+           
+           
+           
+         
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>                        <font class="shop_s"><strong>￥26.0元</strong></font><br />
+                        </td>
+    <td> <a href="goods.php?id=241#dp" target="_new" class="dpfont">2条评价</a></td>
+  </tr>
+</table>
+            
+            
+            <p style="margin-top:5px;">
+           <a href="javascript:collect(241);" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/jrsc.jpg" ></a> 
+           <a href="javascript:addToCart(241)" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/ljgm.jpg" ></a> 
+           </p><div class="clr"></div>
+              
+        </div>
+                 <div class="goodsItem" id="goodname">
+   
+     
+           <a href="goods.php?id=216" target="_new"><img src="images/201305/thumb_img/216_thumb_G_1367781863237.jpg" alt="蚂蚁上树" class="goodsimg" /></a><br />
+           <p class="goodname"><a href="goods.php?id=216" target="_new" title="蚂蚁上树">蚂蚁上树</a></p>
+           
+           
+           
+           
+         
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>                        <font class="shop_s"><strong>￥14.0元</strong></font><br />
+                        </td>
+    <td> <a href="goods.php?id=216#dp" target="_new" class="dpfont">4条评价</a></td>
+  </tr>
+</table>
+            
+            
+            <p style="margin-top:5px;">
+           <a href="javascript:collect(216);" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/jrsc.jpg" ></a> 
+           <a href="javascript:addToCart(216)" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/ljgm.jpg" ></a> 
+           </p><div class="clr"></div>
+              
+        </div>
+                 <div class="goodsItem" id="goodname">
+   
+     
+           <a href="goods.php?id=215" target="_new"><img src="images/201305/thumb_img/215_thumb_G_1367782011076.jpg" alt="清蒸鲈鱼" class="goodsimg" /></a><br />
+           <p class="goodname"><a href="goods.php?id=215" target="_new" title="清蒸鲈鱼">清蒸鲈鱼</a></p>
+           
+           
+           
+           
+         
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>                        <font class="shop_s"><strong>￥28.0元</strong></font><br />
+                        </td>
+    <td> <a href="goods.php?id=215#dp" target="_new" class="dpfont">4条评价</a></td>
+  </tr>
+</table>
+            
+            
+            <p style="margin-top:5px;">
+           <a href="javascript:collect(215);" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/jrsc.jpg" ></a> 
+           <a href="javascript:addToCart(215)" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/ljgm.jpg" ></a> 
+           </p><div class="clr"></div>
+              
+        </div>
+                 <div class="goodsItem" id="goodname">
+   
+     
+           <a href="goods.php?id=187" target="_new"><img src="images/201304/thumb_img/187_thumb_G_1364936969205.jpg" alt="韭菜苔炒肉丝" class="goodsimg" /></a><br />
+           <p class="goodname"><a href="goods.php?id=187" target="_new" title="韭菜苔炒肉丝">韭菜苔炒肉丝</a></p>
+           
+           
+           
+           
+         
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>                        <font class="shop_s"><strong>￥16.0元</strong></font><br />
+                        </td>
+    <td> <a href="goods.php?id=187#dp" target="_new" class="dpfont">0条评价</a></td>
+  </tr>
+</table>
+            
+            
+            <p style="margin-top:5px;">
+           <a href="javascript:collect(187);" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/jrsc.jpg" ></a> 
+           <a href="javascript:addToCart(187)" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/ljgm.jpg" ></a> 
+           </p><div class="clr"></div>
+              
+        </div>
+                 <div class="goodsItem" id="goodname">
+   
+     
+           <a href="goods.php?id=186" target="_new"><img src="images/201304/thumb_img/186_thumb_G_1364936904987.jpg" alt="麻辣牛肉" class="goodsimg" /></a><br />
+           <p class="goodname"><a href="goods.php?id=186" target="_new" title="麻辣牛肉">麻辣牛肉</a></p>
+           
+           
+           
+           
+         
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>                        <font class="shop_s"><strong>￥28.0元</strong></font><br />
+                        </td>
+    <td> <a href="goods.php?id=186#dp" target="_new" class="dpfont">0条评价</a></td>
+  </tr>
+</table>
+            
+            
+            <p style="margin-top:5px;">
+           <a href="javascript:collect(186);" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/jrsc.jpg" ></a> 
+           <a href="javascript:addToCart(186)" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/ljgm.jpg" ></a> 
+           </p><div class="clr"></div>
+              
+        </div>
+                 <div class="goodsItem" id="goodname">
+   
+     
+           <a href="goods.php?id=178" target="_new"><img src="images/201303/thumb_img/178_thumb_G_1363134479645.jpg" alt="莴笋肉片" class="goodsimg" /></a><br />
+           <p class="goodname"><a href="goods.php?id=178" target="_new" title="莴笋肉片">莴笋肉片</a></p>
+           
+           
+           
+           
+         
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>                        <font class="shop_s"><strong>￥14.0元</strong></font><br />
+                        </td>
+    <td> <a href="goods.php?id=178#dp" target="_new" class="dpfont">6条评价</a></td>
+  </tr>
+</table>
+            
+            
+            <p style="margin-top:5px;">
+           <a href="javascript:collect(178);" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/jrsc.jpg" ></a> 
+           <a href="javascript:addToCart(178)" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/ljgm.jpg" ></a> 
+           </p><div class="clr"></div>
+              
+        </div>
+                 <div class="goodsItem" id="goodname">
+   
+     
+           <a href="goods.php?id=147" target="_new"><img src="images/201302/thumb_img/147_thumb_G_1360880407151.jpg" alt="酸菜鱼" class="goodsimg" /></a><br />
+           <p class="goodname"><a href="goods.php?id=147" target="_new" title="酸菜鱼">酸菜鱼</a></p>
+           
+           
+           
+           
+         
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>                        <font class="shop_s"><strong>￥16.0元</strong></font><br />
+                        </td>
+    <td> <a href="goods.php?id=147#dp" target="_new" class="dpfont">79条评价</a></td>
+  </tr>
+</table>
+            
+            
+            <p style="margin-top:5px;">
+           <a href="javascript:collect(147);" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/jrsc.jpg" ></a> 
+           <a href="javascript:addToCart(147)" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/ljgm.jpg" ></a> 
+           </p><div class="clr"></div>
+              
+        </div>
+                 <div class="goodsItem" id="goodname">
+   
+     
+           <a href="goods.php?id=146" target="_new"><img src="images/201302/thumb_img/146_thumb_G_1360879752795.jpg" alt="肉末蛋羹" class="goodsimg" /></a><br />
+           <p class="goodname"><a href="goods.php?id=146" target="_new" title="肉末蛋羹">肉末蛋羹</a></p>
+           
+           
+           
+           
+         
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>                        <font class="shop_s"><strong>￥8.0元</strong></font><br />
+                        </td>
+    <td> <a href="goods.php?id=146#dp" target="_new" class="dpfont">8条评价</a></td>
+  </tr>
+</table>
+            
+            
+            <p style="margin-top:5px;">
+           <a href="javascript:collect(146);" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/jrsc.jpg" ></a> 
+           <a href="javascript:addToCart(146)" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/ljgm.jpg" ></a> 
+           </p><div class="clr"></div>
+              
+        </div>
+            </div>
+    </div>
+        </form>
+  
+ </div>
+</div>
+<div class="blank5"></div>
+<script type="Text/Javascript" language="JavaScript">
+<!--
+function selectPage(sel)
+{
+  sel.form.submit();
+}
+//-->
+</script>
+<script type="text/javascript">
+window.onload = function()
+{
+  Compare.init();
+  fixpng();
+}
+var button_compare = '';
+var exist = "您已经选择了%s";
+var count_limit = "最多只能选择4个菜品进行对比";
+var goods_type_different = "\"%s\"和已选择菜品类型不同无法进行对比";
+var compare_no_goods = "您没有选定任何需要比较的菜品或者比较的菜品数少于 2 个。";
+var btn_buy = "购买";
+var is_cancel = "取消";
+var select_spe = "请选择菜品属性";
+</script> </body>
+</html><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<title>卡卡鲜</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="http://www.kakaxian.com/themes/kkx/style.css" rel="stylesheet" type="text/css" />
+<link href="http://www.kakaxian.com/themes/kkx/css/re.css" rel="stylesheet" type="text/css" />
+<link href="http://www.kakaxian.com/themes/kkx/css/pro.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+ 
+<div class="box">
+ <div class="box_1" style="border:none">
+ 
+  
+  <style>
+  .drtop{border-bottom:1px solid #d0d4d9; text-align:left}
+  .drtop span{float:left}
+  .drtop a{float:right; margin-top:10px; margin-right:3px;} 
+  </style>
+  
+  <div class="drtop">
+    
+    <span><img src="http://www.kakaxian.com/themes/kkx/images/pro/kk17.jpg" ></span>
+    
+    <a href="category.php?id=17" target="_new"><img src="http://www.kakaxian.com/themes/kkx/images/pro/20111226202707749.gif" width="57" height="15"></a>
+    <div class="clr"></div>
+                         
+    
+    
+    </div>
+  
+  
+      <form name="compareForm" action="http://www.kakaxian.com/compare.php" method="post" onSubmit="return compareGoods(this);">
+            <div class="centerPadd "  style="border:none;">
+    <div class="clearfix goodsBox" style="border:none;">
+             <div class="goodsItem" id="goodname">
+   
+     
+           <a href="goods.php?id=265" target="_new"><img src="images/201306/thumb_img/265_thumb_G_1371851895021.jpg" alt="昂刺鱼豆腐汤" class="goodsimg" /></a><br />
+           <p class="goodname"><a href="goods.php?id=265" target="_new" title="昂刺鱼豆腐汤">昂刺鱼豆腐汤</a></p>
+           
+           
+           
+           
+         
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>                        <font class="shop_s"><strong>￥22.0元</strong></font><br />
+                        </td>
+    <td> <a href="goods.php?id=265#dp" target="_new" class="dpfont">2条评价</a></td>
+  </tr>
+</table>
+            
+            
+            <p style="margin-top:5px;">
+           <a href="javascript:collect(265);" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/jrsc.jpg" ></a> 
+           <a href="javascript:addToCart(265)" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/ljgm.jpg" ></a> 
+           </p><div class="clr"></div>
+              
+        </div>
+                 <div class="goodsItem" id="goodname">
+   
+     
+           <a href="goods.php?id=247" target="_new"><img src="images/201306/thumb_img/247_thumb_G_1372027724406.jpg" alt="玉米萝卜排骨汤" class="goodsimg" /></a><br />
+           <p class="goodname"><a href="goods.php?id=247" target="_new" title="玉米萝卜排骨汤">玉米萝卜排骨汤</a></p>
+           
+           
+           
+           
+         
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>                        <font class="shop_s"><strong>￥22.0元</strong></font><br />
+                        </td>
+    <td> <a href="goods.php?id=247#dp" target="_new" class="dpfont">0条评价</a></td>
+  </tr>
+</table>
+            
+            
+            <p style="margin-top:5px;">
+           <a href="javascript:collect(247);" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/jrsc.jpg" ></a> 
+           <a href="javascript:addToCart(247)" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/ljgm.jpg" ></a> 
+           </p><div class="clr"></div>
+              
+        </div>
+                 <div class="goodsItem" id="goodname">
+   
+     
+           <a href="goods.php?id=233" target="_new"><img src="images/201306/thumb_img/233_thumb_G_1372030163249.jpg" alt="蘑菇莴笋鸡蛋汤" class="goodsimg" /></a><br />
+           <p class="goodname"><a href="goods.php?id=233" target="_new" title="蘑菇莴笋鸡蛋汤">蘑菇莴笋鸡蛋汤</a></p>
+           
+           
+           
+           
+         
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>                        <font class="shop_s"><strong>￥10.0元</strong></font><br />
+                        </td>
+    <td> <a href="goods.php?id=233#dp" target="_new" class="dpfont">0条评价</a></td>
+  </tr>
+</table>
+            
+            
+            <p style="margin-top:5px;">
+           <a href="javascript:collect(233);" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/jrsc.jpg" ></a> 
+           <a href="javascript:addToCart(233)" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/ljgm.jpg" ></a> 
+           </p><div class="clr"></div>
+              
+        </div>
+                 <div class="goodsItem" id="goodname">
+   
+     
+           <a href="goods.php?id=85" target="_new"><img src="images/201211/thumb_img/73_thumb_G_1352213702948.jpg" alt="美白猪蹄汤" class="goodsimg" /></a><br />
+           <p class="goodname"><a href="goods.php?id=85" target="_new" title="美白猪蹄汤">美白猪蹄汤</a></p>
+           
+           
+           
+           
+         
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>                        <font class="shop_s"><strong>￥18.0元</strong></font><br />
+                        </td>
+    <td> <a href="goods.php?id=85#dp" target="_new" class="dpfont">14条评价</a></td>
+  </tr>
+</table>
+            
+            
+            <p style="margin-top:5px;">
+           <a href="javascript:collect(85);" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/jrsc.jpg" ></a> 
+           <a href="javascript:addToCart(85)" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/ljgm.jpg" ></a> 
+           </p><div class="clr"></div>
+              
+        </div>
+                 <div class="goodsItem" id="goodname">
+   
+     
+           <a href="goods.php?id=76" target="_new"><img src="images/201211/thumb_img/76_thumb_G_1352213733917.jpg" alt="红薯（粥/汤）" class="goodsimg" /></a><br />
+           <p class="goodname"><a href="goods.php?id=76" target="_new" title="红薯（粥/汤）">红薯（粥/汤）</a></p>
+           
+           
+           
+           
+         
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>                        <font class="shop_s"><strong>￥4.0元</strong></font><br />
+                        </td>
+    <td> <a href="goods.php?id=76#dp" target="_new" class="dpfont">2条评价</a></td>
+  </tr>
+</table>
+            
+            
+            <p style="margin-top:5px;">
+           <a href="javascript:collect(76);" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/jrsc.jpg" ></a> 
+           <a href="javascript:addToCart(76)" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/ljgm.jpg" ></a> 
+           </p><div class="clr"></div>
+              
+        </div>
+                 <div class="goodsItem" id="goodname">
+   
+     
+           <a href="goods.php?id=65" target="_new"><img src="images/201211/thumb_img/65_thumb_G_1352213639670.jpg" alt="鲫鱼萝卜豆腐汤" class="goodsimg" /></a><br />
+           <p class="goodname"><a href="goods.php?id=65" target="_new" title="鲫鱼萝卜豆腐汤">鲫鱼萝卜豆腐汤</a></p>
+           
+           
+           
+           
+         
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>                        <font class="shop_s"><strong>￥14.0元</strong></font><br />
+                        </td>
+    <td> <a href="goods.php?id=65#dp" target="_new" class="dpfont">6条评价</a></td>
+  </tr>
+</table>
+            
+            
+            <p style="margin-top:5px;">
+           <a href="javascript:collect(65);" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/jrsc.jpg" ></a> 
+           <a href="javascript:addToCart(65)" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/ljgm.jpg" ></a> 
+           </p><div class="clr"></div>
+              
+        </div>
+                 <div class="goodsItem" id="goodname">
+   
+     
+           <a href="goods.php?id=55" target="_new"><img src="images/201210/thumb_img/55_thumb_G_1350854848414.jpg" alt="双莲炖排骨" class="goodsimg" /></a><br />
+           <p class="goodname"><a href="goods.php?id=55" target="_new" title="双莲炖排骨">双莲炖排骨</a></p>
+           
+           
+           
+           
+         
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>                        <font class="shop_s"><strong>￥22.0元</strong></font><br />
+                        </td>
+    <td> <a href="goods.php?id=55#dp" target="_new" class="dpfont">2条评价</a></td>
+  </tr>
+</table>
+            
+            
+            <p style="margin-top:5px;">
+           <a href="javascript:collect(55);" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/jrsc.jpg" ></a> 
+           <a href="javascript:addToCart(55)" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/ljgm.jpg" ></a> 
+           </p><div class="clr"></div>
+              
+        </div>
+                 <div class="goodsItem" id="goodname">
+   
+     
+           <a href="goods.php?id=37" target="_new"><img src="images/201210/thumb_img/37_thumb_G_1349633349363.jpg" alt="番茄蛋汤" class="goodsimg" /></a><br />
+           <p class="goodname"><a href="goods.php?id=37" target="_new" title="番茄蛋汤">番茄蛋汤</a></p>
+           
+           
+           
+           
+         
+            
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>                        <font class="shop_s"><strong>￥6.0元</strong></font><br />
+                        </td>
+    <td> <a href="goods.php?id=37#dp" target="_new" class="dpfont">2条评价</a></td>
+  </tr>
+</table>
+            
+            
+            <p style="margin-top:5px;">
+           <a href="javascript:collect(37);" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/jrsc.jpg" ></a> 
+           <a href="javascript:addToCart(37)" target="_new" class="f6"><img src="http://www.kakaxian.com/themes/kkx/images/pro/ljgm.jpg" ></a> 
+           </p><div class="clr"></div>
+              
+        </div>
+            </div>
+    </div>
+        </form>
+  
+ </div>
+</div>
+<div class="blank5"></div>
+<script type="Text/Javascript" language="JavaScript">
+<!--
+function selectPage(sel)
+{
+  sel.form.submit();
+}
+//-->
+</script>
+<script type="text/javascript">
+window.onload = function()
+{
+  Compare.init();
+  fixpng();
+}
+var button_compare = '';
+var exist = "您已经选择了%s";
+var count_limit = "最多只能选择4个菜品进行对比";
+var goods_type_different = "\"%s\"和已选择菜品类型不同无法进行对比";
+var compare_no_goods = "您没有选定任何需要比较的菜品或者比较的菜品数少于 2 个。";
+var btn_buy = "购买";
+var is_cancel = "取消";
+var select_spe = "请选择菜品属性";
+</script> </body>
+</html>

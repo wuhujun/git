@@ -18,7 +18,7 @@ void point_len(void ){
    int lendouble = sizeof(pdouble) ;
    cout<<" double 类型指针的长度: "<<lendouble<<"\n";
    cout<<sizeof(int*)<<endl;
-   
+   double do_test ;   
 }
 /*
 关于面向对象的几个问题。
@@ -59,10 +59,22 @@ double getprice(){
   	return this->price;
 } 
 };
+void map( const int & Ui){
+for(int i=0 ;i!=100;i++){
+cout<<i<<"\t"<<i*i<<endl;
+}
+cout<<"Ui is :"<<Ui<<endl;
+}
+void map(const int *pUi){
+cout<<"*pUi= "<<*pUi<<endl;
+}
 int main(){
 	cout<<"Hello world"<<endl;
 	point_len();
 	apple App;
 	cout<<App.get_ID()<<endl;
+        int n = 100 ;  
+	map(n);
+        map(&n);
 	return 0;
 	}

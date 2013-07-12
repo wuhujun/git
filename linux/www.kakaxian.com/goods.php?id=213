@@ -1,0 +1,941 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="素炒木耳_素食蔬菜_卡卡鲜木耳、蒜苗" />
+<meta name="Description" content="素炒木耳_素食蔬菜_卡卡鲜的主料为木耳、蒜苗配料为姜片、葱段" />
+<title>素炒木耳_素食蔬菜_卡卡鲜</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="http://www.kakaxian.com/themes/kkx/style.css" rel="stylesheet" type="text/css" />
+<link href="http://www.kakaxian.com/themes/kkx/css/re.css" rel="stylesheet" type="text/css" />
+<link href="http://www.kakaxian.com/themes/kkx/css/pro.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://www.kakaxian.com/themes/kkx/js/action.js"></script>
+<script type="text/javascript" src="http://www.kakaxian.com/themes/kkx/js/mzp-packed-me.js"></script>
+<script type="text/javascript" src="http://www.kakaxian.com/js/common.js"></script><script type="text/javascript">
+function $id(element) {
+  return document.getElementById(element);
+}
+//切屏--是按钮，_v是内容平台，_h是内容库
+function reg(str){
+  var bt=$id(str+"_b").getElementsByTagName("h2");
+  for(var i=0;i<bt.length;i++){
+    bt[i].subj=str;
+    bt[i].pai=i;
+    bt[i].style.cursor="pointer";
+    bt[i].onclick=function(){
+      $id(this.subj+"_v").innerHTML=$id(this.subj+"_h").getElementsByTagName("blockquote")[this.pai].innerHTML;
+      for(var j=0;j<$id(this.subj+"_b").getElementsByTagName("h2").length;j++){
+        var _bt=$id(this.subj+"_b").getElementsByTagName("h2")[j];
+        var ison=j==this.pai;
+        _bt.className=(ison?"":"h2bg");
+      }
+    }
+  }
+  $id(str+"_h").className="none";
+  $id(str+"_v").innerHTML=$id(str+"_h").getElementsByTagName("blockquote")[0].innerHTML;
+}
+</script>
+</head>
+<body>
+<script type="text/javascript">
+var process_request = "正在处理您的请求...";
+</script>
+     
+  
+  
+<div class="top" style="overflow:hidden">
+<div class="topbox">
+<div class="tl">
+               <a href="article.php?id=20" >媒体报道</a>
+                                         <a href="message.php" >留言板</a>
+                                         <a href="http://kakaxian.com/article.php?id=15" >用户反馈</a>
+                                         <a href="http://blog.sina.com.cn/u/2963755804"  target="_blank" >官方博客</a>
+                    
+     
+</div>
+<div class="tr">
+<p>
+  欢迎光临卡卡鲜&nbsp;请
+ [<a href="user.php">登录</a>] | [
+ <a href="user.php?act=register">免费注册</a>]
+</p>
+<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1632380823&site=qq&menu=yes" class="qkf"><img src="http://www.kakaxian.com/themes/kkx/images/kf.jpg" width="75" height="25" /></a><a target="_blank" href="msnim:chat?contact=kakaxian@hotmail.com" class="qkf"><img src="http://www.kakaxian.com/themes/kkx/images/msn_2.gif" width="75" height="25" /></a>
+</div>
+</div>
+</div>
+<div class="logobox">
+<a href="index.php" class="logo"><img src="http://www.kakaxian.com/themes/kkx/images/logo.gif"  /></a>
+<!--
+<span><img src="themes/kkx/images/ly.jpg" width="239" height="79" /></span>
+-->
+<div id="search">
+  
+  <form id="searchForm" name="searchForm" method="get" action="http://www.kakaxian.com/search.php" onSubmit="return checkSearchForm()" class="f_r"  style="_position:relative; top:5px;">
+   <select name="category" id="category" class="B_input">
+      <option value="0">所有分类</option>
+      <option value="23" >当日即达</option><option value="26" >&nbsp;&nbsp;&nbsp;&nbsp;美味靓汤</option><option value="24" >&nbsp;&nbsp;&nbsp;&nbsp;素食蔬菜</option><option value="25" >&nbsp;&nbsp;&nbsp;&nbsp;特色荤菜</option><option value="3" >素食蔬菜</option><option value="13" >&nbsp;&nbsp;&nbsp;&nbsp;豆制品</option><option value="15" >&nbsp;&nbsp;&nbsp;&nbsp;蛋</option><option value="12" >&nbsp;&nbsp;&nbsp;&nbsp;时令蔬菜</option><option value="16" >&nbsp;&nbsp;&nbsp;&nbsp;其它</option><option value="27" >餐后甜品</option><option value="29" >&nbsp;&nbsp;&nbsp;&nbsp;草莓</option><option value="30" >&nbsp;&nbsp;&nbsp;&nbsp;梨</option><option value="31" >&nbsp;&nbsp;&nbsp;&nbsp;火龙果</option><option value="4" >美味靓汤</option><option value="17" >&nbsp;&nbsp;&nbsp;&nbsp;鱼汤</option><option value="21" >&nbsp;&nbsp;&nbsp;&nbsp;滋补汤</option><option value="18" >&nbsp;&nbsp;&nbsp;&nbsp;素汤</option><option value="1" >特色荤菜</option><option value="10" >&nbsp;&nbsp;&nbsp;&nbsp;牛肉</option><option value="7" >&nbsp;&nbsp;&nbsp;&nbsp;鱼肉</option><option value="11" >&nbsp;&nbsp;&nbsp;&nbsp;虾</option><option value="8" >&nbsp;&nbsp;&nbsp;&nbsp;猪肉</option><option value="9" >&nbsp;&nbsp;&nbsp;&nbsp;羊肉</option><option value="6" >&nbsp;&nbsp;&nbsp;&nbsp;鸡肉</option><option value="28" >粥类</option>    </select>
+   <input name="keywords" type="text" id="keyword" value="" class="B_input" style="width:110px;"/>
+   <input name="imageField" type="submit" value="" class="go" style="cursor:pointer;" />
+  <!-- <a href="search.php?act=advanced_search">高级搜索</a>-->
+   </form>
+   <div class="clr"></div>
+   <div class="keys f_l">
+   <script type="text/javascript">
+    
+    <!--
+    function checkSearchForm()
+    {
+        if(document.getElementById('keyword').value)
+        {
+            return true;
+        }
+        else
+        {
+            alert("请输入搜索关键词！");
+            return false;
+        }
+    }
+    -->
+    
+    </script>
+    <a>热搜:</a>
+       <a href="search.php?keywords=�%2582%2589">肉</a>
+      <a href="search.php?keywords=�%259A%259D油�%2589%259B�%2582%2589">蚝油牛肉</a>
+      <a href="search.php?keywords=�%2585��%258F%259C鱼">酸菜鱼</a>
+      <a href="search.php?keywords=�%2586�%2592�%259D%258F�%258D�%258F%2587">豆角杏鲍菇</a>
+      <a href="search.php?keywords=�%2586��%2593%259C�%258E%2592骨汤">冬瓜排骨汤</a>
+        </div>
+</div>
+<!--<div class="er"><img src="themes/kkx/images/dgdh.jpg" >
+</div>-->
+<div class="clr"></div>
+</div>
+<div class="dh">
+<div class="dhbox">
+<div class="dhli">
+<ul>
+<li  ><a href="index.php">首页<span></span></a></li>
+   <li   ><a href="category.php?id=1"  >特色荤菜<span></span></a></li>
+   <li   class="dhcho" ><a href="category.php?id=3"  >素食蔬菜<span></span></a></li>
+   <li   ><a href="category.php?id=4"  >美味靓汤<span></span></a></li>
+   <li   ><a href="category.php?id=27"  >餐后甜品<span></span></a></li>
+   <li   ><a href="category.php?id=28"  >健康粥道<span></span></a></li>
+   <li   ><a href="category_today.php?id=23"  >当日即达<span></span></a></li>
+   <li   ><a href="http://www.kakaxian.com/sns"  >社区<span></span></a></li>
+  
+  
+</ul>
+</div>
+<div class="chr">
+<script type="text/javascript" src="http://www.kakaxian.com/js/transport.js"></script><div class="" id="ECS_CARTINFO">
+ <a href="flow.php" title="查看购物车">购物车有 0 件</a></div>
+ </div>
+</div>
+</div>
+ 
+<div class="kk_box">
+ 
+<div class="blank"></div>
+<div class="block clearfix">
+<div class="proleft_tp" id="goodsInfo">
+      <div class="pad">
+         <div class="proimg">
+         
+          <a href="images/201304/goods_img/213_P_1366925429410.jpg" id="zoom1" class="MagicZoom MagicThumb" title="素炒木耳">
+      <img class="zoom1img" src="images/201304/goods_img/213_G_1366925429482.jpg" alt="素炒木耳" width="230px;"/>
+     </a>
+              <div class="blank5"></div>
+     
+     <div class="clearfix botdemo" >
+      <span onmouseover="moveLeft()" onmousedown="clickLeft()" onmouseup="moveLeft()" onmouseout="scrollStop()" class="spanL"><img src="http://www.kakaxian.com/themes/kkx/images/spanl.jpg" width="16" height="30"></span>
+      <div class="gallery">
+        <div id="demo">
+          <div id="demo1" style="float:left">
+            <ul>
+                         <li>
+           <a  href="images/201304/goods_img/213_P_1366925429410.jpg"
+     rel="zoom1" 
+        rev="images/201304/goods_img/213_P_1366925429410.jpg"
+        title="">
+        <img src="images/201304/thumb_img/213_thumb_P_1366925429278.jpg" alt="素炒木耳" class="B_blue" /></a>
+           
+            </li>
+                        </ul>
+            <div class="clr"></div>
+          </div>
+          <div id="demo2" style="display:inline; overflow:visible;"></div>
+        </div>
+      </div>
+      <span onmouseover="moveRight()" onmousedown="clickRight()" onmouseup="moveRight()" onmouseout="scrollStop()" class="spanR"><img src="http://www.kakaxian.com/themes/kkx/images/spanr.jpg" width="16" height="30"></span>
+      <script>
+      function $(id){  
+        return (document.getElementById) ? document.getElementById(id): document.all[id]
+      }
+      
+      var boxwidth=53;//跟图片的实际尺寸相符
+      
+      var box=$("demo");
+      var obox=$("demo1");
+      var dulbox=$("demo2");
+      obox.style.width=obox.getElementsByTagName("li").length*boxwidth+'px';
+      dulbox.style.width=obox.getElementsByTagName("li").length*boxwidth+'px';
+      box.style.width=obox.getElementsByTagName("li").length*boxwidth*3+'px';
+      var canroll = false;
+      if (obox.getElementsByTagName("li").length >= 4) {
+        canroll = true;
+        dulbox.innerHTML=obox.innerHTML;
+      }
+      var step=5;temp=1;speed=50;
+      var awidth=obox.offsetWidth;
+      var mData=0;
+      var isStop = 1;
+      var dir = 1;
+      
+      function s(){
+        if (!canroll) return;
+        if (dir) {
+      if((awidth+mData)>=0)
+      {
+      mData=mData-step;
+      }
+      else
+      {
+      mData=-step;
+      }
+      } else {
+        if(mData>=0)
+        {
+        mData=-awidth;
+        }
+        else
+        {
+        mData+=step;
+        }
+      }
+      
+      obox.style.marginLeft=mData+"px";
+      
+      if (isStop) return;
+      
+      setTimeout(s,speed)
+      }
+      
+      
+      function moveLeft() {
+          var wasStop = isStop;
+          dir = 1;
+          speed = 50;
+          isStop=0;
+          if (wasStop) {
+            setTimeout(s,speed);
+          }
+      }
+      
+      function moveRight() {
+          var wasStop = isStop;
+          dir = 0;
+          speed = 50;
+          isStop=0;
+          if (wasStop) {
+            setTimeout(s,speed);
+          }
+      }
+      
+      function scrollStop() {
+        isStop=1;
+      }
+      
+      function clickLeft() {
+          var wasStop = isStop;
+          dir = 1;
+          speed = 25;
+          isStop=0;
+          if (wasStop) {
+            setTimeout(s,speed);
+          }
+      }
+      
+      function clickRight() {
+          var wasStop = isStop;
+          dir = 0;
+          speed = 25;
+          isStop=0;
+          if (wasStop) {
+            setTimeout(s,speed);
+          }
+      }
+      </script> 
+     </div>
+         
+         
+         
+         
+     </div> 
+        <div class="prowor">
+        
+             <form action="javascript:addToCart(213)" method="post" name="ECS_FORMBUY" id="ECS_FORMBUY" >
+       <h3>素炒木耳</h3>
+      <!--<p class="f_r">
+            <a href="goods.php?id=273"><img alt="prev" src="themes/kkx/images/up.gif" /></a>
+                  <a href="goods.php?id=184"><img alt="next" src="themes/kkx/images/down.gif" /></a>
+       -->
+      </p>
+      <div class="clr"></div>
+           <div class="list" >
+            <div class="listleft" style="display:none">
+                    
+            <ul>             <li><span class="litit">[健康指数]</span> <span class="lido">96</span></li>
+                            <li><span class="litit">[所用厨具]</span> <span class="lido">炒锅</span></li>
+                            <li><span class="litit">[制作难度]</span> <span class="lido">简单</span></li>
+                            <li><span class="litit">[所需时间]</span> <span class="lido">5分钟</span></li>
+                            <li><span class="litit">[主要工艺]</span> <span class="lido">炒</span></li>
+                            <li><span class="litit">[菜肴口味]</span> <span class="lido">香</span></li>
+                                            </ul>
+              <div class=" clr"></div>
+            </div>
+            <div class="listrig">
+                            
+              <h4>￥10.0元</h4>
+                                                  <ul>           <li> <span>饭店价格：</span>  <font class="market">￥14.0元</font></li>
+                     <li class="yhpj">     <span>用户评价：</span>
+      <img src="http://www.kakaxian.com/themes/kkx/images/starsx5.gif" alt="comment rank 5" />共<font id="print"></font>条评论<div class="clr"></div></li>
+             <li> <span>菜品份量：</span>2人份</li>
+              
+          
+          
+       
+       <li class="number"> <dd>
+       <span>购买数量：</span>
+       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script>
+$(function(){
+	var t = $("#text_box");
+	$("#add").click(function(){		
+		t.val(parseInt(t.val())+1)
+		setTotal();
+	})
+	$("#min").click(function(){
+		t.val(parseInt(t.val())-1)
+		setTotal();
+	})
+	function setTotal(){
+		$("#total").html((parseInt(t.val())*3.95).toFixed(2));
+	}
+	setTotal();
+})
+</script>
+ <input type="button" value=" - " class="gmbtn" id="min"> <input name="number" type="text" id="text_box" value="1" size="4" onblur="changePrice()"  class="numtxt"/> <input type="button" value=" + " class="gmbtn" id="add">       </dd>
+      </li>
+       
+                 
+             
+      <li class="pl"><span>主 料：</span><p>木耳、蒜苗</p>
+      <div class="clr"></div>
+      </li>
+      <li class="pl"><span>辅 料：</span><p>姜片、葱段</p>      <div class="clr"></div>
+</li>
+ 
+      <li> <a href="javascript:addToCart(213)"><img src="http://www.kakaxian.com/themes/kkx/images/add.jpg"/></a> <a onclick="addToCart1(213)"><img src="http://www.kakaxian.com/themes/kkx/images/ljadd.jpg"/></a></li>
+      </ul>  
+     
+                
+        
+               </div>
+            <div class="clr"></div>
+          </div>
+          
+          <!--<p class="scmx"><span>食材明细</span></p>
+          
+          <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mxtab">
+  <tr>
+    <td width="12%" align="center"><span>主料</span></td>
+    <td width="88%"><p>木耳、蒜苗</p></td>
+  </tr>
+  <tr>
+    <td align="center"><span>辅料</span></td>
+    <td><p>姜片、葱段</p></td>
+  </tr>
+</table>-->
+<div class="clr"></div>
+<div class="alsocz">
+<span>
+你也可以：</span> <span>
+            <a href="user.php?act=affiliate&amp;goodsid=213"><img src='http://www.kakaxian.com/themes/kkx/images/tuijian.jpg'></a>
+             </span><span>
+            <a href="javascript:collect(213)"><img src="http://www.kakaxian.com/themes/kkx/images/shoucang.jpg" /></a>
+</span>
+<div class="clr"></div>
+</div>
+          </form>
+        </div>
+        
+        <div class="rqtj">
+        <div class="rqpad">
+        <span class="rqtop">相关产品推荐</span>
+                </div>
+        
+        </div>
+        <div class="clr"></div>
+      </div>
+    </div>
+  
+  <div class="AreaR">
+  
+    <div class="cpms">        <!--   <div class="cpms_top">
+    <ul>
+    <li class="cpcho"><a href="#">菜谱介绍</a></li>
+    <li><a href="#dp">点 评</a></li>
+     </ul>
+    
+    </div>-->
+    
+    
+    
+    
+    <div class="mbox" style="display:none">
+          <div id="com_v" class=" RelaArticle">
+      
+             <blockquote>
+          <table width="100%" border="0" cellpadding="3" cellspacing="1"class="sxbox">
+        
+  <tr>
+               <td bgcolor="#f1f1f1" style="font-weight:700" width="10%">健康指数</td>
+       <td bgcolor="#f1f1f1" style="font-weight:700" width="10%">所用厨具</td>
+       <td bgcolor="#f1f1f1" style="font-weight:700" width="10%">制作难度</td>
+       <td bgcolor="#f1f1f1" style="font-weight:700" width="10%">所需时间</td>
+       <td bgcolor="#f1f1f1" style="font-weight:700" width="10%">主要工艺</td>
+       <td bgcolor="#f1f1f1" style="font-weight:700" width="10%">菜肴口味</td>
+             </tr>
+  <tr>
+              <td bgcolor="#FFFFFF" style="color:#666" width="10%">96</td>
+        <td bgcolor="#FFFFFF" style="color:#666" width="10%">炒锅</td>
+        <td bgcolor="#FFFFFF" style="color:#666" width="10%">简单</td>
+        <td bgcolor="#FFFFFF" style="color:#666" width="10%">5分钟</td>
+        <td bgcolor="#FFFFFF" style="color:#666" width="10%">炒</td>
+        <td bgcolor="#FFFFFF" style="color:#666" width="10%">香</td>
+              </tr>
+      </table>
+        <p><span style="font-size: medium; ">&nbsp; <br class="Apple-interchange-newline" />
+<span style="color: rgb(51, 51, 51); font-family: Tahoma, Arial, Helvetica, 宋体, 'Arial Narrow', Geneva, sans-serif; line-height: 24px; text-align: left; "><img alt="" src="http://www.kakaxian.com/images/upload/Image/1mei.JPG" />油锅爆香姜片、葱段。</span></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: medium; "><img alt="" src="http://www.kakaxian.com/images/upload/Image/2mei.JPG" />加入木耳进行翻炒。</span></p>
+<p>&nbsp;</p>       </blockquote>
+</div>
+     </div>
+    
+    
+ 
+    <a id="dp" name="dp"></a>
+    
+    <div id="TabbedPanels1" class="TabbedPanels">
+      <ul class="TabbedPanelsTabGroup">
+        <li class="TabbedPanelsTab" tabindex="0">菜 谱</li>
+        <li class="TabbedPanelsTab" tabindex="0">菜品介绍</li>
+        <li class="TabbedPanelsTab" tabindex="0">网站点评</li>
+        <li class="TabbedPanelsTab" tabindex="0">微博点评</li>
+        <li class="TabbedPanelsTab" tabindex="0">购买记录</li>
+        <li class="TabbedPanelsTab" tabindex="0">还购买过</li>
+        <li class="rigadd"><a href="javascript:addToCart(213)"><img src="http://www.kakaxian.com/themes/kkx/images/pro/addcat.jpg" width="100" height="25" /></a></li>
+        <div class="clr"></div>
+      </ul>
+      <div class="TabbedPanelsContentGroup">
+              <div class="TabbedPanelsContent"> <p><span style="font-size: medium; ">&nbsp; <br class="Apple-interchange-newline" />
+<span style="color: rgb(51, 51, 51); font-family: Tahoma, Arial, Helvetica, 宋体, 'Arial Narrow', Geneva, sans-serif; line-height: 24px; text-align: left; "><img alt="" src="http://www.kakaxian.com/images/upload/Image/1mei.JPG" />油锅爆香姜片、葱段。</span></span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: medium; "><img alt="" src="http://www.kakaxian.com/images/upload/Image/2mei.JPG" />加入木耳进行翻炒。</span></p>
+<p>&nbsp;</p></div>
+       <div class="TabbedPanelsContent">                    <div class="sxtabdiv">
+<blockquote>
+           <table width="100%" border="0" cellpadding="3" cellspacing="1" class="sxbox">
+                 
+                <tr>
+          <td bgcolor="" align="left" width="20%" class="f1">健康指数</td>
+          <td bgcolor="" align="left" width="80%">96</td>
+        </tr>
+                <tr>
+          <td bgcolor="" align="left" width="20%" class="f1">所用厨具</td>
+          <td bgcolor="" align="left" width="80%">炒锅</td>
+        </tr>
+                <tr>
+          <td bgcolor="" align="left" width="20%" class="f1">制作难度</td>
+          <td bgcolor="" align="left" width="80%">简单</td>
+        </tr>
+                <tr>
+          <td bgcolor="" align="left" width="20%" class="f1">所需时间</td>
+          <td bgcolor="" align="left" width="80%">5分钟</td>
+        </tr>
+                <tr>
+          <td bgcolor="" align="left" width="20%" class="f1">主要工艺</td>
+          <td bgcolor="" align="left" width="80%">炒</td>
+        </tr>
+                <tr>
+          <td bgcolor="" align="left" width="20%" class="f1">菜肴口味</td>
+          <td bgcolor="" align="left" width="80%">香</td>
+        </tr>
+                      </table>
+       </blockquote></div>       </div>
+        <div class="TabbedPanelsContent"> <script type="text/javascript" src="http://www.kakaxian.com/js/utils.js"></script><div id="ECS_COMMENT"> <div class="ly">
+    <div class="lypad">
+    
+    <h3> (共<font class="f1" id="source">0</font>条评论)</h3>
+       
+      <div class="boxCenterList clearfix" style="height:1%;">
+        
+                 <link rel="stylesheet" href="editor/themes/default/default.css" />
+	<link rel="stylesheet" href="editor/plugins/code/prettify.css" />
+	<script charset="utf-8" src="editor/kindeditor.js"></script>
+	<script charset="utf-8" src="editor/lang/zh_CN.js"></script>
+	<script charset="utf-8" src="editor/plugins/code/prettify.js"></script>
+	
+              
+      <div class="fb">
+            <form action="javascript:;" onsubmit="submitComment(this)" method="post" name="commentForm" id="commentForm">
+
+    <div class="fbface"><a href="goods.php?id=213#"><img class="fbfaceimg" src="http://www.kakaxian.com/themes/kkx/images/mrt.gif" width="64" height="64"></a><br>匿名用户    <img src="http://www.kakaxian.com/themes/kkx/images/ts.jpg" >
+    
+    </div>
+    <div class="fbrig">
+    
+    <div class="one">
+    Email: <input type="text" name="email" id="email"  maxlength="100" value="" class="inputBorder"/> <font color="#006600">点评一次可得一个卡卡币可用于消费哦！
+ </font>   </div>
+    
+        <div class="one">
+
+      <input name="comment_rank" type="radio" value="1" id="comment_rank1" /> <img src="http://www.kakaxian.com/themes/kkx/images/stars1.gif" />
+          <input name="comment_rank" type="radio" value="2" id="comment_rank2" /> <img src="http://www.kakaxian.com/themes/kkx/images/stars2.gif" />
+          <input name="comment_rank" type="radio" value="3" id="comment_rank3" /> <img src="http://www.kakaxian.com/themes/kkx/images/stars3.gif" />
+          <input name="comment_rank" type="radio" value="4" id="comment_rank4" /> <img src="http://www.kakaxian.com/themes/kkx/images/stars4.gif" />
+          <input name="comment_rank" type="radio" value="5" checked="checked" id="comment_rank5" /> <img src="http://www.kakaxian.com/themes/kkx/images/stars5.gif" />
+          
+          
+          </div>
+              <div class="one">
+              
+   
+              
+
+    <textarea name="content"></textarea><input type="hidden" name="cmt_type" value="0" />
+          <input type="hidden" name="id" value="213" />
+          
+          
+          </div>
+          
+          
+                          <div style="padding-left:15px; text-align:left; float:left;">
+          验证码：<input type="text" name="captcha"  class="inputBorder" style="width:50px; margin-left:5px;"/>
+          <img src="http://www.kakaxian.com/captcha.php?667541680" alt="captcha" onClick="this.src='captcha.php?'+Math.random()" class="captcha">
+          </div>
+              <p style="text-align: right;"><input value="发布评论"    type="submit"  class="fbtn" ></p>
+    
+    </div>
+    
+    <div class="clr"></div></form>
+    </div>
+      
+      
+      
+       <ul class="comments">
+               <li>暂时还没有任何用户评论</li>
+               </ul>
+       
+       <div id="pagebar" class="f_r">
+        <form name="selectPageForm" action="http://www.kakaxian.com/goods.php" method="get">
+                <div id="pager">
+          总计 0 个记录，共 1 页。 <span> <a href="javascript:gotoPage(1,213,0)">第一页</a> <a href="javascript:;">上一页</a> <a href="javascript:;">下一页</a> <a href="javascript:;">最末页</a> </span>
+                    </div>
+                </form>
+        <script type="Text/Javascript" language="JavaScript">
+        <!--
+        
+        function selectPage(sel)
+        {
+          sel.form.submit();
+        }
+        
+        //-->
+        </script>
+      </div>
+      
+      <div class="blank5"></div>
+    
+      </div>
+     </div>
+    </div>
+    <div class="blank5"></div>
+  
+<script type="text/javascript">
+//<![CDATA[
+var cmt_empty_username = "请输入您的用户名称";
+var cmt_empty_email = "请输入您的电子邮件地址";
+var cmt_error_email = "电子邮件地址格式不正确";
+var cmt_empty_content = "您没有输入评论的内容";
+var captcha_not_null = "验证码不能为空!";
+var cmt_invalid_comments = "无效的评论内容!";
+
+/**
+ * 提交评论信息
+*/
+
+		KindEditor.ready(function(K) {
+			var editor1 = K.create('textarea[name="content"]', {
+				cssPath : 'editor/plugins/code/prettify.css',
+				uploadJson : 'editor/php/upload_json.php',
+				fileManagerJson : 'editor/php/file_manager_json.php',
+				allowFileManager : true,
+				
+				
+				afterCreate : function() {
+					var self = this;
+					K.ctrl(document, 13, function() {
+						self.sync();
+						K('form[name=commentForm]')[0].submit();
+					});
+					K.ctrl(self.edit.doc, 13, function() {
+						self.sync();
+						K('form[name=commentForm]')[0].submit();
+					});
+				}
+			});
+			
+			
+			prettyPrint();
+			
+			
+		});
+
+
+function submitComment(frm)
+{
+	setTimeout(function(){
+  var cmt = new Object;
+
+  //cmt.username        = frm.elements['username'].value;
+  cmt.email           = frm.elements['email'].value;
+  cmt.content         = frm.elements['content'].value;
+  cmt.type            = frm.elements['cmt_type'].value;
+  cmt.id              = frm.elements['id'].value;
+  cmt.enabled_captcha = frm.elements['enabled_captcha'] ? frm.elements['enabled_captcha'].value : '0';
+  cmt.captcha         = frm.elements['captcha'] ? frm.elements['captcha'].value : '';
+  cmt.rank            = 0;
+
+  for (i = 0; i < frm.elements['comment_rank'].length; i++)
+  {
+    if (frm.elements['comment_rank'][i].checked)
+    {
+       cmt.rank = frm.elements['comment_rank'][i].value;
+     }
+  }
+
+//  if (cmt.username.length == 0)
+//  {
+//     alert(cmt_empty_username);
+//     return false;
+//  }
+
+  if (cmt.email.length > 0)
+  {
+     if (!(Utils.isEmail(cmt.email)))
+     {
+        alert(cmt_error_email);
+        return false;
+      }
+   }
+   else
+   {
+        alert(cmt_empty_email);
+        return false;
+   }
+
+   if (cmt.content.length == 0)
+   {
+      alert(cmt_empty_content);
+      return false;
+   }
+
+   if (cmt.enabled_captcha > 0 && cmt.captcha.length == 0 )
+   {
+      alert(captcha_not_null);
+      return false;
+   }
+
+   Ajax.call('comment.php', 'cmt=' + cmt.toJSONString(), commentResponse, 'POST', 'JSON');
+   return false;
+	},1);
+}
+
+/**
+ * 处理提交评论的反馈信息
+*/
+  function commentResponse(result)
+  {
+    if (result.message)
+    {
+      alert(result.message);
+    }
+
+    if (result.error == 0)
+    {
+      var layer = document.getElementById('ECS_COMMENT');
+
+      if (layer)
+      {
+        layer.innerHTML = result.content;
+      }
+    }
+  }
+
+//]]>
+</script></div>
+     </div>
+        <div class="TabbedPanelsContent">
+        <script type="text/javascript">
+(function(){
+var url = "http://widget.weibo.com/distribution/comments.php?width=770&url=auto&color=fdfdfd,ffffff,4c4c4c,5093d5,cccccc,f0f0f0&colordiy=1&ralateuid=2963755804&iframskin=1&dpc=1";
+url = url.replace("url=auto", "url=" + document.URL); 
+document.write('<iframe id="WBCommentFrame" src="http://www.kakaxian.com/'&#32;+&#32;url&#32;+&#32;'" scrolling="no" frameborder="0" style="width:770px"></iframe>');
+})();
+</script>
+<script src="http://tjs.sjs.sinajs.cn/open/widget/js/widget/comment.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+window.WBComment.init({
+    "id": "WBCommentFrame"
+});
+</script>
+        
+        </div>
+               <div class="TabbedPanelsContent"> 
+<div id="ECS_BOUGHT"><div class="box">
+     <div class="box_1">
+      <h3><span class="text">购买记录</span>(近期成交数量<font class="f1">2</font>)</h3>
+      <div class="boxCenterList">
+              <table width="100%" cellpadding="4">
+       <tr style="background:url(http://www.kakaxian.com/themes/kkx/images/lineBg.gif) repeat-x left bottom;text-align:center; color:#006bd0; font-weight:bold;"><td width="25%" align="left" style="padding-left:20px">用户名</td><td width="10%">购买数量</td><td width="45%">购买时间</td><td width="20%">订单状态</td></tr>
+              <tr align="center"><td align="left" style="padding-left:20px">florasky</td><td>1</td><td>2013-07-05 21:09:19</td><td>成交</td></tr>
+              <tr align="center"><td align="left" style="padding-left:20px">xuyangz</td><td>1</td><td>2013-06-24 22:00:54</td><td>成交</td></tr>
+              </table>
+               
+       <div id="buy_pagebar" class="f_r" style="margin-top:10px">
+        <form name="selectPageForm" action="http://www.kakaxian.com/goods.php" method="get">
+                <div id="buy_pager">
+          总计 2 个记录，共 1 页。 <span> <a href="javascript:gotoBuyPage(1,213)">第一页</a> <a href="javascript:;">上一页</a> <a href="javascript:;">下一页</a> <a href="javascript:;">最末页</a> </span>
+                    </div>
+                </form>
+        <script type="Text/Javascript" language="JavaScript">
+        <!--
+        
+        function selectPage(sel)
+        {
+          sel.form.submit();
+        }
+        
+        //-->
+        </script>
+      </div>
+      
+      <div class="blank5"></div>
+      </div>
+     </div>
+    </div>
+    <div class="blank5"></div></div></div>
+ <div class="TabbedPanelsContent">     <div class="box">
+     <div class="box_1">
+      <h3><span class="text">购买过此菜品的人还购买过</span></h3>
+      <div class="boxCenterList clearfix ie6">
+               <div class="goodsItem">
+         <a href="goods.php?id=33"><img src="images/201303/thumb_img/33_thumb_G_1362416266358.jpg" alt="鲫鱼汤"  class="goodsimg" /></a><br />
+         <p><a href="goods.php?id=33" title="鲫鱼汤">鲫鱼汤</a></p> 
+                 <font class="shop_s">￥12.0元</font>
+                </div>
+                <div class="goodsItem">
+         <a href="goods.php?id=3"><img src="images/201302/thumb_img/3_thumb_G_1361995301128.jpg" alt="蒜泥菠菜"  class="goodsimg" /></a><br />
+         <p><a href="goods.php?id=3" title="蒜泥菠菜">蒜泥菠菜</a></p> 
+                 <font class="shop_s">￥10.0元</font>
+                </div>
+                <div class="goodsItem">
+         <a href="goods.php?id=234"><img src="images/201306/thumb_img/234_thumb_G_1372026299698.jpg" alt="炝炒空心菜"  class="goodsimg" /></a><br />
+         <p><a href="goods.php?id=234" title="炝炒空心菜">炝炒空心菜</a></p> 
+                 <font class="shop_s">￥10.0元</font>
+                </div>
+                <div class="goodsItem">
+         <a href="goods.php?id=147"><img src="images/201302/thumb_img/147_thumb_G_1360880407151.jpg" alt="酸菜鱼"  class="goodsimg" /></a><br />
+         <p><a href="goods.php?id=147" title="酸菜鱼">酸菜鱼</a></p> 
+                 <font class="shop_s">￥16.0元</font>
+                </div>
+                <div class="goodsItem">
+         <a href="goods.php?id=178"><img src="images/201303/thumb_img/178_thumb_G_1363134479645.jpg" alt="莴笋肉片"  class="goodsimg" /></a><br />
+         <p><a href="goods.php?id=178" title="莴笋肉片">莴笋肉片</a></p> 
+                 <font class="shop_s">￥14.0元</font>
+                </div>
+              </div>
+     </div>
+    </div>
+    <div class="blank5"></div>
+     </div>
+      </div>
+    </div>
+   
+    
+      
+    
+    </div>
+    
+  
+   
+       
+    <script type="text/javascript">
+    <!--
+    reg("com");
+    //-->
+    </script>
+  <div class="blank"></div>
+  
+  
+  </div>
+  
+  
+  
+  <div class="AreaL" style="margin-right:0px; float:right">
+    
+    
+    <div class="box" id='history_div'>
+ <div class="box_1">
+      <div class="prorigtop"><span>最近浏览</span></div>
+  <div class="boxCenterList clearfix" id='history_list'>
+    <ul class="clearfix"><li class="goodsimg"><a href="goods.php?id=216" target="_blank"><img src="images/201305/thumb_img/216_thumb_G_1367781863237.jpg" alt="蚂蚁上树" class="B_blue" /></a></li><li><a href="goods.php?id=216" target="_blank" title="蚂蚁上树">蚂蚁上树</a><br />本店售价：<font class="f1">￥14.0元</font><br /></li></ul><ul class="clearfix"><li class="goodsimg"><a href="goods.php?id=227" target="_blank"><img src="images/201306/thumb_img/227_thumb_G_1372030126225.jpg" alt="干煸四季豆" class="B_blue" /></a></li><li><a href="goods.php?id=227" target="_blank" title="干煸四季豆">干煸四季豆</a><br />本店售价：<font class="f1">￥12.0元</font><br /></li></ul><ul class="clearfix"><li class="goodsimg"><a href="goods.php?id=231" target="_blank"><img src="images/201306/thumb_img/231_thumb_G_1372026710762.jpg" alt="韭菜炒鸡蛋" class="B_blue" /></a></li><li><a href="goods.php?id=231" target="_blank" title="韭菜炒鸡蛋">韭菜炒鸡蛋</a><br />本店售价：<font class="f1">￥10.0元</font><br /></li></ul><ul class="clearfix"><li class="goodsimg"><a href="goods.php?id=239" target="_blank"><img src="images/201306/thumb_img/239_thumb_G_1372026254628.jpg" alt="蒜泥空心菜" class="B_blue" /></a></li><li><a href="goods.php?id=239" target="_blank" title="蒜泥空心菜">蒜泥空心菜</a><br />本店售价：<font class="f1">￥10.0元</font><br /></li></ul><ul class="clearfix"><li class="goodsimg"><a href="goods.php?id=240" target="_blank"><img src="images/201306/thumb_img/240_thumb_G_1372030483961.jpg" alt="蒜香金针菇" class="B_blue" /></a></li><li><a href="goods.php?id=240" target="_blank" title="蒜香金针菇">蒜香金针菇</a><br />本店售价：<font class="f1">￥12.0元</font><br /></li></ul><ul id="clear_history"><a onclick="clear_history()">[清空]</a></ul>  </div>
+ </div>
+</div>
+<div class="blank5"></div>
+<script type="text/javascript">
+if (document.getElementById('history_list').innerHTML.replace(/\s/g,'').length<1)
+{
+    document.getElementById('history_div').style.display='none';
+}
+else
+{
+    document.getElementById('history_div').style.display='block';
+}
+function clear_history()
+{
+Ajax.call('user.php', 'act=clear_history',clear_history_Response, 'GET', 'TEXT',1,1);
+}
+function clear_history_Response(res)
+{
+document.getElementById('history_list').innerHTML = '您已清空最近浏览过的菜品';
+}
+</script>    
+     
+    
+  </div>
+  
+</div>
+<div class="blank5"></div>
+<!--<div class="block">
+  <div class="box">
+   <div class="helpTitBg clearfix">
+       </div>
+  </div>
+</div>-->
+<div class="blank"></div>
+<div class="blank"></div>
+<div class="foot">
+<img src="http://www.kakaxian.com/themes/kkx/images/footad.gif" width="1200" height="70"><div class="clr"></div>
+ 
+<div class="footone">
+  <h4 class="gy">关于卡卡鲜</h4>
+<ul>
+<li><a href="article.php?id=17">品牌故事</a></li>
+<li><a href="article.php?id=18">产品理念</a></li>
+<li><a href="article.php?id=20">媒体报道</a></li>
+<li><a href="article.php?id=19">加盟推广</a></li>
+<li><a href="article.php?id=4">联系我们</a></li>
+ </ul>
+</div>
+<div class="footone">
+<h4 class="xs">新手上路</h4>
+<ul>
+<li><a href="article.php?id=8">用户注册</a></li>
+<li><a href="article.php?id=9">购物流程</a></li>
+<li><a href="article.php?id=16">消费保障</a></li>
+</ul>
+</div>
+<div class="footone">
+<h4 class="ps">配送与支付 </h4>
+<ul>
+<li><a href="article.php?id=7">配送方式</a></li>
+<li><a href="article.php?id=10">支付方法</a></li>
+</ul>
+</div>
+<div class="footone">
+<h4 class="bz">帮助文档 </h4>
+<ul>
+<li><a href="article.php?id=11">菜品如何新鲜</a></li>
+<li><a href="article.php?id=12">调料香料</a></li>
+<li><a href="article.php?id=13">菜品说明</a></li>
+</ul>
+</div>
+<div class="clr"></div>
+</div>
+<div class="footer">
+<p>           <a href="article.php?cat_id=-1"  target="_blank" >免责条款</a>
+                   &copy; 2005-2013 卡卡鲜在线配菜 版权所有，并保留所有权利。 ICP备案证书号:<a href="http://www.miibeian.gov.cn/" target="_blank">沪ICP备12037631号-1</a></p>
+<div class="wb"><iframe width="100%" height="24" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0" scrolling="no" border="0" src="http://widget.weibo.com/relationship/followbutton.php?language=zh_cn&width=100%&height=24&uid=2963755804&style=3&btn=red&dpc=1"></iframe></div>
+<div class="clr"></div>
+</div>
+<p style="text-align:center"><script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F849142ea016a74090fd8bff80b671f48' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p> </div>
+<script type="text/javascript">
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+</script>
+</body>
+<script type="text/javascript">
+var goods_id = 213;
+var goodsattr_style = 1;
+var gmt_end_time = 0;
+var day = "天";
+var hour = "小时";
+var minute = "分钟";
+var second = "秒";
+var end = "结束";
+var goodsId = 213;
+var now_time = 1373301355;
+onload = function(){
+  changePrice();
+  fixpng();
+  try {onload_leftTime();}
+  catch (e) {}
+}
+/**
+ * 点选可选属性或改变数量时修改商品价格的函数
+ */
+function changePrice()
+{
+  var attr = getSelectedAttributes(document.forms['ECS_FORMBUY']);
+  var qty = document.forms['ECS_FORMBUY'].elements['number'].value;
+  Ajax.call('goods.php', 'act=price&id=' + goodsId + '&attr=' + attr + '&number=' + qty, changePriceResponse, 'GET', 'JSON');
+}
+/**
+ * 接收返回的信息
+ */
+function changePriceResponse(res)
+{
+  if (res.err_msg.length > 0)
+  {
+    alert(res.err_msg);
+  }
+  else
+  {
+    document.forms['ECS_FORMBUY'].elements['number'].value = res.qty;
+    if (document.getElementById('ECS_GOODS_AMOUNT'))
+      document.getElementById('ECS_GOODS_AMOUNT').innerHTML = res.result;
+  }
+}
+document.getElementById('print').innerHTML = document.getElementById('source').innerHTML;
+</script>
+</html>

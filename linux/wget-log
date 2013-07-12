@@ -1,0 +1,7 @@
+--2013-07-09 08:41:10--  http://www.xxx.org/pub/path/
+Resolving www.xxx.org (www.xxx.org)... 141.0.173.27
+Connecting to www.xxx.org (www.xxx.org)|141.0.173.27|:80... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2013-07-10 18:03:52 ERROR 404: Not Found.
+
+Converted 0 files in 0 seconds.

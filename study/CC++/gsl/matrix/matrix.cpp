@@ -84,6 +84,7 @@ void setDatafile(string file_name){
 			}
 			i++; 
 		}while(i!=10); 
+                cout<<"\n";
 	}
 };
 int   main (void)
@@ -114,6 +115,7 @@ for(int i= 0 ;i!=10;i++){
  cout<<"The square root of the  pi "<<M_SQRTPI<<endl;
  cout<<"The square root of two :"<<M_SQRT1_2<<endl;
  cout<<"The square rooot of one-half :"<<M_SQRT1_2<<endl;
+ cout<<"\n"<<endl;
  Reader reader ;
  reader.test3();
  return 0;

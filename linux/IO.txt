@@ -1,0 +1,47 @@
+Linux下测试硬盘读写速度
+Linux 中测试硬盘读取、写入速度的命令
+一、测试硬盘读取速度
+命令：hdparm -t divice
+例如：hdparm -t /dev/sda6
+结果：
+/dev/sda6:
+Timing buffered disk reads: 162 MB in 3.03 seconds = 53.38 MB/sec
+二、测试硬盘写入速度
+命令：time sh -c "dd if=/dev/zero of=tmp.dd bs=1000k count=100; sync"
+结果如下：
+记录了100+0 的读入
+记录了100+0 的写出
+102400000字节(102 MB)已复制，1.20575 秒，84.9 MB/秒
+real 0m3.982s
+速度=102 / real = 102 / 3.982 = 25.615 MB/s
+三、time有计时作用，dd用于复制，从if读出，写到of。
+if=/dev/zero不产生IO，因此可以用来测试纯写速度。同理of=/dev/null不产生IO，可以用来测试纯读速度。bs是每次读或写的大小，即一个块的大小，count是读写块的数量。
+1.测/目录所在磁盘的纯写速度：
+　　[root@base-dmz1 /]# time dd if=/dev/zero bs=1024 count=1000000 of=/1Gb.file
+2.测/目录所在磁盘的纯读速度：
+　　dd if=/kvm/ftp/other/1Gb.file bs=64k |dd of=/dev/null
+3.测读写速度(这是什么)：
+　　dd if=/vat/test of=/oradata/test1 bs=64k
+四、测试磁盘的写入速度
+除了网速和CPU快慢，Linux服务器或者Linux VPS的硬盘读写速度也很重要呐。CPU大多蛮强劲，
+不必担心，网速的话机房是固定的也就变化不大了，这样硬盘的读写速度就可能成为服务器或者vps的性能瓶颈了。
+在linux下面我们可以使用命令dd来测试硬盘写入速度。
+使用Linux命令
+dd if=/dev/zero of=100mb.bin bs=100M count=1
+这条命令的意思是从 /dev/zero中读数据，写入到文件100mb.bin中，
+命令完了后会多出一个临时文件100mb.bin，记得删掉这个文件哦。
+后会出来一个类似
+
+1+0 records in
+1+0 records out
+104857600 bytes (105 MB) copied, 0.154539 seconds, 679 MB/s
+的结果，表面硬盘读写速度测试结果为 678MB/s
+
+你可以把100MB改为500MB等，这样生成的文件大小就是500MB。ps：不要太大呐。
+
+实际测试：本台机器的磁盘的
+读取数据的速度：
+读取缓存数据： Timing O_DIRECT cached reads:   498 MB in  2.01 seconds = 248.10 MB/sec
+读取磁盘数据： Timing O_DIRECT disk reads: 228 MB in  3.00 seconds =  75.91 MB/sec
+数据写入速度：
+524288000 bytes (524 MB) copied, 10.4642 s, 50.1 MB/s

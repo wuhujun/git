@@ -1,0 +1,81 @@
+为了提高Hadoop的性能，可以在Hadoop中加入combine程序，
+Hadoop之Combiner
+
+Combiners的作用：
+   每一个map可能会产生大量的输出，combiner的作用就是在map端对输出先做一次合并，以减少传输到reducer
+的数据量:
+1)combiner最基本是实现本地key的聚合，对map输出的key排序，value进行迭代。如下所示：map: (K1, V1)
+   → list(K2, V2) combine: (K2, list(V2)) → list(K2, V2) reduce: (K2, list(V2)) → list(K3, V3)
+ 
+2）combiner还具有类似本地的reduce功能.例如hadoop自带的wordcount的例子和找出value的最大值的程序，
+   combiner和reduce完全一致。如下所示：map: (K1, V1) → list(K2, V2) combine: (K2, list(V2)) →
+   list(K3, V3) reduce: (K3, list(V3)) → list(K4, V4) 
+ 
+3）如果不用combiner，那么，所有的结果都是reduce完成，效率会相对低下。使用combiner，先完成的map会
+   在本地聚合，提升速度。
+ 
+4）对于hadoop自带的wordcount的例子，value就是一个叠加的数字，所以map一结束就可以进行reduce的value
+   叠加，而不必要等到所有的map结束再去进行reduce的value叠加。
+ 
+注意：combiner使用合适，可以在满足业务的情况下提升job的速度，如果不合适，则将导致输出结果不正确。
+Combiner的输出是Reducer的输入，Combiner绝不能改变最终的计算结果。所以从我的想法来看，Combiner只应该用于那种Reduce的输入key/value与输出key/value类型完全一致，且不影响最终结果的场景。比如累加，最大值等。
+好处：减少传输数量，减少带宽
+下面摘自网络
+众所周知，Hadoop框架使用Mapper将数据处理成一个<key,value>键值对，再网络节点间对其进行整理(shuffle)，然后使用Reducer处理数据并进行最终输出。
+
+    在上述过程中，我们看到至少两个性能瓶颈：
+
+ 
+
+如果我们有10亿个数据，Mapper会生成10亿个键值对在网络间进行传输，但如果我们只是对数据求最大值，那么很明显的Mapper只需要输出它所知道的最大值即可。这样做不仅可以减轻网络压力，同样也可以大幅度提高程序效率。
+Mapper中的键值对、中间阶段(shuffle)的键值对等，大多数的键值对最终会聚集于一个单一的Reducer之上，压倒这个Reducer，从而大大降低程序的性能。
+ 
+
+Hadoop通过使用一个介于Mapper和Reducer之间的Combiner步骤来解决上述瓶颈。你可以将Combiner视为Reducer的一个帮手，它主要是为了削减Mapper的输出从而减少网络带宽和Reducer之上的负载。如果我们
+
+定义一个Combiner，MapReducer框架会对中间数据多次地使用它进行处理。
+
+如果Reducer只运行简单的分布式方法，例如最大值、最小值、或者计数，那么我们可以让Reducer自己作为Combiner。但许多有用的方法不是分布式的。
+
+ 
+
+ 
+ 
+ 
+Combiners的作用：
+每一个map可能会产生大量的输出，combiner的作用就是在map端对输出先做一次合并，以减少传输到reducer
+的数据量，
+1）combiner最基本是实现本地key的聚合，对map输出的key排序，value进行迭代。如下所示：map: (K1, V1)
+   → list(K2, V2) combine: (K2, list(V2)) → list(K2, V2) reduce: (K2, list(V2)) → list(K3, V3)
+ 
+2）combiner还具有类似本地的reduce功能.例如hadoop自带的wordcount的例子和找出value的最大值的程序，
+   combiner和reduce完全一致。如下所示：map: (K1, V1) → list(K2, V2) combine: (K2, list(V2)) →
+   list(K3, V3) reduce: (K3, list(V3)) → list(K4, V4) 
+ 
+3）如果不用combiner，那么，所有的结果都是reduce完成，效率会相对低下。使用combiner，先完成的map会
+   在本地聚合，提升速度。
+ 
+4）对于hadoop自带的wordcount的例子，value就是一个叠加的数字，所以map一结束就可以进行reduce的value
+   叠加，而不必要等到所有的map结束再去进行reduce的value叠加。
+ 
+注意：combiner使用合适，可以在满足业务的情况下提升job的速度，如果不合适，则将导致输出结果不正确。
+Combiner的输出是Reducer的输入，Combiner绝不能改变最终的计算结果。所以从我的想法来看，Combiner只应该用于那种Reduce的输入key/value与输出key/value类型完全一致，且不影响最终结果的场景。比如累加，最大值等。
+好处：减少传输数量，减少带宽
+下面摘自网络
+众所周知，Hadoop框架使用Mapper将数据处理成一个<key,value>键值对，再网络节点间对其进行整理(shuffle)，然后使用Reducer处理数据并进行最终输出。
+
+    在上述过程中，我们看到至少两个性能瓶颈：
+
+ 
+
+如果我们有10亿个数据，Mapper会生成10亿个键值对在网络间进行传输，但如果我们只是对数据求最大值，那么很明显的Mapper只需要输出它所知道的最大值即可。这样做不仅可以减轻网络压力，同样也可以大幅度提高程序效率。
+Mapper中的键值对、中间阶段(shuffle)的键值对等，大多数的键值对最终会聚集于一个单一的Reducer之上，压倒这个Reducer，从而大大降低程序的性能。
+ 
+
+Hadoop通过使用一个介于Mapper和Reducer之间的Combiner步骤来解决上述瓶颈。你可以将Combiner视为Reducer的一个帮手，它主要是为了削减Mapper的输出从而减少网络带宽和Reducer之上的负载。如果我们
+
+定义一个Combiner，MapReducer框架会对中间数据多次地使用它进行处理。
+
+如果Reducer只运行简单的分布式方法，例如最大值、最小值、或者计数，那么我们可以让Reducer自己作为Combiner。但许多有用的方法不是分布式的。
+
+ 
