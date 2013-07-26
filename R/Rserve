@@ -1,0 +1,2 @@
+启动Rserve
+ R CMD Rserve --RS_port 1001（指定端口号）

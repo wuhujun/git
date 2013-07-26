@@ -1,0 +1,26 @@
+一.安装R过程中常见的问题：
+一般使用源代码安装比较方便，由于R是使用C和FORTRAN编写的，所以在编译R的时候需要
+安装gcc编译器和fortran编译器，一般选择gfortran编译器。
+R论坛中活跃分子李舰总结了一篇博客： 
+    Ubuntu下安装R很方便，可以在软件管理中心搜索r-base直接安装，
+也可以将CRAN的相关目录添加到源，然后通过apt-get安装：
+sudo apt-get install r-base
+　不过如果想清楚地知道R安装过程中的细节并控制相关的设置，可以采用手工编译.tar.gz的方式安装。
+　　首先需要到CRAN上下载R的源码包，我使用的是最新的版本R-2.12.2.tar.gz。将其拷入某个目录，并解压缩：
+tar -zvxf R-2.12.2.tar.gz
+　　然后进入目录R-2.12.2，运行./configure检查安装的依赖环境并配置安装文件：
+./configure --prefix=/home/me/R --enable-R-shlib
+　　注意prefix参数可以设置R将要安装的路径，enable-R-shlib可以保证lib目录下的动态库能够共享，这个选项一定不要忘记添加，否则以后安装某些包的时候会出现Error in dyn.load的错误。
+　　系统会提示未找到G77编译器的错误，需要安装一个gfortran，当然安装g77也能顺利编译通过，不过新版本的Ubuntu不再提供g77的源，需要配置旧的aptitude的方式，而且有些新的R包用g77编译会出问题，所以使用新的gfortran比较保险。此外还需安装build-essential，提供C/C++的编译环境，否则也会报错。
+sudo apt-get install build-essential
+sudo apt-get install gfortran
+　　如果出现错误：configure: error: –with-readline=yes (default) and headers/libs are not available，需要安装libreadline6-dev：
+sudo apt-get install libreadline6-dev
+　　如果出现错误：configure: error: –with-x=yes (default) and X11 headers/libs are not available，需要安装libxt-dev：
+sudo apt-get install libxt-dev
+　　所有依赖包安装好之后，配置就可以成功，此时进行编译就能成功：
+make
+make install
+　　安装结束后需要手动设置环境变量，可以打开.bashrc文件，添加R_HOME和R_LIBS变量，并修改PATH，这样R就完全安
+装好。
+李舰的博客地址：http://jliblog.com/archives/368
