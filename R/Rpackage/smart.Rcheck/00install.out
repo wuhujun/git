@@ -1,0 +1,11 @@
+* installing *source* package ‘smart’ ...
+** R
+** preparing package for lazy loading
+** help
+Warning: /home/ia/Documents/project/git/R/Rpackage/smart/man/smart-package.Rd:33: All text must be in a section
+Warning: /home/ia/Documents/project/git/R/Rpackage/smart/man/smart-package.Rd:34: All text must be in a section
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+
+* DONE (smart)

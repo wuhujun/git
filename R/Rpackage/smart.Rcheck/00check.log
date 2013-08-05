@@ -1,0 +1,84 @@
+* using log directory ‘/home/ia/Documents/project/git/R/Rpackage/smart.Rcheck’
+* using R version 2.15.1 (2012-06-22)
+* using platform: x86_64-pc-linux-gnu (64-bit)
+* using session charset: UTF-8
+* checking for file ‘smart/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘smart’ version ‘1.0’
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking whether package ‘smart’ can be installed ... WARNING
+Found the following significant warnings:
+  Warning: /home/ia/Documents/project/git/R/Rpackage/smart/man/smart-package.Rd:33: All text must be in a section
+  Warning: /home/ia/Documents/project/git/R/Rpackage/smart/man/smart-package.Rd:34: All text must be in a section
+See ‘/home/ia/Documents/project/git/R/Rpackage/smart.Rcheck/00install.out’ for details.
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking DESCRIPTION meta-information ... WARNING
+Non-standard license specification:
+  What license is it under?
+Standardizable: FALSE
+* checking top-level files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking for unstated dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... WARNING
+prepare_Rd: smart-package.Rd:33: All text must be in a section
+prepare_Rd: smart-package.Rd:34: All text must be in a section
+prepare_Rd: smart.Rd:13-15: Dropping empty section \details
+prepare_Rd: smart.Rd:16-22: Dropping empty section \value
+prepare_Rd: smart.Rd:29-31: Dropping empty section \note
+prepare_Rd: smart.Rd:26-28: Dropping empty section \author
+prepare_Rd: smart.Rd:23-25: Dropping empty section \references
+prepare_Rd: smart.Rd:35-37: Dropping empty section \seealso
+prepare_Rd: smooth.Rd:13-15: Dropping empty section \details
+prepare_Rd: smooth.Rd:16-22: Dropping empty section \value
+prepare_Rd: smooth.Rd:29-31: Dropping empty section \note
+prepare_Rd: smooth.Rd:26-28: Dropping empty section \author
+prepare_Rd: smooth.Rd:23-25: Dropping empty section \references
+prepare_Rd: smooth.Rd:35-37: Dropping empty section \seealso
+* checking Rd metadata ... WARNING
+Rd files with duplicated alias 'smart':
+  ‘smart-package.Rd’ ‘smart.Rd’
+* checking Rd cross-references ... WARNING
+Unknown package(s) ‘<pkg>’ in Rd xrefs
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... WARNING
+Warning: parse error in file ‘smart-Ex.R’:
+11: unexpected symbol
+19: 
+20: ~~ simple examples
+             ^
+* checking examples ... ERROR
+Running examples in ‘smart-Ex.R’ failed
+The error most likely occurred in:
+
+> ### Name: smart-package
+> ### Title: What the package does (short line) ~~ package title ~~
+> ### Aliases: smart-package smart
+> ### Keywords: package
+> 
+> ### ** Examples
+> 
+> ~~ simple examples of the most important functions ~~
+Error: unexpected symbol in "~~ simple examples"
+Execution halted

@@ -9,7 +9,7 @@ cat /proc/meminfo
       8  Intel(R) Xeon(R) CPU            E5410   @ 2.33GHz
       (看到有8个逻辑CPU, 也知道了CPU型号)
 
-      # cat /proc/cpuinfo | grep physical | uniq -c
+ # cat /proc/cpuinfo | grep physical | uniq -c
             4 physical id      : 0
 	          4 physical id      : 1
 		  (说明实际上是两颗4核的CPU)

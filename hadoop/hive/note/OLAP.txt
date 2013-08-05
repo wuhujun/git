@@ -1,8 +1,5 @@
 什么是联机分析处理（OLAP）
 
-
-(转载自北大高科网站，http://www.pku-ht.com/) 
-
 联机分析处理 (OLAP) 的概念最早是由关系数据库之父E.F.Codd于1993年提出的，他同时提出了关于OLAP的12条准则。
 OLAP的提出引起了很大的反响，OLAP作为一类产品同联机事务处理 (OLTP) 明显区分开来。
     当今的数据处理大致可以分成两大类：联机事务处理OLTP（on-line transaction processing）、

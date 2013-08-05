@@ -1,0 +1,5 @@
+1.查看操作系统版本
+ cat /etc/issue 
+ lsb_release -a
+2.查看系统内核
+ uname -a 

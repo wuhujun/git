@@ -1,2 +1,14 @@
-man : man - an interface to the on-line reference manuals
-sudo : super user do something
+1.man : man - an interface to the on-line reference manuals
+2.sudo : super user do something
+3.设定默认值，首先要给出-D选项，然后添加想要设定的默认值，例如为了将默认
+主目录设定为/home可以执行如下命令：
+useradd -D -b /home -s /bin/bash
+useradd -D 选项的使用方法：并非创建一个新账户，而是将创建任何新账户所提供
+的信息作为默认设置保存。
+4.创建一个用户的方法：
+ useradd   -m   -g smart    -s /bin/bash   smart 
+ -m：自动生成主目录。
+ -g：分配用户到组。
+ -s：配置默认的shell
+smart ：用户名
+RSclient - R-based client for Rserve
