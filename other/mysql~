@@ -1,0 +1,10 @@
+ 1.删除mysql的匿名用户
+UPDATE user set password=PASSWORD(ia) where user='' ; 
+FLUSH PRIVILEGES;
+2.创建一个数据库
+create database oozie ;
+3.创建用户
+ grant all privileges on oozie.* to 'oozie'@'localhost' identified by 'oozie';
+
+ grant all privileges on oozie.* to 'oozie'@'%' identified by 'oozie';
+

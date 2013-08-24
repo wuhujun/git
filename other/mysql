@@ -1,0 +1,12 @@
+ 1.删除mysql的匿名用户
+UPDATE user set password=PASSWORD(ia) where user='' ; 
+FLUSH PRIVILEGES;
+2.创建一个数据库
+create database oozie ;
+3.创建用户并授权从任何地址访问。
+ grant all privileges on oozie.* to 'oozie'@'localhost' identified by 'oozie';
+
+ grant all privileges on oozie.* to 'oozie'@'%' identified by 'oozie';
+
+ grant all privileges on hive.* to 'hive'@'%' identified by 'hive';
+

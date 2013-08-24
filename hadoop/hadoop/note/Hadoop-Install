@@ -129,7 +129,7 @@ R是开源的每次发布新的版本就是通过发布源代码的方式。
   到Master上。
   具体的做法就是在Master上生成密钥对，将公钥发送到每台Slave机器,并导入到~/.ssh/authorized_keys中。
   用到的命令：
-    ssh-keygen -t rsa -P ‘''
+    ssh-keygen -t rsa -P ''
     cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys  
     将本机生成的公钥导入到本机存放公钥的文件中，可以不需要验证登录localhost.
     将~/.ssh/id_rsa.pub 分发到每台Slave机器，并导入到Slave机器的~/.ssh/authorized_keys 中。

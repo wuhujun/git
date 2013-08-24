@@ -1,0 +1,14 @@
+1.关于Oozie介绍的文档
+http://www.infoq.com/cn/articles/introductionOozie
+2.关于Oozie安装的文档
+http://guoyunsky.iteye.com/blog/1391975
+3.关于Oozie工作原理介绍的文档
+http://www.infoq.com/cn/articles/oozieexample
+4.关于Oozie的异常处理的文档
+http://yaoyinjie.blog.51cto.com/3189782/790333
+5.关于Oozie工作流配置的文档
+http://blog.csdn.net/cuirong1986/article/details/8246798
+6.关于Oozie编程接口的文档
+http://oozie.apache.org/docs/3.1.3-incubating/WebServicesAPI.html
+两种API，一种WebServicesAPI,一种是客户端API，客户端API，调用API操作工作流，WebServicesAPI通过操作
+API，获取运行过程中的信息，向Web显示的自定义的状态。
